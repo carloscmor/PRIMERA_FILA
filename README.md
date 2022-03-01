@@ -8,3 +8,4 @@ Proyecto grupal
 - Javier Lanceta Salas
 - Guillermo Tell González
 - Julián Castro Coloma
+- -Pablo Fernández Serrano
