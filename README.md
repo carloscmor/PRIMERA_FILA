@@ -5,4 +5,6 @@ Proyecto grupal
 -Nuria Rodríguez Tortosa
 -Daniel García Rodríguez
 -Guillermo Tell González
+-Javier Leiva Dueñas
+-Javier Lanceta Salas
 
