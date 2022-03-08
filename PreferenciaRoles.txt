@@ -5,7 +5,7 @@ Planificación	Diseño	Implementación	Pruebas
 Guillermo	Carlos	J.Leiva		Guillermo
 Carlos		Pablo	J.Lanceta	J.Leiva
 Dani		Nuria	Pablo		J.Lanceta
-Nuria		Dani
+Nuria		        Dani
 
 Suejeto a cambios
 
