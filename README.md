@@ -1,5 +1,6 @@
-# PRIMERA_FILA
-Proyecto grupal
+# Primera Fila
+
+### Miembros del grupo
 
 - Carlos Castaño Moreno
 - Nuria Rodríguez Tortosa
