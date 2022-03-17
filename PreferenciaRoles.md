@@ -3,7 +3,7 @@
 | Planificación | Diseño | Implementación | Pruebas   | Scrum Master | Analista  |
 | ------------- | ------ | -------------- | --------- | ------------ | --------- |
 | Guillermo     | Carlos | J.Leiva        | Guillermo | Carlos       | Guillermo |
-| Carlos        | Pablo  | J.Lanceta      | J.Leiva   | ¿Julián?     | Nuria     |
+| Carlos        | Pablo  | J.Lanceta      | J.Leiva   |  Julián      | Nuria     |
 | Nuria         | Nuria  | Pablo          | J.Lanceta |              |           |
 |               | Julián | Dani           | Julián    |              |           |
 |               |        |                | Dani      |              |           |
