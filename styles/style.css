@@ -14,6 +14,8 @@ header {
 .tablero {
 	display: block;
 	margin: 10px auto;
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	max-width: 500px;
+	height: 100%;
+	max-height: 500px;
 }
