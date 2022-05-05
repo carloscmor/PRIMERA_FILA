@@ -28,7 +28,7 @@ public class Pregunta {
 	public Set<String> getOpciones() {
 		return opciones;
 	}
-	public void setOpciones(String opciones) {
+	public void setOpciones(Set<String> opciones) {
 		this.opciones = opciones;
 	}
 	
