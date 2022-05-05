@@ -1,0 +1,7 @@
+/** Estilo del modo claro */
+:root {
+	--fondo1: rgb(238, 238, 238);
+	--fondo2: rgb(171, 171, 171);
+	--borde1: rgb(136, 136, 136);
+	--fuente: rgb(36, 36, 36);
+}
