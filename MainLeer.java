@@ -23,7 +23,7 @@ public class MainLeer {
 	public static void main(String[] args) {
 		String lineaCompleta = leer("salida.txt");
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta incorrecta (puede ser una lista si la respuesta es de multiple eleccion
-		//							  0		   1		 2			 3				 4							5
+		//			      0	       1	 2	     3	              4				5
 		//indices del array despues del split
 
 		String pregunta = lineaCompleta.split("[;]")[3];
