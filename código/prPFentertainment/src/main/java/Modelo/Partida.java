@@ -1,8 +1,6 @@
 package Modelo;
 
-public class Partida {
-    Partida(){
-
-    }
-    //
+public interface Partida {
+    void empezar();
+    void terminar();
 }
