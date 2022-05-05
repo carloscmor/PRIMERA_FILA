@@ -1,9 +1,7 @@
-body {
-	background-color: #242424;
-	color: #CFCFCF;
-}
-
-header {
-	background-color: #141414;
-	border-bottom: 2px solid #141414;
+/** Estilo del modo oscuro */
+:root {
+	--fondo1: rgb(36, 36, 36);
+	--fondo2: rgb(20, 20, 20);
+	--borde1: rgb(20, 20, 20);
+	--fuente: rgb(207, 207, 207);
 }

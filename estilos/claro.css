@@ -1,9 +1,7 @@
-body {
-	background-color: #EEEEEE;
-	color: #242424;
-}
-
-header {
-	background-color: #AAAAAA;
-	border-bottom: 2px solid #888888;
+/** Estilo del modo claro */
+:root {
+	--fondo1: rgb(238, 238, 238);
+	--fondo2: rgb(171, 171, 171);
+	--borde1: rgb(136, 136, 136);
+	--fuente: rgb(36, 36, 36);
 }
