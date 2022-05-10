@@ -1,4 +1,4 @@
-package tablero;
+package Modelo;
 
 public enum Dificultad {
 
