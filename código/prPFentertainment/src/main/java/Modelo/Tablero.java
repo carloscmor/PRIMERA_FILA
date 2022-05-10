@@ -18,6 +18,7 @@ public class Tablero {
 	}
 	
 	public Tablero(char r, Dificultad d){ // para que el tablero se cree en modo partida rapida con la dificultad seleccionada
+		iniciarTablero();
 		modalidad = d;
 		dificultad = d;
 
@@ -35,7 +36,7 @@ public class Tablero {
 		return categorias[pos];
 	}
 
-	public void iniciarTablero() {
+	public void iniciarTablero() { // hay que cambiarla para cada modalidad
 		casillas = new ArrayList<>();
 
 		for(int i=0; i<TAM_TABLERO; i++) {
