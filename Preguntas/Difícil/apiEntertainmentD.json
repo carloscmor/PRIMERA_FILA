@@ -1,0 +1,605 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who wrote the novel &quot;Moby-Dick&quot;?",
+      "correct_answer": "Herman Melville",
+      "incorrect_answers": [
+        "William Golding",
+        "William Shakespeare",
+        "J. R. R. Tolkien"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the book &quot;The Martian&quot;, how long was Mark Watney trapped on Mars (in Sols)?",
+      "correct_answer": "549 Days",
+      "incorrect_answers": [
+        "765 Days",
+        "401 Days",
+        "324 Days"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Harry Potter universe, what is Cornelius Fudge&#039;s middle name?",
+      "correct_answer": "Oswald",
+      "incorrect_answers": [
+        "James",
+        "Harold",
+        "Christopher"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Magic: The Gathering universe,  the Antiquities, Ice Age, and Alliances expansions take place on which continent?",
+      "correct_answer": "Terisiare",
+      "incorrect_answers": [
+        "Aerona",
+        "Shiv",
+        "Jamuraa"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Magic: The Gathering universe, the Fallen Empires expansion takes place on which continent?",
+      "correct_answer": "Sarpadia",
+      "incorrect_answers": [
+        "Otaria",
+        "Terisiare",
+        "Shiv"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the film &quot;Interstellar&quot;, how long did they spend on Miller&#039;s planet?",
+      "correct_answer": "23 years, 4 months, and 8 days",
+      "incorrect_answers": [
+        "15 years, 2 months, and 15 days",
+        "10 months and 6 days",
+        "26 years, 4 months, and 10 days"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the first movie to ever use a Wilhelm Scream?",
+      "correct_answer": "Distant Drums",
+      "incorrect_answers": [
+        "Treasure of the Sierra Madre",
+        "The Charge at Feather River",
+        "Indiana Jones"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In what year did Clint Eastwood star as Inspector Harry Callahan in the film &quot;Dirty Harry&quot;?",
+      "correct_answer": "1971",
+      "incorrect_answers": [
+        "1975",
+        "1983",
+        "1969"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the &quot;Jurassic Park&quot; universe, when did &quot;Jurassic Park: San Diego&quot; begin construction?",
+      "correct_answer": "1985",
+      "incorrect_answers": [
+        "1988",
+        "1986",
+        "1993"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was Humphrey Bogart&#039;s middle name?",
+      "correct_answer": "DeForest",
+      "incorrect_answers": [
+        "DeWinter",
+        "Steven",
+        "Bryce"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+      "correct_answer": "Revolver",
+      "incorrect_answers": [
+        "Help!",
+        "Rubber Soul",
+        "Abbey Road"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which M83 album is the song &quot;Midnight City&quot; featured in?",
+      "correct_answer": "Hurry Up, We&#039;re Dreaming",
+      "incorrect_answers": [
+        "Saturdays = Youth",
+        "Before the Dawn Heals Us",
+        "Junk"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which of these songs is not by Tatsuro Yamashita?",
+      "correct_answer": "Lucky Lady Feel So Good ",
+      "incorrect_answers": [
+        "Merry-Go Round",
+        "Let&#039;s Dance Baby",
+        "Love Talkin&#039;"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the first Studio Album to be released on the Internet with a &quot;Pay-What-You-Want&quot; price?",
+      "correct_answer": "In Rainbows",
+      "incorrect_answers": [
+        "The Help Album",
+        "Skrillex and Diplo Present Jack &Uuml;",
+        "Blackstar"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What song originally performed by The Bee Gees in 1978 had a cover version by Steps 20 years later?",
+      "correct_answer": "Tragedy",
+      "incorrect_answers": [
+        "Night Fever",
+        "Stayin&#039; Alive",
+        "You Should Be Dancing"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of Broadway&#039;s first &quot;long-run&quot; musical?",
+      "correct_answer": "The Elves",
+      "incorrect_answers": [
+        "Wicked",
+        "Hamilton",
+        "The Book of Mormon"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In Les Mis&eacute;rables, who is Prison Code 24601?",
+      "correct_answer": "Jean Valjean",
+      "incorrect_answers": [
+        "Marius Pontmercy",
+        "Javert",
+        "Jean Claude Van Damme"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who serves as the speaker of the prologue in Shakespeare&#039;s Romeo and Juliet?",
+      "correct_answer": "Chorus",
+      "incorrect_answers": [
+        "Montague",
+        "Refrain",
+        "Capulet"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "After England, more Shakespeare plays are set in this present day country than in any other.",
+      "correct_answer": "Italy",
+      "incorrect_answers": [
+        "United States",
+        "Greece",
+        "France"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Shakespeare play features the stage direction &quot;Enter a messenger, with two heads and a hand&quot;?",
+      "correct_answer": "Titus Andronicus",
+      "incorrect_answers": [
+        "Othello",
+        "Macbeth",
+        "King Lear"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the Klingon&#039;s afterlife called?",
+      "correct_answer": "Sto-vo-kor",
+      "incorrect_answers": [
+        "Valhalla",
+        "Karon&#039;gahk",
+        "New Jersey"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In 2008, British celebrity chef Gordon Ramsay believes he almost died after suffering what accident in Iceland while filming?",
+      "correct_answer": "Slipping off a cliff, and nearly drowning in icy water",
+      "incorrect_answers": [
+        "Crash landing when arriving at Keflav&iacute;k airport",
+        "A minor car accident in a snowstorm",
+        "Being served under-cooked chicken at his hotel"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who was the winner of &quot;Big Brother&quot; Season 10?",
+      "correct_answer": "Dan Gheesling",
+      "incorrect_answers": [
+        "Bryce Kranyik",
+        "Ryan Sutfin",
+        "Chris Mundorf"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which former Coronation Street actress was once a hostess on the British Game Show &quot;Double Your Money&quot;?",
+      "correct_answer": "Amanda Barrie",
+      "incorrect_answers": [
+        "Sue Nicholls",
+        "Violet Carson",
+        "Jean Alexander"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which actor from The Young Ones also played Lord Flashheart in one episode of Blackadder II?",
+      "correct_answer": "Rik Mayall",
+      "incorrect_answers": [
+        "Adrian Edmondson",
+        "Nigel Planer",
+        "Christopher Ryan"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "When was the first &quot;Half-Life&quot; released?",
+      "correct_answer": "1998",
+      "incorrect_answers": [
+        "2004",
+        "1999",
+        "1997"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which of these weapon classes DO NOT appear in the first Monster Hunter game?",
+      "correct_answer": "Bow ",
+      "incorrect_answers": [
+        "Hammer",
+        "Heavy Bowgun",
+        "Light Bowgun"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "How many playable characters are there in Super Smash Bros. for Nintendo 3DS and Wii U?",
+      "correct_answer": "58",
+      "incorrect_answers": [
+        "48",
+        "51",
+        "55"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "How many voice channels does the Super Nintendo Entertainment System support?",
+      "correct_answer": "8",
+      "incorrect_answers": [
+        "6",
+        "10",
+        "12"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In which game did the character 'Mario' make his first appearance?",
+      "correct_answer": "Donkey Kong",
+      "incorrect_answers": [
+        "Super Mario Bros.",
+        "Super Mario Land",
+        "Mario Bros."
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the world&#039;s oldest board game?",
+      "correct_answer": "Senet",
+      "incorrect_answers": [
+        "Chess",
+        "Checkers",
+        "Go"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which board game was first released on February 6th, 1935?",
+      "correct_answer": "Monopoly",
+      "incorrect_answers": [
+        "Risk",
+        "Clue",
+        "Candy Land"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which card is on the cover of the Beta rulebook of &quot;Magic: The Gathering&quot;?",
+      "correct_answer": "Bog Wraith",
+      "incorrect_answers": [
+        "Island",
+        "Rock Hydra",
+        "Elvish Archers"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In Magic: The Gathering, what card&#039;s flavor text is &quot;Catch!&quot;?",
+      "correct_answer": "Lava Axe",
+      "incorrect_answers": [
+        "Stone-Throwing Devils",
+        "Ember Shot",
+        "Throwing Knife"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the sum of all the tiles in a standard box of Scrabble?",
+      "correct_answer": "187",
+      "incorrect_answers": [
+        "207",
+        "197",
+        "177"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In what Homestuck Update was [S] Game Over released?",
+      "correct_answer": "October 25th, 2014",
+      "incorrect_answers": [
+        "April 13th, 2009",
+        "April 8th, 2012",
+        "August 28th, 2003"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the real hair colour of the mainstream comic book version (Earth-616) of Daredevil?",
+      "correct_answer": "Blonde",
+      "incorrect_answers": [
+        "Auburn",
+        "Brown",
+        "Black"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the &quot;Archie&quot; comics, who was Jughead&#039;s first girlfriend?",
+      "correct_answer": "Joani",
+      "incorrect_answers": [
+        "Ethel",
+        "Debbi",
+        "Margret"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the webcomic &quot;Ava&#039;s Demon&quot;, what sin is &quot;Nevy Nervine&quot; based off of? ",
+      "correct_answer": "Envy ",
+      "incorrect_answers": [
+        "Sloth",
+        "Wrath ",
+        "Lust"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which of the following rings from the DC Comics&#039; &quot;Lantern Corps&quot; are classified as Parasitic?",
+      "correct_answer": "Indigo (Compassion)",
+      "incorrect_answers": [
+        "Green (Willpower)",
+        "White (Life)",
+        "Yellow (Fear)"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In &quot;One Piece&quot;, what does &quot;the Pirate King&quot; mean to the captain of the Straw Hat Pirates?",
+      "correct_answer": "Freedom",
+      "incorrect_answers": [
+        "Promise",
+        "Adventure",
+        "Friendship"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the &quot;Dragon Ball&quot; franchise, what is the name of Goku&#039;s brother?",
+      "correct_answer": "Raditz",
+      "incorrect_answers": [
+        "Gohan",
+        "Vegeta",
+        "Bardock"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which animation studio animated &quot;Psycho Pass&quot;?",
+      "correct_answer": "Production I.G",
+      "incorrect_answers": [
+        "Kyoto Animation",
+        "Shaft",
+        "Trigger"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which animation studio produced &quot;Log Horizon&quot;?",
+      "correct_answer": "Satelite",
+      "incorrect_answers": [
+        "Sunrise",
+        "Xebec",
+        "Production I.G"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the horror manga artist who made Uzumaki?",
+      "correct_answer": "Junji Ito",
+      "incorrect_answers": [
+        "Kazuo Umezu",
+        "Shintaro Kago",
+        "Sui Ishida"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who played Stan&#039;s dog in the South Park episode &quot;Big Gay Al&#039;s Big Gay Boat Ride&quot;?",
+      "correct_answer": "George Clooney",
+      "incorrect_answers": [
+        "Jay Leno",
+        "Matt Stone",
+        "Robert Smith"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which of the following films was Don Bluth both the writer, director, and producer for?",
+      "correct_answer": "All Dogs Go To Heaven",
+      "incorrect_answers": [
+        "Titan A.E.",
+        "Anastasia",
+        "The Land Before Time"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In &quot;Gravity Falls&quot;, the character Bill Cipher remarks that &quot;the universe is what?&quot;",
+      "correct_answer": "A hologram ",
+      "incorrect_answers": [
+        "An illusion ",
+        "A simulation",
+        "Corrupting"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was the name of Jonny&#039;s pet dog in The Adventures of Jonny Quest?",
+      "correct_answer": "Bandit",
+      "incorrect_answers": [
+        "Lucky",
+        "Rocky",
+        "Max"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What was Maggie Simpson&#039;s first canonical word, not including the Tracey Ullman shorts?",
+      "correct_answer": "Daddy.",
+      "incorrect_answers": [
+        "Sequel?",
+        "Ja!",
+        "Rusty!"
+      ]
+    }
+  ]
+}
