@@ -1,0 +1,15 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Spring Boot-PfEntertainmentApplication<PF-ENTERTAINMENT>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"mainClass": "PrimeraFila.PFENTERTAINMENT.PfEntertainmentApplication",
+			"projectName": "PF-ENTERTAINMENT",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		}
+	]
+}
