@@ -6,6 +6,10 @@ public class Jugador {
     private String nombre;
     private int vidas, puntuacion;
 
+    public Jugador(String nombre, int vidas){
+        this(nombre, vidas, 0);
+    }
+
     public Jugador(String nombre, int vidas, int puntuacion){
         this.nombre = nombre;
         this.vidas = vidas;
