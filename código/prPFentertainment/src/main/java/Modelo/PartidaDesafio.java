@@ -1,22 +1,25 @@
 package Modelo;
 
-private Tablero t;
-private Jugador j;
-
 public class PartidaDesafio implements Partida{
-    public PartidaDesafio() {
-    }
+	private Tablero t;
+	private Jugador j;
+
+	public PartidaDesafio() {
+	}
+
+	public Tablero getTablero() {
+		return t;
+	}
 
     @Override
     public void empezar() {
-        t = new Tablero(d);
-        j = new Jugador();
-        j.setvidas(5);
+        t = new Tablero('m');
+        j = new Jugador("Jugador 1", 5);
     }
 
     @Override
     public void terminar() {
-        if (j.getvidas() == 0){
+        if (j.getVidas() == 0){
             //hay que completar
         }
     }

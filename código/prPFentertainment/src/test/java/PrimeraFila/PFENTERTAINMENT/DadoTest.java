@@ -1,4 +1,4 @@
-package pruebasJUnit;
+package PrimeraFila.PFENTERTAINMENT;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import Temporizador.Dado;
+import Modelo.Dado;
 
 public class DadoTest {
 	Dado d;
@@ -18,7 +18,7 @@ public class DadoTest {
 	public void init() {
 		d = new Dado();
 	}
-	
+
 	@AfterEach
 	public void terminate() {
 		d = null;
@@ -29,7 +29,7 @@ public class DadoTest {
 		d.tirar();
 		assertTrue(d.valor() > 0 && d.valor() < 7);
 	}
-	
+
 	@Test
 	public void elDadoDevuelveTodosLosPosiblesValores() {
 		Set<Integer> lista = new HashSet<>();

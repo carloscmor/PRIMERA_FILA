@@ -16,11 +16,16 @@ public class Tablero {
 		iniciarTablero();
 		modalidad = d;
 	}
-	
-	public Tablero(char r, Dificultad d){ // para que el tablero se cree en modo partida rapida con la dificultad seleccionada
+
+	public Tablero(char r, Dificultad d) { // para que el tablero se cree en modo partida rapida con la dificultad seleccionada
 		iniciarTablero();
-		modalidad = d;
+		modalidad = r;
 		dificultad = d;
+	}
+
+	public char getModalidad() {
+		return modalidad;
+	}
 
 	public void setDificultad(Dificultad d) {
 		dificultad = d;

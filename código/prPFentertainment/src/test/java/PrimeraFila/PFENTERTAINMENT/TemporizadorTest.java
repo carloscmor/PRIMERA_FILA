@@ -1,4 +1,4 @@
-package pruebasJUnit;
+package PrimeraFila.PFENTERTAINMENT;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -11,7 +11,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import Temporizador.Temporizador;
+import Modelo.Temporizador;
 
 public class TemporizadorTest {
 	Temporizador t;
@@ -37,7 +37,6 @@ public class TemporizadorTest {
 		try {
 			TimeUnit.SECONDS.sleep(1);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		assertFalse(t.getResultado());
@@ -49,7 +48,6 @@ public class TemporizadorTest {
 		try {
 			TimeUnit.SECONDS.sleep(4);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		assertTrue(t.getResultado());
@@ -63,7 +61,6 @@ public class TemporizadorTest {
 		try {
 			TimeUnit.SECONDS.sleep(4);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
