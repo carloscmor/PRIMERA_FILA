@@ -38,7 +38,12 @@ public class Jugador {
     }
 
     public void setPuntuacion(int puntuacion) {
-        this.puntuacion = puntuacion;
+        if(puntuacion >= 0)
+            this.puntuacion = puntuacion;
+    }
+
+    public void incrementaPuntuacion(int p){
+        puntuacion += p;
     }
 
     @Override
