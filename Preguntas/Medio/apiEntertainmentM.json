@@ -1,0 +1,597 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What was the name of the Mysterious Island, in Jules Verne&#039;s &quot;The Mysterious Island&quot;?",
+      "correct_answer": "Lincoln Island",
+      "incorrect_answers": [
+        "Vulcania Island",
+        "Prometheus Island",
+        "Neptune Island"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Michael Crichton&#039;s novel &quot;Jurassic Park&quot;, John Hammond meets his demise at the claws of which dinosaur?",
+      "correct_answer": "Procompsognathus",
+      "incorrect_answers": [
+        "Dilophosaurus",
+        "Tyrannosaurus Rex",
+        "Velociraptor"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What book series published by Jim Butcher follows a wizard in modern day Chicago?",
+      "correct_answer": "The Dresden Files",
+      "incorrect_answers": [
+        "A Hat in Time",
+        "The Cinder Spires",
+        "My Life as a Teenage Wizard"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Eragon&#039;s dragon in &quot;Eragon&quot;?",
+      "correct_answer": "Saphira",
+      "incorrect_answers": [
+        "Glaedr",
+        "Thorn",
+        "Arya"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "Originally, the character Charlie from Charlie and the Chocolate Factory was going to be black.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?",
+      "correct_answer": "Sean Connery",
+      "incorrect_answers": [
+        "Dennis Quaid",
+        "Pete Postlethwaite",
+        "Brian Thompson"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the 1984 movie &quot;The Terminator&quot;, what model number is the Terminator portrayed by Arnold Schwarzenegger?",
+      "correct_answer": "T-800",
+      "incorrect_answers": [
+        "I-950",
+        "T-888",
+        "T-1000"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the robot in the 1951 science fiction film classic &#039;The Day the Earth Stood Still&#039;?",
+      "correct_answer": "Gort",
+      "incorrect_answers": [
+        "Robby",
+        "Colossus",
+        "Box"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What city did the monster attack in the film, &quot;Cloverfield&quot;?",
+      "correct_answer": "New York, New York",
+      "incorrect_answers": [
+        "Las Vegas, Nevada",
+        "Chicago, Illinois",
+        "Orlando, Florida"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Brendan Fraser starred in the following movies, except which one?",
+      "correct_answer": "Titanic",
+      "incorrect_answers": [
+        "Monkeybone",
+        "Encino Man",
+        "Mrs. Winterbourne"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the founder and leader of industrial rock band, &#039;Nine Inch Nails&#039;?",
+      "correct_answer": "Trent Reznor",
+      "incorrect_answers": [
+        "Marilyn Manson",
+        "Robin Finck",
+        "Josh Homme"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who had a 1976 hit with the song &#039;You Make Me Feel Like Dancing&#039;?",
+      "correct_answer": "Leo Sayer",
+      "incorrect_answers": [
+        "Elton John",
+        "Billy Joel",
+        "Andy Gibb"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which city did American rap producer DJ Khaled originate from?",
+      "correct_answer": "Miami",
+      "incorrect_answers": [
+        "New York",
+        "Detroit",
+        "Atlanta"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+      "correct_answer": "Hurt",
+      "incorrect_answers": [
+        "Closer",
+        "A Warm Place",
+        "Big Man with a Gun"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "&#039;74&ndash;&#039;75 is a 1993 single from the album Ring by what American band?",
+      "correct_answer": "The Connells",
+      "incorrect_answers": [
+        "R.E.M.",
+        "The Ocean Blue",
+        "The Bangles"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which Shakespeare play does the character Marcellus say, &quot;Something is rotten in the state of Denmark&quot;?",
+      "correct_answer": "Hamlet",
+      "incorrect_answers": [
+        "Macbeth",
+        "King Lear",
+        "Twelfth Night"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which Shakespearean play will you find the suicide of Ophelia?",
+      "correct_answer": "Hamlet",
+      "incorrect_answers": [
+        "Macbeth",
+        "Othello",
+        "King Lear"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of the following is not a piece from the 1950&#039;s musical West Side Story?",
+      "correct_answer": "The Back Alley",
+      "incorrect_answers": [
+        "Maria",
+        "Tonight",
+        "Mambo"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who played Marquis de Lafayette and Thomas Jefferson in the original Broadway run of Hamilton?",
+      "correct_answer": "Daveed Diggs",
+      "incorrect_answers": [
+        "Lin-Manuel Miranda",
+        "Javier Mu&ntilde;oz",
+        "Wayne Brady"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The Andrew Lloyd Webber musical &quot;Cats&quot; is based off a book of poems written by which author?",
+      "correct_answer": "T.S. Elliot",
+      "incorrect_answers": [
+        "Andrew Lloyd Webber",
+        "Emily Dickenson",
+        "Robert Frost"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What year did the television company BBC officially launch the channel BBC One?",
+      "correct_answer": "1936",
+      "incorrect_answers": [
+        "1948",
+        "1932",
+        "1955"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who co-founded the YouTube Let&#039;s Play channel &quot;Game Grumps&quot; alongside Newgrounds animator Egoraptor?",
+      "correct_answer": "JonTron",
+      "incorrect_answers": [
+        "Pewdiepie",
+        "Tobuscus",
+        "Markiplier"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Dee from &quot;It&#039;s Always Sunny in Philadelphia&quot; has dated all of the following guys EXCEPT",
+      "correct_answer": "Matthew &quot;Rickety Cricket&quot; Mara",
+      "incorrect_answers": [
+        "Colin the Thief",
+        "Ben the Soldier",
+        "Kevin Gallagher aka Lil&#039; Kevin"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these television shows makes everyone look under their chair?",
+      "correct_answer": "Oprah",
+      "incorrect_answers": [
+        "Jimmy Fallon",
+        "Saturday Night Live",
+        "Larry Rubert"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who was the winner of the 2016 WWE Royal Rumble?",
+      "correct_answer": "Triple H",
+      "incorrect_answers": [
+        "Roman Reigns",
+        "AJ Styles",
+        "Dean Ambrose"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these weapons is NOT available to the Terrorist team in the game, &quot;Counter-Strike: Global Offensive&quot;?",
+      "correct_answer": "SCAR-20",
+      "incorrect_answers": [
+        "SG 550",
+        "CZ-75",
+        "XM1014"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What happened to Half-Life 2 prior to its release, which resulted in Valve starting over the development of the game?",
+      "correct_answer": "The source code got leaked",
+      "incorrect_answers": [
+        "They weren&#039;t satisfied with the result",
+        "The story was not good enough",
+        "Way too many bugs to be fixed"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which company did Bethesda purchase the Fallout Series from?",
+      "correct_answer": "Interplay Entertainment ",
+      "incorrect_answers": [
+        "Capcom",
+        "Blizzard Entertainment",
+        "Nintendo"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What block in Minecraft has the highest blast resistance?",
+      "correct_answer": "Barrier",
+      "incorrect_answers": [
+        "Obsidian",
+        "Bedrock",
+        "Block of Diamond"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What was the first weapon pack for 'PAYDAY2'?",
+      "correct_answer": "The Gage Weapon Pack #1",
+      "incorrect_answers": [
+        "The Overkill Pack",
+        "The Gage Chivalry Pack",
+        "The Gage Historical Pack"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "In the game &quot;Racko&quot; you may pick up ANY card from the discard pile.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "How many points is the Z tile worth in Scrabble?",
+      "correct_answer": "10",
+      "incorrect_answers": [
+        "8",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Yu-Gi-Oh, how does a player perform an Xyz Summon?",
+      "correct_answer": "Overlay at least 2 Monsters of the Same Level",
+      "incorrect_answers": [
+        "Activate a Spell and Send Monsters to the Graveyard",
+        "Add the Monsters&#039; Levels Together to Match the Xyz Monster",
+        "Banish A Number of Monsters From Your Hand And Deck"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Europa Universalis is a strategy video game based on which French board game?",
+      "correct_answer": "Europa Universalis",
+      "incorrect_answers": [
+        "Europe and the Universe",
+        "Europa!",
+        "Power in Europe"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In what year was the card game Magic: the Gathering first introduced?",
+      "correct_answer": "1993",
+      "incorrect_answers": [
+        "1987",
+        "1998",
+        "2003"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the Batman comics, by what other name is the villain Dr. Jonathan Crane known?",
+      "correct_answer": "Scarecrow",
+      "incorrect_answers": [
+        "Bane",
+        "Calendar Man",
+        "Clayface"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "In the comic book &quot;Archie&quot;, Betty is friends with Veronica because she is rich.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In what year did the first &quot;The Walking Dead&quot; comic come out?",
+      "correct_answer": "2003",
+      "incorrect_answers": [
+        "2001",
+        "2006",
+        "1999"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the webcomic &quot;Ava&#039;s Demon&quot;, what sin is &quot;Nevy Nervine&quot; based off of? ",
+      "correct_answer": "Envy ",
+      "incorrect_answers": [
+        "Sloth",
+        "Wrath ",
+        "Lust"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What are the Three Virtues of Bionicle?",
+      "correct_answer": "Unity, Duty, Destiny",
+      "incorrect_answers": [
+        "Build, Play, Change",
+        "Work, Play, Live",
+        "Forge, Build, Fight"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the anime &quot;Mr. Osomatsu&quot;, how many brothers does Osomatsu-san have?",
+      "correct_answer": "5",
+      "incorrect_answers": [
+        "6",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which band name isn&#039;t a Stand in &quot;JoJo&#039;s Bizzare Adventure&quot;?",
+      "correct_answer": "AC\/DC",
+      "incorrect_answers": [
+        "Green Day",
+        "Survivor",
+        "Red Hot Chili Peppers"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What studio animated Ouran High School Host Club?",
+      "correct_answer": "Bones",
+      "incorrect_answers": [
+        "Production I.G",
+        "Kyoto Animation",
+        "xebec"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In 'Love Live: School Idol Project' what pseudonym does Kotori Minami use in her job as a maid?",
+      "correct_answer": "Minalinsky",
+      "incorrect_answers": [
+        "Stanoytchev",
+        "Kuznetsov",
+        "Aqours"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these is not a world in the anime &quot;Buddyfight&quot;?",
+      "correct_answer": "Ancient Dragon World",
+      "incorrect_answers": [
+        "Dragon World",
+        "Star Dragon World",
+        "Darkness Dragon World"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What Cartoon Network show aired its first episode on November 4th, 2013?",
+      "correct_answer": "Steven Universe",
+      "incorrect_answers": [
+        "Regular Show",
+        "Adventure Time",
+        "The Amazing World of Gumball"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which episode from The Amazing World Of Gumball won the Childrens Choice Award at the British Animation Awards in 2016?",
+      "correct_answer": "The Shell",
+      "incorrect_answers": [
+        "The Limit",
+        "The Kids",
+        "The Gripes"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Hanna-Barbera cartoon character travelled with a canine companion named Beegle Beagle?",
+      "correct_answer": "Grape Ape",
+      "incorrect_answers": [
+        "Boss Gator",
+        "Wally Gator",
+        "Yogi Bear"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "Donald Duck played the role of Bob Cratchit in Disney&#039;s 1983 adaptation of A Christmas Carol.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Nickelodeon is owned by what parent company?",
+      "correct_answer": "Viacom",
+      "incorrect_answers": [
+        "CBS",
+        "FOX",
+        "ABC"
+      ]
+    }
+  ]
+}
