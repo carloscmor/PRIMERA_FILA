@@ -3,16 +3,18 @@ package Modelo;
 import java.util.Set;
 
 public class Pregunta {
+	private String categoria;
+	private String pregunta;
+	private String solucion;
+	private String dificultad;
+	private Set<String> opciones;
+
 	public Pregunta(String pregunta, Set<String> opciones, String solucion) {
 		this.pregunta = pregunta;
 		this.solucion = solucion;
 		this.opciones = opciones;
 	}
-	String categoria;
-	String pregunta;
-	String solucion;
-	String dificultad;
-	Set<String> opciones;
+
 	public String getCategoria() {
 		return categoria;
 	}
