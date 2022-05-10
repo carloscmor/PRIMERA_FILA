@@ -1,4 +1,4 @@
-package practicaMockito.practicaSensores;
+package pruebasJUnit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
