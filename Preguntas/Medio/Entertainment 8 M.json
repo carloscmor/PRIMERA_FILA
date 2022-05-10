@@ -1,1 +1,63 @@
-{"response_code":0,"results":[{"category":"Entertainment: Comics","type":"multiple","difficulty":"hard","question":"In the Batman comics, by what other name is the villain Dr. Jonathan Crane known?","correct_answer":"Scarecrow","incorrect_answers":["Bane","Calendar Man","Clayface"]},{"category":"Entertainment: Comics","type":"boolean","difficulty":"hard","question":"In the comic book &quot;Archie&quot;, Betty is friends with Veronica because she is rich.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Entertainment: Comics","type":"multiple","difficulty":"hard","question":"In what year did the first &quot;The Walking Dead&quot; comic come out?","correct_answer":"2003","incorrect_answers":["2001","2006","1999"]},{"category":"Entertainment: Comics","type":"multiple","difficulty":"hard","question":"In the webcomic &quot;Ava&#039;s Demon&quot;, what sin is &quot;Nevy Nervine&quot; based off of? ","correct_answer":"Envy ","incorrect_answers":["Sloth","Wrath ","Lust"]},{"category":"Entertainment: Comics","type":"multiple","difficulty":"hard","question":"What are the Three Virtues of Bionicle?","correct_answer":"Unity, Duty, Destiny","incorrect_answers":["Build, Play, Change","Work, Play, Live","Forge, Build, Fight"]}]}
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "Entertainment: Comics",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "In the Batman comics, by what other name is the villain Dr. Jonathan Crane known?",
+			"correct_answer": "Scarecrow",
+			"incorrect_answers": [
+				"Bane",
+				"Calendar Man",
+				"Clayface"
+			]
+		},
+		{
+			"category": "Entertainment: Comics",
+			"type": "boolean",
+			"difficulty": "hard",
+			"question": "In the comic book &quot;Archie&quot;, Betty is friends with Veronica because she is rich.",
+			"correct_answer": "False",
+			"incorrect_answers": [
+				"True"
+			]
+		},
+		{
+			"category": "Entertainment: Comics",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "In what year did the first &quot;The Walking Dead&quot; comic come out?",
+			"correct_answer": "2003",
+			"incorrect_answers": [
+				"2001",
+				"2006",
+				"1999"
+			]
+		},
+		{
+			"category": "Entertainment: Comics",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "In the webcomic &quot;Ava&#039;s Demon&quot;, what sin is &quot;Nevy Nervine&quot; based off of? ",
+			"correct_answer": "Envy ",
+			"incorrect_answers": [
+				"Sloth",
+				"Wrath ",
+				"Lust"
+			]
+		},
+		{
+			"category": "Entertainment: Comics",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "What are the Three Virtues of Bionicle?",
+			"correct_answer": "Unity, Duty, Destiny",
+			"incorrect_answers": [
+				"Build, Play, Change",
+				"Work, Play, Live",
+				"Forge, Build, Fight"
+			]
+		}
+	]
+}

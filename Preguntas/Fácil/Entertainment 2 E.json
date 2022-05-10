@@ -1,1 +1,65 @@
-{"response_code":0,"results":[{"category":"Entertainment: Film","type":"multiple","difficulty":"easy","question":"Which of the following movies was not based on a novel by Stephen King? ","correct_answer":"The Thing","incorrect_answers":["Carrie","Misery","The Green Mile"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"easy","question":"Who starred as Bruce Wayne and Batman in Tim Burton&#039;s 1989 movie &quot;Batman&quot;?","correct_answer":"Michael Keaton","incorrect_answers":["George Clooney","Val Kilmer","Adam West"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"easy","question":"This movie contains the quote, &quot;I feel the need ... the need for speed!&quot;","correct_answer":"Top Gun","incorrect_answers":["Days of Thunder","The Color of Money","Cocktail"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"easy","question":"Which actor plays Obi-Wan Kenobi in Star Wars Episodes I-lll?","correct_answer":"Ewan McGregor","incorrect_answers":["Alec Guinness","Hayden Christensen","Liam Neeson"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"easy","question":"In the 1995 film &quot;Balto&quot;, who are Steele&#039;s accomplices?","correct_answer":"Kaltag, Nikki, and Star","incorrect_answers":["Dusty, Kirby, and Ralph","Nuk, Yak, and Sumac","Jenna, Sylvie, and Dixie"]}]}
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which of the following movies was not based on a novel by Stephen King? ",
+			"correct_answer": "The Thing",
+			"incorrect_answers": [
+				"Carrie",
+				"Misery",
+				"The Green Mile"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Who starred as Bruce Wayne and Batman in Tim Burton&#039;s 1989 movie &quot;Batman&quot;?",
+			"correct_answer": "Michael Keaton",
+			"incorrect_answers": [
+				"George Clooney",
+				"Val Kilmer",
+				"Adam West"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "This movie contains the quote, &quot;I feel the need ... the need for speed!&quot;",
+			"correct_answer": "Top Gun",
+			"incorrect_answers": [
+				"Days of Thunder",
+				"The Color of Money",
+				"Cocktail"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which actor plays Obi-Wan Kenobi in Star Wars Episodes I-lll?",
+			"correct_answer": "Ewan McGregor",
+			"incorrect_answers": [
+				"Alec Guinness",
+				"Hayden Christensen",
+				"Liam Neeson"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "In the 1995 film &quot;Balto&quot;, who are Steele&#039;s accomplices?",
+			"correct_answer": "Kaltag, Nikki, and Star",
+			"incorrect_answers": [
+				"Dusty, Kirby, and Ralph",
+				"Nuk, Yak, and Sumac",
+				"Jenna, Sylvie, and Dixie"
+			]
+		}
+	]
+}

@@ -1,1 +1,65 @@
-{"response_code":0,"results":[{"category":"Entertainment: Film","type":"multiple","difficulty":"medium","question":"Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?","correct_answer":"Sean Connery","incorrect_answers":["Dennis Quaid","Pete Postlethwaite","Brian Thompson"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"medium","question":"In the 1984 movie &quot;The Terminator&quot;, what model number is the Terminator portrayed by Arnold Schwarzenegger?","correct_answer":"T-800","incorrect_answers":["I-950","T-888","T-1000"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"medium","question":"What is the name of the robot in the 1951 science fiction film classic &#039;The Day the Earth Stood Still&#039;?","correct_answer":"Gort","incorrect_answers":["Robby","Colossus","Box"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"medium","question":"What city did the monster attack in the film, &quot;Cloverfield&quot;?","correct_answer":"New York, New York","incorrect_answers":["Las Vegas, Nevada","Chicago, Illinois","Orlando, Florida"]},{"category":"Entertainment: Film","type":"multiple","difficulty":"medium","question":"Brendan Fraser starred in the following movies, except which one?","correct_answer":"Titanic","incorrect_answers":["Monkeybone","Encino Man","Mrs. Winterbourne"]}]}
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?",
+			"correct_answer": "Sean Connery",
+			"incorrect_answers": [
+				"Dennis Quaid",
+				"Pete Postlethwaite",
+				"Brian Thompson"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In the 1984 movie &quot;The Terminator&quot;, what model number is the Terminator portrayed by Arnold Schwarzenegger?",
+			"correct_answer": "T-800",
+			"incorrect_answers": [
+				"I-950",
+				"T-888",
+				"T-1000"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What is the name of the robot in the 1951 science fiction film classic &#039;The Day the Earth Stood Still&#039;?",
+			"correct_answer": "Gort",
+			"incorrect_answers": [
+				"Robby",
+				"Colossus",
+				"Box"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What city did the monster attack in the film, &quot;Cloverfield&quot;?",
+			"correct_answer": "New York, New York",
+			"incorrect_answers": [
+				"Las Vegas, Nevada",
+				"Chicago, Illinois",
+				"Orlando, Florida"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Brendan Fraser starred in the following movies, except which one?",
+			"correct_answer": "Titanic",
+			"incorrect_answers": [
+				"Monkeybone",
+				"Encino Man",
+				"Mrs. Winterbourne"
+			]
+		}
+	]
+}

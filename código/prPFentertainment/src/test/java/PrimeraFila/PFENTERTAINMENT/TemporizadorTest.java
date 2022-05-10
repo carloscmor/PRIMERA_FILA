@@ -20,7 +20,7 @@ public class TemporizadorTest {
 	public void init() {
 		t = new Temporizador(3);
 	}
-	
+
 	@AfterEach
 	public void terminate() {
 		t = null;
@@ -30,7 +30,7 @@ public class TemporizadorTest {
 	public void alPrincipioElTimerNoEstaAgotado() {
 		assertFalse(t.getResultado());
 	}
-	
+
 	@Test
 	public void siSeRespondeAntesDeTiempoNoEstaAgotado() {
 		t.start();
@@ -42,7 +42,7 @@ public class TemporizadorTest {
 		}
 		assertFalse(t.getResultado());
 	}
-	
+
 	@Test
 	public void siNoSeRespondeTiempoEstaAgotado() {
 		t.start();
@@ -54,23 +54,23 @@ public class TemporizadorTest {
 		}
 		assertTrue(t.getResultado());
 	}
-	
+
 	@Test
 	public void alReiniciarElTemporizadorElTiempoSeQuedaIgualQueAlPrincipio() {
 		int inicio = t.getTiempo();
 		t.start();
-		
+
 		try {
 			TimeUnit.SECONDS.sleep(4);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		t.reiniciar();
 		assertEquals(inicio, t.getTiempo()-1);
 	}
-	
+
 	@Test
 	public void siSeCreaElTimerConUnValorIncorrectoLanzaExcepcion() throws IllegalArgumentException {
 		Exception exception = assertThrows(IllegalArgumentException.class, () -> new Temporizador(-5));

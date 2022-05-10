@@ -1,1 +1,65 @@
-{"response_code":0,"results":[{"category":"Entertainment: Musicals & Theatres","type":"multiple","difficulty":"hard","question":"What is the name of Broadway&#039;s first &quot;long-run&quot; musical?","correct_answer":"The Elves","incorrect_answers":["Wicked","Hamilton","The Book of Mormon"]},{"category":"Entertainment: Musicals & Theatres","type":"multiple","difficulty":"hard","question":"In Les Mis&eacute;rables, who is Prison Code 24601?","correct_answer":"Jean Valjean","incorrect_answers":["Marius Pontmercy","Javert","Jean Claude Van Damme"]},{"category":"Entertainment: Musicals & Theatres","type":"multiple","difficulty":"hard","question":"Who serves as the speaker of the prologue in Shakespeare&#039;s Romeo and Juliet?","correct_answer":"Chorus","incorrect_answers":["Montague","Refrain","Capulet"]},{"category":"Entertainment: Musicals & Theatres","type":"multiple","difficulty":"hard","question":"After England, more Shakespeare plays are set in this present day country than in any other.","correct_answer":"Italy","incorrect_answers":["United States","Greece","France"]},{"category":"Entertainment: Musicals & Theatres","type":"multiple","difficulty":"hard","question":"Which Shakespeare play features the stage direction &quot;Enter a messenger, with two heads and a hand&quot;?","correct_answer":"Titus Andronicus","incorrect_answers":["Othello","Macbeth","King Lear"]}]}
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "Entertainment: Musicals & Theatres",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "What is the name of Broadway&#039;s first &quot;long-run&quot; musical?",
+			"correct_answer": "The Elves",
+			"incorrect_answers": [
+				"Wicked",
+				"Hamilton",
+				"The Book of Mormon"
+			]
+		},
+		{
+			"category": "Entertainment: Musicals & Theatres",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "In Les Mis&eacute;rables, who is Prison Code 24601?",
+			"correct_answer": "Jean Valjean",
+			"incorrect_answers": [
+				"Marius Pontmercy",
+				"Javert",
+				"Jean Claude Van Damme"
+			]
+		},
+		{
+			"category": "Entertainment: Musicals & Theatres",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "Who serves as the speaker of the prologue in Shakespeare&#039;s Romeo and Juliet?",
+			"correct_answer": "Chorus",
+			"incorrect_answers": [
+				"Montague",
+				"Refrain",
+				"Capulet"
+			]
+		},
+		{
+			"category": "Entertainment: Musicals & Theatres",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "After England, more Shakespeare plays are set in this present day country than in any other.",
+			"correct_answer": "Italy",
+			"incorrect_answers": [
+				"United States",
+				"Greece",
+				"France"
+			]
+		},
+		{
+			"category": "Entertainment: Musicals & Theatres",
+			"type": "multiple",
+			"difficulty": "hard",
+			"question": "Which Shakespeare play features the stage direction &quot;Enter a messenger, with two heads and a hand&quot;?",
+			"correct_answer": "Titus Andronicus",
+			"incorrect_answers": [
+				"Othello",
+				"Macbeth",
+				"King Lear"
+			]
+		}
+	]
+}

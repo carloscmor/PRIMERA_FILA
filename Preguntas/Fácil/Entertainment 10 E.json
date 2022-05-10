@@ -1,1 +1,65 @@
-{"response_code":0,"results":[{"category":"Entertainment: Cartoon & Animations","type":"multiple","difficulty":"easy","question":"In South Park, what is Stan&#039;s surname?","correct_answer":"Marsh","incorrect_answers":["Stotch","Broflovski","Tweak"]},{"category":"Entertainment: Cartoon & Animations","type":"multiple","difficulty":"easy","question":"Which &#039;Family Guy&#039; character got his own spin-off show in 2009?","correct_answer":"Cleveland Brown","incorrect_answers":["Glenn Quagmire","Joe Swanson","The Greased-up Deaf Guy"]},{"category":"Entertainment: Cartoon & Animations","type":"multiple","difficulty":"easy","question":"Which of these is NOT a catchphrase used by Rick Sanchez in the TV show &quot;Rick and Morty&quot;?","correct_answer":"Slam dunk, nothing but net!","incorrect_answers":["Hit the sack, Jack!","Rikki-Tikki-Tavi, biatch!","Wubba-lubba-dub-dub!"]},{"category":"Entertainment: Cartoon & Animations","type":"multiple","difficulty":"easy","question":"Who is the only voice actor to have a speaking part in all of the Disney Pixar feature films? ","correct_answer":"John Ratzenberger","incorrect_answers":["Tom Hanks","Dave Foley","Geoffrey Rush"]},{"category":"Entertainment: Cartoon & Animations","type":"multiple","difficulty":"easy","question":"Which of these characters live in a pineapple under the sea in the cartoon &quot;SpongeBob SquarePants&quot;.","correct_answer":"SpongeBob SquarePants ","incorrect_answers":["Patrick Star","Squidward Tentacles","Mr. Krabs"]}]}
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "In South Park, what is Stan&#039;s surname?",
+			"correct_answer": "Marsh",
+			"incorrect_answers": [
+				"Stotch",
+				"Broflovski",
+				"Tweak"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which &#039;Family Guy&#039; character got his own spin-off show in 2009?",
+			"correct_answer": "Cleveland Brown",
+			"incorrect_answers": [
+				"Glenn Quagmire",
+				"Joe Swanson",
+				"The Greased-up Deaf Guy"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which of these is NOT a catchphrase used by Rick Sanchez in the TV show &quot;Rick and Morty&quot;?",
+			"correct_answer": "Slam dunk, nothing but net!",
+			"incorrect_answers": [
+				"Hit the sack, Jack!",
+				"Rikki-Tikki-Tavi, biatch!",
+				"Wubba-lubba-dub-dub!"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Who is the only voice actor to have a speaking part in all of the Disney Pixar feature films? ",
+			"correct_answer": "John Ratzenberger",
+			"incorrect_answers": [
+				"Tom Hanks",
+				"Dave Foley",
+				"Geoffrey Rush"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "easy",
+			"question": "Which of these characters live in a pineapple under the sea in the cartoon &quot;SpongeBob SquarePants&quot;.",
+			"correct_answer": "SpongeBob SquarePants ",
+			"incorrect_answers": [
+				"Patrick Star",
+				"Squidward Tentacles",
+				"Mr. Krabs"
+			]
+		}
+	]
+}
