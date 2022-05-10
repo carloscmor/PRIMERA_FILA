@@ -6,6 +6,10 @@ public class Jugador {
     private String nombre;
     private int vidas, puntuacion;
 
+    public Jugador(String nombre, int vidas){
+        this(nombre, vidas, 0);
+    }
+
     public Jugador(String nombre, int vidas, int puntuacion){
         this.nombre = nombre;
         this.vidas = vidas;
@@ -25,7 +29,8 @@ public class Jugador {
     }
 
     public void setVidas(int vidas) {
-        this.vidas = vidas;
+        if(vidas >= 0)
+            this.vidas = vidas;
     }
 
     public int getPuntuacion() {
@@ -33,7 +38,12 @@ public class Jugador {
     }
 
     public void setPuntuacion(int puntuacion) {
-        this.puntuacion = puntuacion;
+        if(puntuacion >= 0)
+            this.puntuacion = puntuacion;
+    }
+
+    public void incrementaPuntuacion(int p){
+        puntuacion += p;
     }
 
     @Override
