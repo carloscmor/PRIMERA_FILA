@@ -39,7 +39,7 @@ public class Casilla {
 
 	public Pregunta getPregunta() {
 		/*abrir fichero de la dificultad de la casilla y generar pregunta aleatoria de la categoria de la casilla */
-		Pregunta pregunta = new Pregunta();
+		Pregunta pregunta =  null;
 		
 		
 		
