@@ -1,5 +1,7 @@
 package Modelo;
 
+import java.util.StringJoiner;
+
 public class Casilla {
 
 	private String categoria;
@@ -25,5 +27,11 @@ public class Casilla {
 		return 0;
 	}
 
-
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", "Casilla" + "[", "]")
+				.add("categoria='" + categoria + "'")
+				.add("Posicion=" + Posicion)
+				.toString();
+	}
 }
