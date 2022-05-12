@@ -8,19 +8,19 @@ public class Tablero {
 	private char modalidad;
 
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
-	private Dificultad dificultad; // Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
+	private Dificultad dificultad; // Almacena la dificultad del tablero, que se pasará al metodo que seleccione
 								   // la pregunta del fichero de preguntas
 	private static final int TAM_TABLERO=80; //Numero de casillas del tablero
 
-	public Tablero(char d) { // para que el tablero se cree en modo desefaio
+	public Tablero() { // para que el tablero se cree en modo desafío
 		iniciarTablero();
-		modalidad = d;
+		modalidad = 'd';
 	}
 
-	public Tablero(char r, Dificultad d) { // para que el tablero se cree en modo partida rapida con la dificultad seleccionada
+	public Tablero(Dificultad dificultad) { // para que el tablero se cree en modo partida rapida con la dificultad seleccionada
 		iniciarTablero();
-		modalidad = r;
-		dificultad = d;
+		modalidad = 'r';
+		this.dificultad = dificultad;
 	}
 
 	public char getModalidad() {

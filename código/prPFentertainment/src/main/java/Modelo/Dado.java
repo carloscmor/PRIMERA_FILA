@@ -1,6 +1,7 @@
 package Modelo;
 
 import java.util.Random;
+import java.util.StringJoiner;
 
 public class Dado {
 	private Random rd; // Clase que proporciona el siguiente resultado.
@@ -24,5 +25,13 @@ public class Dado {
 	// Asigna a valor el siguiente resultado.
 	public void tirar() {
 		valor = rd.nextInt(6) + 1;
+	}
+
+	@Override
+	public String toString() {
+		return new StringJoiner(", ", "Dado" + "[", "]")
+				.add("Variable Random = " + rd)
+				.add("valor = " + valor)
+				.toString();
 	}
 }
