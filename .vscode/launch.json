@@ -10,6 +10,16 @@
 			"projectName": "PF-ENTERTAINMENT",
 			"args": "",
 			"envFile": "${workspaceFolder}/.env"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-JugadorMain<PF-ENTERTAINMENT>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "PruebasMainClases.JugadorMain",
+			"projectName": "PF-ENTERTAINMENT",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
 		}
 	]
 }
