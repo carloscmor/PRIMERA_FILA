@@ -5,12 +5,23 @@ import java.util.StringJoiner;
 public class Casilla {
 
 	private String categoria;
-	private int Posicion;
+	private int posicion;
+	private Dificultad dificultad;
 
-	public Casilla(String categ, int pos) {
+	public Casilla(String categ, int pos, Dificultad d) {
 		categoria = categ;
-		Posicion = pos;
-
+		posicion = pos;
+		if(d != Dificultad.desafio) {
+			dificultad = d;
+		}else {
+			if(pos  <  Tablero.getTamTableroDesafio() / 3) {
+				dificultad = Dificultad.facil;
+			}else if(pos  <  (Tablero.getTamTableroDesafio() / 3)*2) {
+				dificultad = Dificultad.medio;
+			}else {
+				dificultad = Dificultad.dificil;
+			}
+		}
 	}
 
 	public String getCategoria() {
@@ -18,20 +29,28 @@ public class Casilla {
 	}
 
 	public int getPosicion() {
-		return Posicion;
+		return posicion;
+	}
+	
+	public Dificultad getDificultad() {
+		return dificultad;
 	}
 
-	public int getPregunta() {
-		/*generar pregunta del fichero
-		  dificultad ya elegida en el tablero*/
-		return 0;
+	public Pregunta getPregunta() {
+		/*abrir fichero de la dificultad de la casilla y generar pregunta aleatoria de la categoria de la casilla */
+		Pregunta pregunta;
+		
+		
+		
+		return pregunta;
 	}
 
 	@Override
 	public String toString() {
 		return new StringJoiner(", ", "Casilla" + "[", "]")
-				.add("categoria='" + categoria + "'")
-				.add("Posicion=" + Posicion)
+				.add("Categoria='" + categoria + "'")
+				.add("Posicion=" + posicion)
 				.toString();
 	}
+	
 }

@@ -31,7 +31,7 @@ public class PartidaRapida implements Partida{
     }
     @Override
     public String toString() {
-        return new StringJoiner(", \n", "Partida (DesafÃ­o) " + "[\n", "]")
+        return new StringJoiner(", \n", "Partida (Desafío) " + "[\n", "]")
                 .add("\tTablero = {" + t + "}")
                 .add("\tJugador = {" + j + "}")
                 .toString();

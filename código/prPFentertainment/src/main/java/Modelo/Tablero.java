@@ -4,27 +4,23 @@ import java.util.ArrayList;
 
 public class Tablero {
 
-	String[] categorias = new String[] {"Geografia, Historia, Ciencia, Deporte"};
-	private char modalidad;
+	String[] categorias = new String[] {"Entertainment, Animals, Science, History, Sports, General"};
 
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
-	private Dificultad dificultad; // Almacena la dificultad del tablero, que se pasará al metodo que seleccione
-								   // la pregunta del fichero de preguntas
-	private static final int TAM_TABLERO=80; //Numero de casillas del tablero
+	private Dificultad dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
+									  la pregunta del fichero de preguntas*/
+	private static final int TAM_TABLERO_RAPIDA=20; //Numero de casillas partida rapida
+	private static final int TAM_TABLERO_DESAFIO=30; // Numero de casillas de tablero desafio
 
-	public Tablero() { // para que el tablero se cree en modo desafío
-		iniciarTablero();
-		modalidad = 'd';
+	public Tablero() {				//
+		dificultad=Dificultad.desafio;
+		iniciarTablero(dificultad);
 	}
-
-	public Tablero(Dificultad dificultad) { // para que el tablero se cree en modo partida rapida con la dificultad seleccionada
-		iniciarTablero();
-		modalidad = 'r';
-		this.dificultad = dificultad;
-	}
-
-	public char getModalidad() {
-		return modalidad;
+	
+	public Tablero(Dificultad d) { // Para que el tablero se cree en modo partida rapida con la dificultad seleccionad
+		dificultad = d;
+		iniciarTablero(dificultad);
+		
 	}
 
 	public void setDificultad(Dificultad d) {
@@ -35,28 +31,39 @@ public class Tablero {
 		return dificultad;
 	}
 
+	public static int getTamTableroDesafio() {
+		return TAM_TABLERO_DESAFIO;
+	}
+	
+	public static int getTamTableroRapida() {
+		return TAM_TABLERO_RAPIDA;
+	}
 	private String generarCategoria() {
 		int pos = (int) (Math.random() * categorias.length);
 
 		return categorias[pos];
 	}
 
-	public void iniciarTablero() { // hay que cambiarla para cada modalidad
+	public void iniciarTablero(Dificultad d) { // hay que cambiarla para cada modalidad
 		casillas = new ArrayList<>();
 
-		for(int i=0; i<TAM_TABLERO; i++) {
-			//Genero casilla con categoria aleatoria llamando a generarCategoria()
-			casillas.add(new Casilla(generarCategoria(), i));
+		if(d != Dificultad.desafio) {
+			for(int i=0; i<TAM_TABLERO_RAPIDA; i++) {
+				if(i==2 || i==6 || i==10 || i==14 || i==17) {
+					casillas.add(new CasillaEspecial(generarCategoria(), i, d));
+				}else {
+				casillas.add(new Casilla(generarCategoria(), i, d));	// Creando casillas PR
+				}
+			}
+		}else {
+			for(int y=0; y<TAM_TABLERO_DESAFIO; y++) {
+				if(y==3 || y==7 || y==11 || y==15 || y==18 || y==22 || y==26) {
+					casillas.add(new Casilla(generarCategoria(), y, d));
+				}else {
+				casillas.add(new Casilla(generarCategoria(), y, d));	// Creando casillas Desafio
+				}
+			}
 		}
 	}
 
 }
-/* DUDAS:
-- Como se selecciona la dificultad
-- Las preguntas estan divididas en diferentes ficheros segun su dificultad
-  o estan todas en un mismo fichero y tienen un atributo de dificultad.
-- Cuantas categorias vamos a tener y si cada una tiene su dificultad o todas
-pueden estar en diferentes dificultades.
--
-
-*/
