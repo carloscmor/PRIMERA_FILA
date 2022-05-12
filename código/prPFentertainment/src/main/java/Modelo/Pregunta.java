@@ -19,7 +19,7 @@ public class Pregunta {
 		return categoria;
 	}
 
-	public String getPregutna() {
+	public String getPregunta() {
 		return pregunta;
 	}
 	
