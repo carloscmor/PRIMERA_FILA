@@ -10,7 +10,20 @@ header {
 	padding: 0.1px;
 	border-bottom: 2px solid var(--borde1);
 	background-color: var(--fondo2);
+	font-size: 0.85em;
 	text-align: center;
+}
+
+header > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+header > div > img {
+	display: block;
+	width: 68px;
+	height: 68px;
+	padding: 1px;
 }
 
 #tema_botón {
