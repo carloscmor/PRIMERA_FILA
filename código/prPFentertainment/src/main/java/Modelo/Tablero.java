@@ -13,7 +13,7 @@ public class Tablero {
 	private static final int TAM_TABLERO_DESAFIO=30; // Numero de casillas de tablero desafio
 
 	public Tablero() {				//
-		dificultad=Dificultad.desafio;
+		//dificultad=Dificultad.desafio;
 		iniciarTablero(dificultad);
 	}
 	
@@ -47,7 +47,7 @@ public class Tablero {
 	public void iniciarTablero(Dificultad d) { // hay que cambiarla para cada modalidad
 		casillas = new ArrayList<>();
 
-		if(d != Dificultad.desafio) {
+		if(d != dificultad/*.desafio*/) {
 			for(int i=0; i<TAM_TABLERO_RAPIDA; i++) {
 				if(i==2 || i==6 || i==10 || i==14 || i==17) {
 					casillas.add(new CasillaEspecial(generarCategoria(), i, d));

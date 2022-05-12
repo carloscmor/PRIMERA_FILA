@@ -47,4 +47,13 @@ public class Pregunta {
 		return solucion.equalsIgnoreCase(resp);
 	}
 
+	public String getSolucion(){return solucion;}
+
+	@Override
+	public String toString(){
+		StringBuilder sb = new StringBuilder(pregunta.toUpperCase() + "\n");
+			for(String op : opciones) sb.append("\t" + op + "\n");
+		return sb.toString();
+	}
+
 }
