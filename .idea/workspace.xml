@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19a13a6b-b387-4888-a8c5-847b39f2b0f7" name="Changes" comment="Creación del método toString de pregunta y del método getSolución.">
-      <change afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Casilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Pregunta.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Pregunta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <workItem from="1652252822971" duration="24000" />
       <workItem from="1652346184384" duration="2965000" />
       <workItem from="1652374516284" duration="1185000" />
-      <workItem from="1652375775743" duration="710000" />
+      <workItem from="1652375775743" duration="1357000" />
     </task>
     <servers />
   </component>
