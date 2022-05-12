@@ -4,34 +4,32 @@ public class CasillaEspecial extends Casilla {
 
 
 
-	public CasillaEspecial(String categ, int pos, Dificultad d) {
-		super(categ, pos, d);
+	public CasillaEspecial(String categ, int pos) {
+		super(categ, pos, Dificultad.dificil);
 	}
 	
-	public void ActivarEspecial(Jugador jug) {
+	public void ActivarEspecial(Jugador jug, Ficha f) {
 		switch (this.getPosicion()) {
-		case 2: case 3: {
-			/*avanzar casilla
-			 Ficha.avanzar();  ????
-			 */
+		case 2: case 3: { // Avanzar casilla
+			 f.Avanzar(); //  ????
 			break;
 		}
-		case 6: case 7:{
+		case 6: case 7:{ // Restar 1 vida
 			if(jug.getVidas() > 1) {
 				jug.setVidas(jug.getVidas() - 1);
 			}
 		}
 			break;
-		case 10: case 11: case 22:
-			//Pregunta Especial    ????
+		case 10: case 11: case 22:{ // Pregunta Especial = Pregunta dificil aleatoria
+			getPregunta();	
+			
 			break;
-		case 14: case 18:
+		}
+		case 14: case 18:  // Aumentar 1 vida
 			jug.setVidas(jug.getVidas()+1);
 			break;
-		case 15: case 17: case 26: 
-			/*Retroceder casilla
-			 Ficha.retroceder();  ????
-			 */
+		case 15: case 17: case 26: //Retroceder casilla
+			 f.Retroceder(); //????
 			break;
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + this.getPosicion());

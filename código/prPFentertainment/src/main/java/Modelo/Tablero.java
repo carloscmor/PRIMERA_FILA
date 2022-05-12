@@ -47,10 +47,10 @@ public class Tablero {
 	public void iniciarTablero(Dificultad d) { // hay que cambiarla para cada modalidad
 		casillas = new ArrayList<>();
 
-		if(d != dificultad.desafio) {
+		if(d != Dificultad.desafio) {
 			for(int i=0; i<TAM_TABLERO_RAPIDA; i++) {
 				if(i==2 || i==6 || i==10 || i==14 || i==17) {
-					casillas.add(new CasillaEspecial(generarCategoria(), i, d));
+					casillas.add(new CasillaEspecial(generarCategoria(), i));
 				}else {
 				casillas.add(new Casilla(generarCategoria(), i, d));	// Creando casillas PR
 				}
@@ -58,7 +58,7 @@ public class Tablero {
 		}else {
 			for(int y=0; y<TAM_TABLERO_DESAFIO; y++) {
 				if(y==3 || y==7 || y==11 || y==15 || y==18 || y==22 || y==26) {
-					casillas.add(new Casilla(generarCategoria(), y, d));
+					casillas.add(new CasillaEspecial(generarCategoria(), y));
 				}else {
 				casillas.add(new Casilla(generarCategoria(), y, d));	// Creando casillas Desafio
 				}
