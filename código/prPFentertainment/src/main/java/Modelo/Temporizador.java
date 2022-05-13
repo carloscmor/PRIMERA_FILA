@@ -6,7 +6,7 @@ public class Temporizador extends Thread {
 	private int tiempo;
 	private boolean agotado;
 	private boolean respondido;
-	public boolean fin;
+	private boolean fin;
 
 	//Constructor
 	public Temporizador(int n) {
@@ -47,13 +47,18 @@ public class Temporizador extends Thread {
 		this.respondido = false;
 	}
 
+	public boolean esFinal(){ return fin;}
+
 	//Inicia el temporizador
 	public void run() {
 		while (!fin) {
-			if (tiempo >= 0)
-				System.out.println(tiempo);
-			if (tiempo <= 0)
+			if(tiempo >= 0){
+				System.out.print("\b\b");
+				System.out.print(tiempo);
+			}else{
 				agotado = true;
+				fin = true;
+			}
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
