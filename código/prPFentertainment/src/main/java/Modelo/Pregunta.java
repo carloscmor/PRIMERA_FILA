@@ -1,55 +1,58 @@
-package Modelo;
-
 import java.util.Set;
 
 public class Pregunta {
 	private String categoria;
 	private String pregunta;
 	private String solucion;
-	private String dificultad;
-	private Set<String> opciones;
+	private Set<String> incorrectas;
 
-	public Pregunta(String pregunta, Set<String> opciones, String solucion) {
+	//Constructor para preguntas de multiple opcion
+	//Se pasan como parametro por orden los elementos como vienen en el json, depues de hacerle el split
+	//Tipo y dificultad no se pasan como parametro porque no nos hace falta para la clase, ya que solo
+	//lo usariamos para elegir el fichero y la pregunta a crear
+	public Pregunta(String categoria, String pregunta, String solucion, Set<String> incorrectas) {
+		this.categoria = categoria;
 		this.pregunta = pregunta;
 		this.solucion = solucion;
-		this.opciones = opciones;
+		this.incorrectas = incorrectas;
 	}
 
+	//Constructor para preguntas de verdadero o falso
+	//En este no se pasan las opciones ya que siempre es o verdadero o falso
+	public Pregunta(String categoria, String pregunta, String solucion) {
+		this.categoria = categoria;
+		this.pregunta = pregunta;
+		this.solucion = solucion;
+		this.incorrectas = null;
+	}
+
+	//Devuelve la categoria de la pregunta
 	public String getCategoria() {
 		return categoria;
 	}
-
+	
+	//Devuelve la pregunta
 	public String getPregunta() {
 		return pregunta;
 	}
+
+	//Devuelve la solucion a la pregunta, es decir, la opcion correcta
+	public String getSolucion() {
+		return solucion;
+	}
 	
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	//Devuelve las opciones que no son correctas
+	public Set<String> getIncorrectas() {
+		return incorrectas;
 	}
 
-	public String getDificultad() {
-		return dificultad;
-	}
-
-	public void setDificultad(String dificultad) {
-		this.dificultad = dificultad;
-	}
-
-	public Set<String> getOpciones() {
-		return opciones;
-	}
-
-	public void setOpciones(Set<String> opciones) {
-		this.opciones = opciones;
-	}
-
+	//Valida la respuesta elegida
 	public boolean validar(String resp) {
 		return solucion.equalsIgnoreCase(resp);
 	}
-
-	public String getSolucion(){return solucion;}
-
-	@Override
+	
+	/*
+	 @Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder(pregunta.toUpperCase() + "\n");
 		int i = (int) 'a';
@@ -59,5 +62,6 @@ public class Pregunta {
 			}
 		return sb.toString();
 	}
+	 */
 
 }
