@@ -52,7 +52,11 @@ public class Pregunta {
 	@Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder(pregunta.toUpperCase() + "\n");
-			for(String op : opciones) sb.append("\t" + op + "\n");
+		int i = (int) 'a';
+			for(String op : opciones){
+				char c = (char) i++;
+				sb.append("\t" + c + ") " + op + "\n");
+			}
 		return sb.toString();
 	}
 
