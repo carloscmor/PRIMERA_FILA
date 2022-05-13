@@ -53,14 +53,13 @@ public class Temporizador extends Thread {
 	public void run() {
 		while (!fin) {
 			if(tiempo >= 0){
-				System.out.print("\b\b");
-				System.out.print(tiempo);
+				System.out.print(tiempo + " ");
 			}else{
 				agotado = true;
 				fin = true;
 			}
 			try {
-				Thread.sleep(1000);
+				if(tiempo > 0) Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
