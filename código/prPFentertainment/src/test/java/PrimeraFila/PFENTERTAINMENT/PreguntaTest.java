@@ -1,11 +1,10 @@
-package PrimeraFila.PFENTERTAINMENT;
+package practicaMockito.practicaSensores;
 
-
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -28,8 +27,7 @@ public class PreguntaTest {
 		incorrectas.add("A");
 		incorrectas.add("B");
 		incorrectas.add("C");
-		incorrectas.add("Solucion");
-		pregunta = new Pregunta("Categoria" , "Pregunta", "Solucion", incorrectas);
+		pregunta = new Pregunta("Categoria", "Pregunta", "Solucion", incorrectas);
 
 	}
 
@@ -47,13 +45,13 @@ public class PreguntaTest {
 	}
 
 	@Test
-	public void lasOpcionesTienenQueSerCuatroONull() {
+	public void lasIncorrectasTienenQueSerTresONull() {
 		Casilla cMock = mock(Casilla.class);
 		when(cMock.getPregunta()).thenReturn(pregunta);
 
 		Pregunta p = cMock.getPregunta();
 
-		assertTrue(p.getIncorrectas() == null || p.getIncorrectas().size() == 4);
+		assertTrue(p.getIncorrectas() == null || p.getIncorrectas().size() == 3);
 	}
 
 	@Test
@@ -69,15 +67,39 @@ public class PreguntaTest {
 				);
 
 	}
-	
+
+	@Test
+	public void lasIncorrectasAparecenSoloUnaVez() {
+		Casilla cMock = mock(Casilla.class);
+		when(cMock.getPregunta()).thenReturn(pregunta);
+
+		Pregunta p = cMock.getPregunta();
+
+		assertAll(
+				() -> assertNotEquals(p.getOpciones().get(0), p.getOpciones().get(1)),
+				() -> assertNotEquals(p.getOpciones().get(1), p.getOpciones().get(2)),
+				() -> assertNotEquals(p.getOpciones().get(2), p.getOpciones().get(0)),
+				() -> assertNotEquals(p.getOpciones().get(0), p.getOpciones().get(3)),
+				() -> assertNotEquals(p.getOpciones().get(1), p.getOpciones().get(3)),
+				() -> assertNotEquals(p.getOpciones().get(2), p.getOpciones().get(3)));
+	}
+
 	@Test
 	public void laSolucionEstaEnLasOpciones() {
 		Casilla cMock = mock(Casilla.class);
 		when(cMock.getPregunta()).thenReturn(pregunta);
-		
+
 		Pregunta p = cMock.getPregunta();
-		
-		assertTrue(p.getIncorrectas().contains("Solucion"));
+
+		boolean apareceSolucion = false;
+		int i = 0;
+
+		while (i < 4 && !apareceSolucion) {
+			apareceSolucion = p.getSolucion().equalsIgnoreCase(p.getOpciones().get(i));
+			i++;
+		}
+
+		assertTrue(apareceSolucion);
 	}
 
 }
