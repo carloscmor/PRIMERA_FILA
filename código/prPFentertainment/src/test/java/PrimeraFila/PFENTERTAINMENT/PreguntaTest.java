@@ -1,7 +1,12 @@
-package PrimeraFila.PFENTERTAINMENT;
+package practicaMockito.practicaSensores;
 
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,56 +14,58 @@ import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import Modelo.Casilla;
 import Modelo.Pregunta;
 
 public class PreguntaTest {
-	String pregunta;
-	Set<String> opciones;
-	String solucion;
-	Pregunta p;
+
+	Pregunta pregunta;
 
 	@BeforeEach
 	public void init() {
-		opciones = new HashSet<String>();
-		pregunta = "Which Game Boy from the Game Boy series of portable video game consoles was released first?";
-		opciones.add("Game Boy Color");
-		opciones.add("Game Boy Advance");
-		opciones.add("Game Boy Micro");
-		opciones.add("Game Boy Advance SP");
-		solucion = "Game Boy Color";
-		p = new Pregunta(pregunta,opciones,solucion);
-		//Pregunta de ejemplo, la idea es probar los tests con todas las preguntas, extraidas de los json.
+		Set<String> incorrectas = new HashSet<String>();
+		incorrectas.add("A");
+		incorrectas.add("B");
+		incorrectas.add("C");
+		pregunta = new Pregunta("Categoria" , "Pregunta", "Solucion", incorrectas);
+
 	}
 
 	@Test
-	public void haySoloUnaSolucion() {
-		int correctas = 0;
-		for(String opcion:opciones) {
-			if(p.validar(opcion)) correctas++;
-		}
-		assertEquals(1,correctas);
+	public void laPreguntaSeHaCreadoCorrectaMente() {
+		Casilla cMock = mock(Casilla.class);
+		when(cMock.getPregunta()).thenReturn(pregunta);
+
+		Pregunta p = cMock.getPregunta();
+
+		assertAll(
+				() -> assertEquals("Pregunta", p.getPregunta()),
+				() -> assertEquals("Solucion", p.getSolucion())
+				);
 	}
 
 	@Test
-	public void tieneCategoria(){
-		assertTrue( p.getCategoria()!=null && !(p.getCategoria().isEmpty()) );
+	public void lasIncorrectasTienenQueSerTresONull() {
+		Casilla cMock = mock(Casilla.class);
+		when(cMock.getPregunta()).thenReturn(pregunta);
+
+		Pregunta p = cMock.getPregunta();
+
+		assertTrue(p.getIncorrectas() == null || p.getIncorrectas().size() == 3);
 	}
 
 	@Test
-	public void tieneDificultad(){
-		assertTrue( p.getDificultad()!=null && !(p.getDificultad().isEmpty()) );
+	public void elMetodoValidarFuciona() {
+		Casilla cMock = mock(Casilla.class);
+		when(cMock.getPregunta()).thenReturn(pregunta);
+
+		Pregunta p = cMock.getPregunta();
+
+		assertAll(
+				() -> assertTrue(p.validar("solucion")),
+				() -> assertFalse(p.validar("B"))
+				);
+
 	}
-
-	@Test
-	public void tieneOpciones(){
-		assertTrue( p.getOpciones()!=null && !(p.getOpciones().isEmpty()) );
-	}
-
-	@Test
-	public void solucionEstaEnOpciones() {
-		assertTrue(opciones.contains(solucion));
-	}
-
-
 
 }
