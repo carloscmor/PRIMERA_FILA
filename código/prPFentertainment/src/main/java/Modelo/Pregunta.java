@@ -1,4 +1,5 @@
-import java.util.Set;
+package Modelo;
+import java.util.*;
 
 public class Pregunta {
 	private String categoria;
@@ -51,10 +52,21 @@ public class Pregunta {
 		return solucion.equalsIgnoreCase(resp);
 	}
 	
-	/*
+	public List<String> getOpciones(){
+		List<String> res = new ArrayList<>();
+		for(String op : incorrectas) {
+			res.add(op);
+		}
+		res.add(solucion);
+		Collections.shuffle(res);
+		return res;
+	}
+	
 	 @Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder(pregunta.toUpperCase() + "\n");
+		List<String> opciones = getOpciones();
+		
 		int i = (int) 'a';
 			for(String op : opciones){
 				char c = (char) i++;
@@ -62,6 +74,6 @@ public class Pregunta {
 			}
 		return sb.toString();
 	}
-	 */
+	 
 
 }

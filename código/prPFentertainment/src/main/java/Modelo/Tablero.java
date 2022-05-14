@@ -1,6 +1,7 @@
 package Modelo;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Tablero {
 
@@ -39,7 +40,8 @@ public class Tablero {
 		return TAM_TABLERO_RAPIDA;
 	}
 	private String generarCategoria() {
-		int pos = (int) (Math.random() * categorias.length);
+		Random rnd = new Random();
+		int pos = rnd.nextInt();
 
 		return categorias[pos];
 	}
