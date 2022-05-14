@@ -1,4 +1,4 @@
-package practicaMockito.practicaSensores;
+package PrimeraFila.PFENTERTAINMENT;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertAll;
