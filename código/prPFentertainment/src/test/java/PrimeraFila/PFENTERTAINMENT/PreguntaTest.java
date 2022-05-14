@@ -1,4 +1,4 @@
-package PrimeraFila.PFENTERTAINMENT;
+package practicaMockito.practicaSensores;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -27,6 +27,7 @@ public class PreguntaTest {
 		incorrectas.add("A");
 		incorrectas.add("B");
 		incorrectas.add("C");
+		incorrectas.add("Solucion");
 		pregunta = new Pregunta("Categoria" , "Pregunta", "Solucion", incorrectas);
 
 	}
@@ -45,13 +46,13 @@ public class PreguntaTest {
 	}
 
 	@Test
-	public void lasIncorrectasTienenQueSerTresONull() {
+	public void lasOpcionesTienenQueSerCuatroONull() {
 		Casilla cMock = mock(Casilla.class);
 		when(cMock.getPregunta()).thenReturn(pregunta);
 
 		Pregunta p = cMock.getPregunta();
 
-		assertTrue(p.getIncorrectas() == null || p.getIncorrectas().size() == 3);
+		assertTrue(p.getIncorrectas() == null || p.getIncorrectas().size() == 4);
 	}
 
 	@Test
@@ -66,6 +67,16 @@ public class PreguntaTest {
 				() -> assertFalse(p.validar("B"))
 				);
 
+	}
+	
+	@Test
+	public void laSolucionEstaEnLasOpciones() {
+		Casilla cMock = mock(Casilla.class);
+		when(cMock.getPregunta()).thenReturn(pregunta);
+		
+		Pregunta p = cMock.getPregunta();
+		
+		assertTrue(p.getIncorrectas().contains("Solucion"));
 	}
 
 }
