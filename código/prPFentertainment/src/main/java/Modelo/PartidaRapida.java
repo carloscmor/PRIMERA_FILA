@@ -20,18 +20,18 @@ public class PartidaRapida implements Partida{
 
     @Override
     public void empezar() {
-        //TODO
+        // por hacer
     }
 
     @Override
     public void terminar() {
         if (j.getVidas() == 0){
-            //TODO completar
+            // por completar
         }
     }
     @Override
     public String toString() {
-        return new StringJoiner(", \n", "Partida (Desafío) " + "[\n", "]")
+        return new StringJoiner(", \n", "Partida (Desafï¿½o) " + "[\n", "]")
                 .add("\tTablero = {" + t + "}")
                 .add("\tJugador = {" + j + "}")
                 .toString();

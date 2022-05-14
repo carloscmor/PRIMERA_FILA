@@ -32,17 +32,17 @@ public class Casilla {
 	public int getPosicion() {
 		return posicion;
 	}
-	
+
 	public Dificultad getDificultad() {
 		return dificultad;
 	}
 
 	public Pregunta getPregunta() {
 		/*abrir fichero de la dificultad de la casilla y generar pregunta aleatoria de la categoria de la casilla */
-		Pregunta pregunta =  null;
-		
-		
-		
+		// Pregunta pregunta = null;
+
+
+
 		return pregunta;
 	}
 
@@ -53,5 +53,5 @@ public class Casilla {
 				.add("Posicion=" + posicion)
 				.toString();
 	}
-	
+
 }
