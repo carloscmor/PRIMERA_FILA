@@ -69,7 +69,7 @@ public class PreguntaTest {
 	}
 
 	@Test
-	public void lasIncorrectasAparecenSoloUnaVez() {
+	public void lasOpcionesAparecenSoloUnaVez() {
 		Casilla cMock = mock(Casilla.class);
 		when(cMock.getPregunta()).thenReturn(pregunta);
 
