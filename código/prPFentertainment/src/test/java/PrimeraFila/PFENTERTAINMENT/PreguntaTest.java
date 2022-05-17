@@ -8,7 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -68,20 +71,30 @@ public class PreguntaTest {
 
 	}
 
+	private List<String> copiaLista(List<String> l){
+		List<String> res = new ArrayList<>();
+		for(String str : l) res.add(str);
+		return res;
+	}
+	
 	@Test
 	public void lasOpcionesAparecenSoloUnaVez() {
 		Casilla cMock = mock(Casilla.class);
 		when(cMock.getPregunta()).thenReturn(pregunta);
 
 		Pregunta p = cMock.getPregunta();
-
-		assertAll(
-				() -> assertNotEquals(p.getOpciones().get(0), p.getOpciones().get(1)),
-				() -> assertNotEquals(p.getOpciones().get(1), p.getOpciones().get(2)),
-				() -> assertNotEquals(p.getOpciones().get(2), p.getOpciones().get(0)),
-				() -> assertNotEquals(p.getOpciones().get(0), p.getOpciones().get(3)),
-				() -> assertNotEquals(p.getOpciones().get(1), p.getOpciones().get(3)),
-				() -> assertNotEquals(p.getOpciones().get(2), p.getOpciones().get(3)));
+		List<String> opciones = p.getOpciones();
+		List<String> opcionesCopia = copiaLista(opciones); //para no modificar la original
+		boolean res = false;
+		
+		Iterator<String> it = opciones.iterator();
+		while(it.hasNext() && !res) {
+			String op = it.next();
+			opcionesCopia.remove(op);
+			res = !(opcionesCopia.contains(op));
+		}
+		
+		assertTrue(res);
 	}
 
 	@Test
@@ -92,11 +105,12 @@ public class PreguntaTest {
 		Pregunta p = cMock.getPregunta();
 
 		boolean apareceSolucion = false;
-		int i = 0;
-
-		while (i < 4 && !apareceSolucion) {
-			apareceSolucion = p.getSolucion().equalsIgnoreCase(p.getOpciones().get(i));
-			i++;
+		String solucion = p.getSolucion();
+		List<String> opciones = p.getOpciones();
+		
+		Iterator<String> it = opciones.iterator();
+		while (it.hasNext() && !apareceSolucion) {
+			apareceSolucion = it.next().equalsIgnoreCase(solucion);
 		}
 
 		assertTrue(apareceSolucion);
