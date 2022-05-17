@@ -273,62 +273,8 @@
                                               <toMultiplicity></toMultiplicity>
                                             </net.java.amateras.uml.classdiagram.model.AggregationModel>
                                             <net.java.amateras.uml.classdiagram.model.AggregationModel reference="../../.."/>
-                                            <net.java.amateras.uml.classdiagram.model.CompositeModel>
-                                              <showIcon>true</showIcon>
-                                              <listeners serialization="custom">
-                                                <java.beans.PropertyChangeSupport>
-                                                  <default>
-                                                    <source class="net.java.amateras.uml.classdiagram.model.CompositeModel" reference="../../../.."/>
-                                                    <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-                                                  </default>
-                                                  <null/>
-                                                </java.beans.PropertyChangeSupport>
-                                              </listeners>
-                                              <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
-                                              <target class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
-                                              <bendpoints>
-                                                <net.java.amateras.uml.editpart.ConnectionBendpoint>
-                                                  <weight>0.5</weight>
-                                                  <d1>
-                                                    <width>0</width>
-                                                    <height>0</height>
-                                                  </d1>
-                                                  <d2>
-                                                    <width>167</width>
-                                                    <height>0</height>
-                                                  </d2>
-                                                </net.java.amateras.uml.editpart.ConnectionBendpoint>
-                                                <net.java.amateras.uml.editpart.ConnectionBendpoint>
-                                                  <weight>0.5</weight>
-                                                  <d1>
-                                                    <width>167</width>
-                                                    <height>0</height>
-                                                  </d1>
-                                                  <d2>
-                                                    <width>167</width>
-                                                    <height>-159</height>
-                                                  </d2>
-                                                </net.java.amateras.uml.editpart.ConnectionBendpoint>
-                                                <net.java.amateras.uml.editpart.ConnectionBendpoint>
-                                                  <weight>0.5</weight>
-                                                  <d1>
-                                                    <width>167</width>
-                                                    <height>-159</height>
-                                                  </d1>
-                                                  <d2>
-                                                    <width>0</width>
-                                                    <height>-159</height>
-                                                  </d2>
-                                                </net.java.amateras.uml.editpart.ConnectionBendpoint>
-                                              </bendpoints>
-                                              <stereoType></stereoType>
-                                              <fromMultiplicity></fromMultiplicity>
-                                              <toMultiplicity></toMultiplicity>
-                                            </net.java.amateras.uml.classdiagram.model.CompositeModel>
                                           </sourceConnections>
-                                          <targetConnections>
-                                            <net.java.amateras.uml.classdiagram.model.CompositeModel reference="../../sourceConnections/net.java.amateras.uml.classdiagram.model.CompositeModel"/>
-                                          </targetConnections>
+                                          <targetConnections/>
                                           <children>
                                             <net.java.amateras.uml.classdiagram.model.AttributeModel>
                                               <backgroundColor reference="../../../../../../../../../../../../../../../../../../../../../backgroundColor"/>
