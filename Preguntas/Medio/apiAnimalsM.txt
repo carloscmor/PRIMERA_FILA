@@ -1,0 +1,10 @@
+Animals;multiple;medium;What color/colour is a polar bear&#039;s skin?;Black;['White', 'Pink', 'Green'];
+Animals;multiple;medium;What are rhino&#039;s horn made of?;Keratin;['Bone', 'Ivory', 'Skin'];
+Animals;multiple;medium;For what reason would a spotted hyena &quot;laugh&quot;?;Nervousness;['Excitement', 'Aggression', 'Exhaustion'];
+Animals;multiple;medium;The now extinct species &quot;Thylacine&quot; was native to where?;Tasmania, Australia;['Baluchistan, Pakistan', 'Wallachia, Romania', 'Oregon, United States'];
+Animals;multiple;medium;What dog bread is one of the oldest breeds of dog and has flourished since before 400 BCE.;Pugs;['Bulldogs', 'Boxers', 'Chihuahua'];
+Animals;multiple;medium;What is the fastest animal?;Peregrine Falcon;['Golden Eagle', 'Cheetah', 'Horsefly'];
+Animals;multiple;medium;What is the scientific name of the Common Chimpanzee?;Pan troglodytes;['Gorilla gorilla', 'Pan paniscus', 'Panthera leo'];
+Animals;multiple;medium;What is the name for a male bee that comes from an unfertilized egg?;Drone;['Soldier', 'Worker', 'Male'];
+Animals;multiple;medium;What is the collective noun for bears?;Sloth;['Drove', 'Tribe', 'Husk'];
+Animals;multiple;medium;&quot;Decapods&quot; are an order of ten-footed crustaceans.  Which of these are NOT decapods?;Krill;['Lobsters', 'Shrimp', 'Crabs'];
