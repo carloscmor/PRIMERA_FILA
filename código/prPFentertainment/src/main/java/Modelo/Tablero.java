@@ -41,7 +41,7 @@ public class Tablero {
 	}
 	private String generarCategoria() {
 		Random rnd = new Random();
-		int pos = rnd.nextInt();
+		int pos = rnd.nextInt(categorias.length);
 
 		return categorias[pos];
 	}
@@ -66,6 +66,10 @@ public class Tablero {
 				}
 			}
 		}
+	}
+	
+	public String toString() {
+		return casillas.toString();
 	}
 
 }
