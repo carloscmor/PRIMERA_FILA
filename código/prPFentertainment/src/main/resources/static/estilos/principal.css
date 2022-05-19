@@ -47,17 +47,31 @@ header > div > img {
 
 /* Tablero */
 
-#lienzo {
-	display: block;
+.contenedor {
+	position: relative;
+	top: 25px;
+	width: 1024px;
+	height: 576px;
 	margin: 0 auto 0 auto;
+	border: 3px solid var(--borde2);
+	border-radius: 2.5%;
+}
+
+.dado {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 86px;
+	height: 86px;
 }
 
 .tablero {
-	position: relative;
-	top: -285px;
-	display: block;
-	width: auto;
-	max-width: 80vw;
-	max-height: 78vh;
-	margin: 25px auto;
+	position: absolute;
+	top: 25px;
+	left: 8px;
+	height: 500px;
+}
+
+.oculto {
+	display: none;
 }

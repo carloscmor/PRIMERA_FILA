@@ -1,6 +1,23 @@
 //* Clase dado
-export default class Dado {
-	constructor() {
-		
+export default function crear_dados() {
+	const ruta = "archivos/dado/";
+	const tipo = ".png";
+	let dado = [];
+
+	for (let i = 1; i <= 6; i++) {
+		// Asignar elementos <img class="dado" src="archivos/dado/x.png"> al array.
+		dado[i] = document.createElement("img");
+		dado[i].setAttribute("class", "dado");
+		dado[i].setAttribute("src", ruta + i + tipo);
+		// Ocultar todos las imagenes menos la x.
+		if (i != 3) {
+			dado[i].classList.toggle("oculto", true);
+		}
+		// Escuchar los eventos del dado.
+		dado[i].addEventListener("click", () => {
+			console.log("Dado " + i + " clicado.");
+		});
 	}
+
+	return dado;
 }
