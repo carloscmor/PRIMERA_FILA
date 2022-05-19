@@ -8,30 +8,30 @@ public class Tablero {
 	String[] categorias = new String[] {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
 	
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
-	private Dificultad dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
+	private String dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
 									  la pregunta del fichero de preguntas*/
 	private static final int TAM_TABLERO_RAPIDA=20; //Numero de casillas partida rapida
 	private static final int TAM_TABLERO_DESAFIO=30; // Numero de casillas de tablero desafio
 
 	public Tablero() {				//
-		dificultad=Dificultad.desafio;
+		dificultad="desafio";
 		iniciarTablero(dificultad);
 	}
 	
-	public Tablero(Dificultad d) { // Para que el tablero se cree en modo partida rapida con la dificultad seleccionad
+	public Tablero(String d) { // Para que el tablero se cree en modo partida rapida con la dificultad seleccionad
 		dificultad = d;
 		iniciarTablero(dificultad);
 		
 	}
 
-	public void setDificultad(Dificultad d) {
-		dificultad = d;
-	}
-
-	public Dificultad getDificultad() {
+	public String getDificultad() {
 		return dificultad;
 	}
 
+	public ArrayList<Casilla> getCasillas() {
+		return casillas;
+	}
+	
 	public static int getTamTableroDesafio() {
 		return TAM_TABLERO_DESAFIO;
 	}
@@ -46,10 +46,10 @@ public class Tablero {
 		return categorias[pos];
 	}
 
-	public void iniciarTablero(Dificultad d) { // hay que cambiarla para cada modalidad
+	public void iniciarTablero(String d) { // hay que cambiarla para cada modalidad
 		casillas = new ArrayList<>();
 
-		if(d != Dificultad.desafio) {
+		if(!d.equals("desafio")) {
 			for(int i=0; i<TAM_TABLERO_RAPIDA; i++) {
 				if(i==2 || i==6 || i==10 || i==14 || i==17) {
 					casillas.add(new CasillaEspecial(generarCategoria(), i));
@@ -71,5 +71,5 @@ public class Tablero {
 	public String toString() {
 		return dificultad + casillas.toString();
 	}
-
+//Subirlo actualizado por cambiar dificultad a string
 }

@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19a13a6b-b387-4888-a8c5-847b39f2b0f7" name="Changes" comment="Creación del método toString de pregunta y del método getSolución.">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiScienceD.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiScienceF.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Preguntas/Medio/apiScienceM.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceComputerD.json" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceComputerD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceMathD.json" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceMathD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceNatureD.json" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceNatureD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/Science/apiScienceComputerF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/Science/apiScienceMathF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/Science/apiScienceNatureF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/Science/apiScienceComputerM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/Science/apiScienceMathM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/Science/apiScienceNatureM.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "coverage",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "spring.configuration.checksum": "0b58fcf7882a62d7e86b820befd98f86"
   }
 }]]></component>
