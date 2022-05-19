@@ -41,7 +41,14 @@ header > div > img {
 	opacity: 80%;
 }
 
+#lienzo {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
 .tablero {
+	position: relative;
+	top: -285px;
 	display: block;
 	width: auto;
 	max-width: 80vw;

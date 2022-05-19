@@ -13,14 +13,23 @@
 <body>
 	<header>
 		<div>
-			<img src="archivos/Logo oscuro.png" alt="Logotipo" id="logotipo">
+			<img src="archivos/logo/logo_oscuro.png" alt="Logotipo" id="logotipo">
 			<h1> SABELOTODO - EL VIDEOJUEGO </h1>
 			<p></p>
 		</div>
 		<input id="botón_tema" type="image" src="archivos/vectores/modo_claro.svg" alt="Cambiar a modo claro" title="Cambiar a modo claro">
 	</header>
 	<main>
-		<img class="tablero" src="archivos/tablero.png" alt="Tablero de Juego">
+		<canvas id="lienzo" width="1024" height="576px"></canvas>
+		<div class="tablero">
+			<img class="tablero" src="archivos/tablero.png" alt="Tablero de Juego">
+			<input id="dado1" type="image" src="archivos/dado/1.png">
+			<input id="dado2" type="image" src="archivos/dado/2.png">
+			<input id="dado3" type="image" src="archivos/dado/3.png">
+			<input id="dado4" type="image" src="archivos/dado/4.png">
+			<input id="dado5" type="image" src="archivos/dado/5.png">
+			<input id="dado6" type="image" src="archivos/dado/6.png">
+		</div>
 	</main>
 	<footer>
 
