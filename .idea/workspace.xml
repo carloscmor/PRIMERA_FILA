@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19a13a6b-b387-4888-a8c5-847b39f2b0f7" name="Changes" comment="Creación del método toString de pregunta y del método getSolución.">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PreguntaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/apiAnimalsD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiAnimalsD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/apiEntertainmentD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiEntertainmentD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/apiGeneralD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiGeneralD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/apiHistoryD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiHistoryD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/apiSportsD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiSportsD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/apiAnimalsF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiAnimalsF.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/apiEntertainmentF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiEntertainmentF.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/apiGeneralF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiGeneralF.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/apiHistoryF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiHistoryF.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/apiSportsF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiSportsF.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +48,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "coverage",
-    "spring.configuration.checksum": "0b58fcf7882a62d7e86b820befd98f86"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;coverage&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0b58fcf7882a62d7e86b820befd98f86&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.PreguntaMain">
     <configuration name="PreguntaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PruebasMainClases.PreguntaMain" />
@@ -99,6 +107,7 @@
       <workItem from="1652346184384" duration="2965000" />
       <workItem from="1652374516284" duration="1185000" />
       <workItem from="1652375775743" duration="1357000" />
+      <workItem from="1652952037886" duration="2778000" />
     </task>
     <servers />
   </component>
