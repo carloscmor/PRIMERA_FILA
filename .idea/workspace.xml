@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19a13a6b-b387-4888-a8c5-847b39f2b0f7" name="Changes" comment="Creación del método toString de pregunta y del método getSolución.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Preguntas/Difícil/apiScienceD.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Preguntas/Fácil/apiScienceF.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Preguntas/Medio/apiScienceM.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/apiAnimalsM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Medio/apiAnimalsM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/apiEntertainmentM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Medio/apiEntertainmentM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/apiGeneralM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Medio/apiGeneralM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/apiHistoryM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Medio/apiHistoryM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/apiSportsM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Medio/apiSportsM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceComputerD.json" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceComputerD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceMathD.json" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceMathD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceNatureD.json" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas/Difícil/Science/apiScienceNatureD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/Science/apiScienceComputerF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/Science/apiScienceMathF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Fácil/Science/apiScienceNatureF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/Science/apiScienceComputerM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/Science/apiScienceMathM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preguntas/Medio/Science/apiScienceNatureM.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
