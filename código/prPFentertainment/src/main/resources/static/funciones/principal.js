@@ -26,3 +26,7 @@ lienzo.alto = 576;
 
 ctx.fillStyle = "#0F0";
 ctx.fillRect(0, 0, lienzo.ancho, lienzo.alto);
+ctx.fillStyle = "#F00";
+let x = ctx.fillRect(0, 0, 10, 10);
+
+x.addEventListener("click", () => { console.log("¡ESTA VIVO!"); });

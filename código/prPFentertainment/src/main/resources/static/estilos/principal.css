@@ -1,10 +1,12 @@
-/** Estilo web principal */
+/** Estilo principal */
 body {
 	margin: 0;
 	background-color: var(--fondo1);
 	font-family: sans-serif;
 	color: var(--fuente);
 }
+
+/* Cabecera */
 
 header {
 	padding: 0.1px;
@@ -26,6 +28,8 @@ header > div > img {
 	padding: 1px;
 }
 
+/* Tema */
+
 #botón_tema {
 	position: absolute;
 	top: 10px;
@@ -40,6 +44,8 @@ header > div > img {
 	cursor: pointer;
 	opacity: 80%;
 }
+
+/* Tablero */
 
 #lienzo {
 	display: block;
