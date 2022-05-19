@@ -4,6 +4,18 @@ public class Ficha {
 
 	private int posicion;
 	
+	public Ficha() {
+		this(0);
+	}
+	
+	public Ficha(int pos) {
+		posicion = pos;
+	}
+	
+	public void SetPosicion(int pos) {
+		posicion = pos;
+	}
+	
 	public int getPosicion() {
 		return posicion;
 	}
