@@ -12,14 +12,14 @@ public class Casilla {
 	public Casilla(String categ, int pos, Dificultad d) {
 		categoria = categ;
 		posicion = pos;
-		if(d != Dificultad.desafio) {
+		if (d != Dificultad.desafio) {
 			dificultad = d;
-		}else {
-			if(pos  <  Tablero.getTamTableroDesafio() / 3) {
+		} else {
+			if (pos < Tablero.getTamTableroDesafio() / 3) {
 				dificultad = Dificultad.facil;
-			}else if(pos  <  (Tablero.getTamTableroDesafio() / 3)*2) {
+			} else if (pos < (Tablero.getTamTableroDesafio() / 3) * 2) {
 				dificultad = Dificultad.medio;
-			}else {
+			} else {
 				dificultad = Dificultad.dificil;
 			}
 		}
@@ -38,10 +38,11 @@ public class Casilla {
 	}
 
 	public Pregunta getPregunta() {
-		/*abrir fichero de la dificultad de la casilla y generar pregunta aleatoria de la categoria de la casilla */
+		/*
+		 * abrir fichero de la dificultad de la casilla y generar pregunta aleatoria de
+		 * la categoria de la casilla
+		 */
 		// Pregunta pregunta = null;
-
-
 
 		return pregunta;
 	}

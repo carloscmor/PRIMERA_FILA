@@ -1,5 +1,7 @@
 package Modelo;
 
+import java.util.StringJoiner;
+
 public class CasillaEspecial extends Casilla {
 
 
@@ -33,8 +35,14 @@ public class CasillaEspecial extends Casilla {
 			break;
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + this.getPosicion());
-		}
-		
+		}	
+	}
+	
+	public String toString() {
+		return new StringJoiner(", ", "Casilla" + "[", "]")
+				.add("Categoria='" + getCategoria() + "'")
+				.add("Posicion=" + getPosicion() + " Especial")
+				.toString();
 	}
 
 	

@@ -69,7 +69,7 @@ public class Tablero {
 	}
 	
 	public String toString() {
-		return casillas.toString();
+		return dificultad + casillas.toString();
 	}
 
 }

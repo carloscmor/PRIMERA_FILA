@@ -28,5 +28,10 @@ public class Ficha {
 		posicion--;
 	}
 	
-/* Revisar y mejorar*/	
+	@Override
+	public String toString() {
+		return "Posicion de la ficha: "+ getPosicion();
+	}
+
+	
 }
