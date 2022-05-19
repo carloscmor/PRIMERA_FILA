@@ -8,7 +8,7 @@ public class Temporizador extends Thread {
 	private boolean respondido;
 	private boolean fin;
 
-	//Constructor
+	// Constructor
 	public Temporizador(int n) {
 		if (n <= 0) {
 			throw new IllegalArgumentException("Valor incorrecto.");
@@ -20,46 +20,50 @@ public class Temporizador extends Thread {
 		fin = false;
 	}
 
-	//Devuelve si la pregunta ha sido respondida a no.
+	// Devuelve si la pregunta ha sido respondida a no.
 	public boolean getRespondido() {
 		return respondido;
 	}
 
-	//Devuelve el estado del temporizador, es decir, si esta agotado o no
+	// Devuelve el estado del temporizador, es decir, si esta agotado o no
 	public boolean getResultado() {
 		return this.agotado;
 	}
 
-	//Devuelve la cantidad de tiempo del temporizador. No usar mientras el temporizador esta corriendo
+	// Devuelve la cantidad de tiempo del temporizador. No usar mientras el
+	// temporizador esta corriendo
 	public int getTiempo() {
 		return tiempo;
 	}
 
-	//Para el temporizador
+	// Para el temporizador
 	public void parar() {
 		fin = true;
 	}
 
-	//Reinicia el temporizador, reinicializando las variables
+	// Reinicia el temporizador, reinicializando las variables
 	public void reiniciar() {
 		this.tiempo = inicio + 1;
 		this.agotado = false;
 		this.respondido = false;
 	}
 
-	public boolean esFinal(){ return fin;}
+	public boolean esFinal() {
+		return fin;
+	}
 
-	//Inicia el temporizador
+	// Inicia el temporizador
 	public void run() {
 		while (!fin) {
-			if(tiempo >= 0){
+			if (tiempo >= 0) {
 				System.out.print(tiempo + " ");
-			}else{
+			} else {
 				agotado = true;
 				fin = true;
 			}
 			try {
-				if(tiempo > 0) Thread.sleep(1000);
+				if (tiempo > 0)
+					Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

@@ -31,7 +31,7 @@ public class Pregunta {
 	public String getCategoria() {
 		return categoria;
 	}
-	
+
 	//Devuelve la pregunta
 	public String getPregunta() {
 		return pregunta;
@@ -41,7 +41,7 @@ public class Pregunta {
 	public String getSolucion() {
 		return solucion;
 	}
-	
+
 	//Devuelve las opciones que no son correctas
 	public Set<String> getIncorrectas() {
 		return incorrectas;
@@ -51,7 +51,7 @@ public class Pregunta {
 	public boolean validar(String resp) {
 		return solucion.equalsIgnoreCase(resp);
 	}
-	
+
 	public List<String> getOpciones(){
 		List<String> res = new ArrayList<>();
 		for(String op : incorrectas) {
@@ -61,12 +61,12 @@ public class Pregunta {
 		Collections.shuffle(res);
 		return res;
 	}
-	
+
 	 @Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder(pregunta.toUpperCase() + "\n");
 		List<String> opciones = getOpciones();
-		
+
 		int i = (int) 'a';
 			for(String op : opciones){
 				char c = (char) i++;
@@ -74,6 +74,6 @@ public class Pregunta {
 			}
 		return sb.toString();
 	}
-	 
+
 
 }

@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -76,7 +75,7 @@ public class PreguntaTest {
 		for(String str : l) res.add(str);
 		return res;
 	}
-	
+
 	@Test
 	public void lasOpcionesAparecenSoloUnaVez() {
 		Casilla cMock = mock(Casilla.class);
@@ -86,14 +85,14 @@ public class PreguntaTest {
 		List<String> opciones = p.getOpciones();
 		List<String> opcionesCopia = copiaLista(opciones); //para no modificar la original
 		boolean res = false;
-		
+
 		Iterator<String> it = opciones.iterator();
 		while(it.hasNext() && !res) {
 			String op = it.next();
 			opcionesCopia.remove(op);
 			res = !(opcionesCopia.contains(op));
 		}
-		
+
 		assertTrue(res);
 	}
 
@@ -107,7 +106,7 @@ public class PreguntaTest {
 		boolean apareceSolucion = false;
 		String solucion = p.getSolucion();
 		List<String> opciones = p.getOpciones();
-		
+
 		Iterator<String> it = opciones.iterator();
 		while (it.hasNext() && !apareceSolucion) {
 			apareceSolucion = it.next().equalsIgnoreCase(solucion);

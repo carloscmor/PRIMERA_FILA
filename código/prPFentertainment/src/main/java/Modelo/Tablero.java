@@ -6,7 +6,7 @@ import java.util.Random;
 public class Tablero {
 
 	String[] categorias = new String[] {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
-	
+
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
 	private Dificultad dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
 									  la pregunta del fichero de preguntas*/
@@ -17,11 +17,11 @@ public class Tablero {
 		dificultad=Dificultad.desafio;
 		iniciarTablero(dificultad);
 	}
-	
+
 	public Tablero(Dificultad d) { // Para que el tablero se cree en modo partida rapida con la dificultad seleccionad
 		dificultad = d;
 		iniciarTablero(dificultad);
-		
+
 	}
 
 	public void setDificultad(Dificultad d) {
@@ -35,7 +35,7 @@ public class Tablero {
 	public static int getTamTableroDesafio() {
 		return TAM_TABLERO_DESAFIO;
 	}
-	
+
 	public static int getTamTableroRapida() {
 		return TAM_TABLERO_RAPIDA;
 	}
@@ -67,7 +67,7 @@ public class Tablero {
 			}
 		}
 	}
-	
+
 	public String toString() {
 		return casillas.toString();
 	}
