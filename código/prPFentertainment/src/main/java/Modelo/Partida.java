@@ -14,11 +14,11 @@ public class Partida {
 	private Dado dado;
 	private Ficha ficha;
 	
-	public Partida(String nombreJugador) {
-		this(nombreJugador, tipo_partida.desafio, Dificultad.desafio);
+	public Partida(String nombreJugador) { //Partida desafío
+		this(nombreJugador, tipo_partida.desafio, "desafio");
 	}
 	
-	public Partida(String nombreJugador, tipo_partida tipo, Dificultad d) {
+	public Partida(String nombreJugador, tipo_partida tipo, String d) {
 		jugador = new Jugador(nombreJugador, vidas[tipo.ordinal()]);
 		if(tipo == tipo_partida.desafio) {
 			tablero = new Tablero();
@@ -54,7 +54,7 @@ public class Partida {
 	}
 	
     public void empezar() {
-    	while(!terminada);
+    	while(!terminada); //por completar
     }
     public void terminar() {
     	//fin 
