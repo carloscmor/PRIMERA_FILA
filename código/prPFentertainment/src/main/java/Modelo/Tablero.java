@@ -28,6 +28,10 @@ public class Tablero {
 		return dificultad;
 	}
 
+	public ArrayList<Casilla> getCasillas() {
+		return casillas;
+	}
+	
 	public static int getTamTableroDesafio() {
 		return TAM_TABLERO_DESAFIO;
 	}
