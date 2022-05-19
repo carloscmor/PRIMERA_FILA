@@ -4,32 +4,34 @@ import java.util.StringJoiner;
 
 public class CasillaEspecial extends Casilla {
 
+
+
 	public CasillaEspecial(String categ, int pos) {
 		super(categ, pos, "dificil");
 	}
 	
-	public void ActivarEspecial(Jugador jug, Ficha f) {
+	public void ActivarEspecial(Partida p) {
 		switch (this.getPosicion()) {
 		case 2: case 3: { // Avanzar casilla
-			 f.Avanzar(); //  ????
+			 p.getFicha().Avanzar(); 
 			break;
 		}
 		case 6: case 7:{ // Restar 1 vida
-			if(jug.getVidas() > 1) {
-				jug.setVidas(jug.getVidas() - 1);
+			if(p.getJugador().getVidas() > 1) {
+				p.getJugador().setVidas(p.getJugador().getVidas() - 1);
 			}
 		}
 			break;
 		case 10: case 11: case 22:{ // Pregunta Especial = Pregunta dificil aleatoria
-			getPregunta();	
+			generarPregunta();	
 			
 			break;
 		}
 		case 14: case 18:  // Aumentar 1 vida
-			jug.setVidas(jug.getVidas()+1);
+			p.getJugador().setVidas(p.getJugador().getVidas()+1);
 			break;
 		case 15: case 17: case 26: //Retroceder casilla
-			 f.Retroceder(); //????
+			 p.getFicha().Retroceder();
 			break;
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + this.getPosicion());
