@@ -4,10 +4,8 @@ import java.util.StringJoiner;
 
 public class CasillaEspecial extends Casilla {
 
-
-
 	public CasillaEspecial(String categ, int pos) {
-		super(categ, pos, Dificultad.dificil);
+		super(categ, pos, "dificil");
 	}
 	
 	public void ActivarEspecial(Jugador jug, Ficha f) {
