@@ -1,3 +1,5 @@
+package Modelo;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -96,7 +98,7 @@ public class Casilla {
 		}
 
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta incorrecta (puede ser una lista si la respuesta es de multiple eleccion
-				//			     	  0	       1	 	 2	     	 3	             4					5
+				//    	      0	       1	 2	     3	             4			5
 				//indices del array despues del split
 
 		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], new HashSet<String>()) : new Pregunta(pr[0], pr[3], pr[4]); //Falta rellenar el Set con las incorrectas
