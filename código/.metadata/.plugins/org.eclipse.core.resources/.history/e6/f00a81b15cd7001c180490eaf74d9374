@@ -3,6 +3,8 @@ package Modelo;
 import java.util.StringJoiner;
 
 public class Partida {
+	
+	
 
 	private static final int[] vidas= {5,3};
 	public static enum tipo_partida {desafio, rapida};

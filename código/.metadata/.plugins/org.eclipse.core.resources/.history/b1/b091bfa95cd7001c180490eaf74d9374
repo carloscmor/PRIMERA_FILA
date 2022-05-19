@@ -3,6 +3,30 @@ package Modelo;
 import java.util.StringJoiner;
 
 public class Partida {
+	
+	public boolean isTerminada() {
+		return terminada;
+	}
+
+	public void setTerminada(boolean terminada) {
+		this.terminada = terminada;
+	}
+
+	public static int[] getVidas() {
+		return vidas;
+	}
+
+	public Jugador getJugador() {
+		return jugador;
+	}
+
+	public boolean isEmpezada() {
+		return empezada;
+	}
+
+	public Ficha getFicha() {
+		return ficha;
+	}
 
 	private static final int[] vidas= {5,3};
 	public static enum tipo_partida {desafio, rapida};
@@ -29,29 +53,7 @@ public class Partida {
 		ficha = new Ficha();
 	}
 	
-	public boolean isTerminada() {
-		return terminada;
-	}
-
-	public void setTerminada(boolean terminada) {
-		this.terminada = terminada;
-	}
-
-	public static int[] getVidas() {
-		return vidas;
-	}
-
-	public Jugador getJugador() {
-		return jugador;
-	}
-
-	public boolean isEmpezada() {
-		return empezada;
-	}
-
-	public Ficha getFicha() {
-		return ficha;
-	}
+	
 	
     public void empezar() {
     	while(!terminada);
