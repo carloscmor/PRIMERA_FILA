@@ -4,12 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.StringJoiner;
+import java.util.*;
+
 
 public class Casilla {
 
@@ -39,7 +35,7 @@ public class Casilla {
 				dificultad = "hard";
 			}
 		}
-
+		pregunta = generarPregunta();
 	}
 
 	//Devuelve una pregunta en forma de array despues del split
@@ -84,6 +80,13 @@ public class Casilla {
 		return pregunta;
 	}
 
+	private Set<String> procesarIncorrectas(String linea){
+		//['The Little Prince', 'Harry Potter and the Philosopher's Stone', 'The Da Vinci Code']
+		Set<String> res = new TreeSet<>();
+		//por hacer
+		return res;
+	}
+	
 	//Genera una nueva pregunta de fichero para la casilla cada vez que se llama
 	//La pregunta solo se genera despues de llamar a este metodo por primera vez
 	public Pregunta generarPregunta() {
@@ -91,22 +94,22 @@ public class Casilla {
 
 		switch (dificultad) {
 		case "easy":
-			pr = leerDeFichero("api" + categoria + "F.txt");
+			pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
 			break;
 		case "medium":
-			pr = leerDeFichero("api" + categoria + "M.txt");
+			pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
 			break;
 		case "hard":
-			pr = leerDeFichero("api" + categoria + "D.txt");
+			pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
 			break;
 		}
 
-		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta incorrecta (puede ser una lista si la respuesta es de multiple eleccion
-				//    	      0	       1	 2	     3	             4			5
+		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta/s incorrecta (puede ser una lista si la respuesta es de multiple eleccion
+				//    	            0	       1	 2	            3	             4			    5
 				//indices del array despues del split
 
-		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], new HashSet<String>(), tiempos.get(pr[3])) 
-				: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[3])); //Falta rellenar el Set con las incorrectas
+		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2])) 
+				: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2])); //Falta rellenar el Set con las incorrectas
 
 		return pregunta;
 	}
