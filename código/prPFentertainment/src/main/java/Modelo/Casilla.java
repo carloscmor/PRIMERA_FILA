@@ -6,12 +6,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.StringJoiner;
 
 public class Casilla {
 
+	private static final Map<String, Integer> tiempos = Map.of("easy", 20, "medium", 30, "hard", 40);
+	//según la dificultad, los tiempos de espera varían 
+	
 	private String categoria;
 	private int posicion;
 	private String dificultad;
@@ -101,7 +105,8 @@ public class Casilla {
 				//    	      0	       1	 2	     3	             4			5
 				//indices del array despues del split
 
-		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], new HashSet<String>()) : new Pregunta(pr[0], pr[3], pr[4]); //Falta rellenar el Set con las incorrectas
+		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], new HashSet<String>(), tiempos.get(pr[3])) 
+				: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[3])); //Falta rellenar el Set con las incorrectas
 
 		return pregunta;
 	}

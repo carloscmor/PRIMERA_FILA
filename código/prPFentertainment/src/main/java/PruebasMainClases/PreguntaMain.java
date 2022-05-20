@@ -14,11 +14,13 @@ public class PreguntaMain {
         
         String sol = "Homo Sapiens";
 
-        Pregunta p = new Pregunta("Historia", "What is the scientific name for modern day humans?",
-                                    sol, s);
+        Pregunta p1 = new Pregunta("Historia", "What is the scientific name for modern day humans?",
+                                    sol, s,10);
 
-        System.out.println(p);
+        System.out.println(p1 + "\n");
 
-
+        Pregunta p2 = new Pregunta("General", "Flat earth?",
+                Pregunta.falso,10);
+        System.out.println(p2);
     }
 }
