@@ -29,7 +29,7 @@ public class PreguntaTest {
 		incorrectas.add("A");
 		incorrectas.add("B");
 		incorrectas.add("C");
-		pregunta = new Pregunta("Categoria", "Pregunta", "Solucion", incorrectas);
+		pregunta = new Pregunta("Categoria", "Pregunta", "Solucion", incorrectas, 5);
 
 	}
 

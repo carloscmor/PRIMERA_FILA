@@ -70,7 +70,7 @@ public class Pregunta {
 	}
 	
 	//Valida la respuesta elegida -> es usuario el método responder
-	private boolean validar(String resp) {
+	public boolean validar(String resp) {
 		return solucion.equalsIgnoreCase(resp);
 	}
 
