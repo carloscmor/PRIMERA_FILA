@@ -83,7 +83,11 @@ public class Casilla {
 	private Set<String> procesarIncorrectas(String linea){
 		//['The Little Prince', 'Harry Potter and the Philosopher's Stone', 'The Da Vinci Code']
 		Set<String> res = new TreeSet<>();
-		//por hacer
+		if(linea.length() > 1) linea = linea.substring(2, linea.length()-2);
+		String[] ops = linea.split("', '");
+		for(String str : ops) {
+			res.add(str);
+		}
 		return res;
 	}
 	
