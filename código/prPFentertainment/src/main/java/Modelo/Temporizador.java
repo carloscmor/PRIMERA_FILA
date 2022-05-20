@@ -5,7 +5,6 @@ public class Temporizador extends Thread {
 	private int inicio;
 	private int tiempo;
 	private boolean agotado;
-	private boolean respondido;
 	private boolean fin;
 
 	// Constructor
@@ -16,13 +15,7 @@ public class Temporizador extends Thread {
 		this.inicio = n;
 		this.tiempo = n;
 		agotado = false;
-		respondido = false;
 		fin = false;
-	}
-
-	// Devuelve si la pregunta ha sido respondida a no.
-	public boolean getRespondido() {
-		return respondido;
 	}
 
 	// Devuelve el estado del temporizador, es decir, si esta agotado o no
@@ -43,9 +36,8 @@ public class Temporizador extends Thread {
 
 	// Reinicia el temporizador, reinicializando las variables
 	public void reiniciar() {
-		this.tiempo = inicio + 1;
+		this.tiempo = inicio;
 		this.agotado = false;
-		this.respondido = false;
 	}
 
 	public boolean esFinal() {
