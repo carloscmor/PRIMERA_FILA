@@ -96,25 +96,25 @@ public class Casilla {
 	public Pregunta generarPregunta() {
 		String[] pr = null;
 
-		switch (dificultad) {
-		case "easy":
-			pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
-			break;
-		case "medium":
-			pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
-			break;
-		case "hard":
-			pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
-			break;
-		}
-
+		do {
+			switch (dificultad) {
+			case "easy":
+				pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
+				break;
+			case "medium":
+				pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
+				break;
+			case "hard":
+				pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
+				break;
+			}
+		} while(pr.length < 5); //Si hay una pregunta con formato erróneo, es descartada y otra es seleccionada.
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta/s incorrecta (puede ser una lista si la respuesta es de multiple eleccion
 				//    	            0	       1	 2	            3	             4			    5
 				//indices del array despues del split
-
+		
 		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2])) 
-				: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2])); //Falta rellenar el Set con las incorrectas
-
+			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2])); //Falta rellenar el Set con las incorrectas
 		return pregunta;
 	}
 
