@@ -1,6 +1,7 @@
 //* Guión principal.
 import cambiar_tema from "./tema.js";
 import crear_dados from "./dado.js";
+import crear_vidas from "./vidas.js";
 
 // Botón para cambiar el tema.
 const botón_tema = document.getElementById("botón_tema");
@@ -24,6 +25,10 @@ const contenedor = document.getElementById("juego");
 for (let i = 1; i <= 6; i++) {
 	contenedor.appendChild(dados[i]);
 }
+
+// Bloque con las vidas.
+let vidas = crear_vidas(3);
+contenedor.appendChild(vidas);
 
 // Bucle que renderiza y actualiza.
 function bucle_principal() {

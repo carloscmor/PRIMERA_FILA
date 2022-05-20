@@ -1,4 +1,4 @@
-//* Clase dado
+//* Iteración en la creación y escucha del dado.
 export default function crear_dados() {
 	const ruta = "archivos/dado/";
 	const tipo = ".png";

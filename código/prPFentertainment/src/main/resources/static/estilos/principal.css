@@ -53,7 +53,7 @@ header > div > img {
 	width: 1024px;
 	height: 576px;
 	margin: 0 auto 0 auto;
-	border: 3px solid var(--borde2);
+	border: 4px solid var(--borde2);
 	border-radius: 2.5%;
 }
 
@@ -63,6 +63,28 @@ header > div > img {
 	right: 16px;
 	width: 86px;
 	height: 86px;
+	border: 4px solid var(--borde2);
+}
+
+.vidas {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	border: 4px solid var(--borde2);
+	padding: 0px 10px 0px 10px;
+}
+
+.corazón {
+	position: relative;
+	top: 5px;
+	width: 64px;
+	height: 64px;
+}
+
+.número_vidas {
+	position: relative;
+	top: -2px;
+	font-size: 64px;
 }
 
 .tablero {
