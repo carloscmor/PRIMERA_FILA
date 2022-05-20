@@ -55,6 +55,10 @@ public class Pregunta {
 		return incorrectas;
 	}
 	
+	public boolean getAcertada() {
+		return acertada;
+	}
+	
 	//Devuelve si la pregunta ha sido respondida
 	public boolean isRespondida() {
 		return respuesta == null;
