@@ -6,6 +6,5 @@
 | Carlos        | Pablo  | J.Lanceta      | J.Leiva   |  Julián      | Nuria     |
 | Nuria         | Nuria  | Pablo          | J.Lanceta | Dani         |           |
 |               | Julián | Dani           | Julián    |              |           |
-|               |        |                | Dani      |              |           |
 
 ****Sujeto a cambios***
