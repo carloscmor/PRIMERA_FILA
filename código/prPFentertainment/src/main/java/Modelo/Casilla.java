@@ -1,6 +1,7 @@
 package Modelo;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -39,15 +40,10 @@ public class Casilla {
 	}
 
 	//Devuelve una pregunta en forma de array despues del split
-	private String[] leerDeFichero(String nfich) {
+	private String[] leerDeFichero(String nfich) throws IOException {
 		String[] res = new String[6];
 
-		List<String> lc = null;
-		try {
-			lc = Files.readAllLines(Paths.get(nfich));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		List<String> lc = Files.readAllLines(Paths.get(nfich));
 
 		try (Scanner sc = new Scanner(new File(nfich))) {
 			String linea = "";
@@ -57,9 +53,7 @@ public class Casilla {
 				--i;
 			}
 			res = linea.split("[;]");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		} 
 		rn = (rn + 1) % lc.size();
 		return res;
 	}
@@ -97,18 +91,25 @@ public class Casilla {
 		String[] pr = null;
 
 		do {
-			switch (dificultad) {
-			case "easy":
-				pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
-				break;
-			case "medium":
-				pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
-				break;
-			case "hard":
-				pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
-				break;
+			try {
+				switch (dificultad) {
+				case "easy":
+					pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
+					break;
+				case "medium":
+					pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
+					break;
+				case "hard":
+					pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
+					break;
+				}
+				
+			}catch (Exception e) { //Fichero por defecto, en caso de no encontrar el requerido.
+				categoria = "general"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
+				dificultad = "easy";
 			}
-		} while(pr.length < 5); //Si hay una pregunta con formato erróneo, es descartada y otra es seleccionada.
+			
+		} while(pr == null || pr.length < 5); //Si hay una pregunta con formato erróneo, es descartada y otra es seleccionada.
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta/s incorrecta (puede ser una lista si la respuesta es de multiple eleccion
 				//    	            0	       1	 2	            3	             4			    5
 				//indices del array despues del split
