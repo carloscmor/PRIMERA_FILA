@@ -3,6 +3,7 @@ import cambiar_tema from "./tema.js";
 import crear_dados from "./dado.js";
 import crear_vidas from "./vidas.js";
 import Tablero from "./tablero.js";
+import crear_ayuda from "./ayuda.js";
 
 // Botón para cambiar el tema.
 const botón_tema = document.getElementById("botón_tema");
@@ -14,22 +15,26 @@ botón_tema.addEventListener("click", () => {
 });
 
 // Creación y asignación del lienzo.
+const contenedor = document.getElementById("juego");
 const lienzo = document.getElementById("lienzo");
 const ctx = lienzo.getContext("2d");
 
 lienzo.ancho = 1024;
 lienzo.alto = 576;
 
-// Funcionalidad del dado.
-let dados = crear_dados();
-const contenedor = document.getElementById("juego");
-for (let i = 1; i <= 6; i++) {
-	contenedor.appendChild(dados[i]);
-}
-
 // Bloque con las vidas.
 let vidas = crear_vidas(3);
 contenedor.appendChild(vidas);
+
+// Bloque textual de ayuda.
+let ayuda = crear_ayuda();
+contenedor.appendChild(ayuda);
+
+// Funcionalidad del dado.
+let dados = crear_dados();
+for (let i = 1; i <= 6; i++) {
+	contenedor.appendChild(dados[i]);
+}
 
 // Creación del tablero.
 let tablero_ejemplo =
