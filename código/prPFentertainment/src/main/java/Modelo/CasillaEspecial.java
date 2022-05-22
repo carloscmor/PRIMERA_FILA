@@ -7,7 +7,7 @@ public class CasillaEspecial extends Casilla {
 
 
 	public CasillaEspecial(String categ, int pos) {
-		super(categ, pos, "dificil");
+		super(categ, pos, "hard");
 	}
 	
 	public void ActivarEspecial(Partida p) {
@@ -62,6 +62,5 @@ PD
 18 = Gana 1 vida
 22 = Pregunta Especial
 26 = Retrocede 1 casilla
-
  */
 }
