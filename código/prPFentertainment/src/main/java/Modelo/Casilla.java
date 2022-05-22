@@ -25,6 +25,7 @@ public class Casilla {
 		posicion = pos;
 		Random rdn = new Random();
 		rn = rdn.nextInt(59);
+		
 		if (!d.equals("desafio")) {
 			dificultad = d;
 		} else {
@@ -92,16 +93,16 @@ public class Casilla {
 
 		do {
 			try {
-				switch (dificultad) {
-				case "easy":
+				if(dificultad.equalsIgnoreCase("easy")) {
 					pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
-					break;
-				case "medium":
+				}else if(dificultad.equalsIgnoreCase("hard")) {
 					pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
-					break;
-				case "hard":
+				}else if(dificultad.equalsIgnoreCase("medium")) {
 					pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
-					break;
+				}else {
+					pr = leerDeFichero("src\\preguntas\\apiGeneralF.txt");
+					categoria = "general";
+					dificultad = "easy";
 				}
 				
 			}catch (Exception e) { //Fichero por defecto, en caso de no encontrar el requerido.
@@ -109,13 +110,13 @@ public class Casilla {
 				dificultad = "easy";
 			}
 			
-		} while(pr == null || pr.length < 5); //Si hay una pregunta con formato erróneo, es descartada y otra es seleccionada.
+		} while(pr == null || pr.length < 4); //Si hay una pregunta con formato erróneo, es descartada y otra es seleccionada.
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta/s incorrecta (puede ser una lista si la respuesta es de multiple eleccion
 				//    	            0	       1	 2	            3	             4			    5
 				//indices del array despues del split
 		
-		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2])) 
-			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2])); //Falta rellenar el Set con las incorrectas
+		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase())) 
+			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase())); //Falta rellenar el Set con las incorrectas
 		return pregunta;
 	}
 

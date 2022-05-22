@@ -10,6 +10,10 @@ public class TableroMain {
 		
 		System.out.println(t);
 		
+		for(Casilla c : t.getCasillas()) {
+			System.out.println(c.getPregunta());
+		}
+		
 	}
 
 }
