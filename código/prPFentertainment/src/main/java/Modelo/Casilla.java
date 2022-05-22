@@ -1,7 +1,6 @@
 package Modelo;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -11,8 +10,8 @@ import java.util.*;
 public class Casilla {
 
 	private static final Map<String, Integer> tiempos = Map.of("easy", 20, "medium", 30, "hard", 40);
-	//según la dificultad, los tiempos de espera varían 
-	
+	//según la dificultad, los tiempos de espera varían
+
 	private String categoria;
 	private int posicion;
 	private String dificultad;
@@ -25,7 +24,7 @@ public class Casilla {
 		posicion = pos;
 		Random rdn = new Random();
 		rn = rdn.nextInt(59);
-		
+
 		if (!d.equals("desafio")) {
 			dificultad = d;
 		} else {
@@ -54,7 +53,7 @@ public class Casilla {
 				--i;
 			}
 			res = linea.split("[;]");
-		} 
+		}
 		rn = (rn + 1) % lc.size();
 		return res;
 	}
@@ -85,7 +84,7 @@ public class Casilla {
 		}
 		return res;
 	}
-	
+
 	//Genera una nueva pregunta de fichero para la casilla cada vez que se llama
 	//La pregunta solo se genera despues de llamar a este metodo por primera vez
 	public Pregunta generarPregunta() {
@@ -104,18 +103,18 @@ public class Casilla {
 					categoria = "general";
 					dificultad = "easy";
 				}
-				
+
 			}catch (Exception e) { //Fichero por defecto, en caso de no encontrar el requerido.
 				categoria = "general"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
 				dificultad = "easy";
 			}
-			
+
 		} while(pr == null || pr.length < 4); //Si hay una pregunta con formato erróneo, es descartada y otra es seleccionada.
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta/s incorrecta (puede ser una lista si la respuesta es de multiple eleccion
 				//    	            0	       1	 2	            3	             4			    5
 				//indices del array despues del split
-		
-		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase())) 
+
+		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase()))
 			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase())); //Falta rellenar el Set con las incorrectas
 		return pregunta;
 	}

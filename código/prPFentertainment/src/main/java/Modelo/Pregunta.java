@@ -3,12 +3,12 @@ import java.util.*;
 
 public class Pregunta {
 	public static final String verdadero = "TRUE", falso = "FALSE";
-	
+
 	private final String categoria;
 	private final String pregunta;
 	private final String solucion;
 	private final Set<String> incorrectas;
-	
+
 	private boolean acertada;
 	private String respuesta;
 	private Temporizador temporizador;
@@ -22,17 +22,21 @@ public class Pregunta {
 		this.pregunta = pregunta;
 		this.solucion = solucion;
 		this.incorrectas = incorrectas;
-		
+
 		acertada = false;
 		respuesta = null;
 		temporizador = new Temporizador(tiempo); //dependiendo de la dificultad de la casilla
-		
+
 	}
 
 	//Constructor para preguntas de verdadero o falso
 	//En este no se pasan las opciones ya que siempre es o verdadero o falso
 	public Pregunta(String categoria, String pregunta, String solucion, int tiempo) {
 		this(categoria, pregunta, solucion, null, tiempo);
+	}
+
+	public Temporizador getTemporizador() {
+		return temporizador;
 	}
 
 	//Devuelve la categoria de la pregunta
@@ -54,21 +58,21 @@ public class Pregunta {
 	public Set<String> getIncorrectas() {
 		return incorrectas;
 	}
-	
+
 	public boolean getAcertada() {
 		return acertada;
 	}
-	
+
 	//Devuelve si la pregunta ha sido respondida
 	public boolean isRespondida() {
 		return respuesta == null;
 	}
-	
+
 	public void responderPregunta(String resp) {
 		respuesta = resp;
 		acertada = validar(respuesta);
 	}
-	
+
 	//Valida la respuesta elegida -> es usuario el método responder
 	public boolean validar(String resp) {
 		return solucion.equalsIgnoreCase(resp);
