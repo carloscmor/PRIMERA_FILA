@@ -10,7 +10,7 @@ General Knowledge;multiple;easy;What geometric shape is generally used for stop 
 General Knowledge;multiple;easy;What is the shape of the toy invented by Hungarian professor Ern Rubik?;Cube;['Sphere', 'Cylinder', 'Pyramid'];
 General Knowledge;multiple;easy;What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?;Spruce Goose;['Noah's Ark', 'Fat Man', 'Trojan Horse'];
 General Knowledge;multiple;easy;What is the Spanish word for "donkey"?;Burro;['Caballo', 'Toro', 'Perro'];
-General Knowledge;multiple;easy;What is the French word for "hat"?;Chapeau;['Bonnet', ' Écharpe', ' Casque'];
+General Knowledge;multiple;easy;What is the French word for "hat"?;Chapeau;['Bonnet', 'Écharpe', 'Casque'];
 General Knowledge;multiple;easy;Which American-owned brewery led the country in sales by volume in 2015?;D. G. Yuengling and Son, Inc;['Anheuser Busch', 'Boston Beer Company', 'Miller Coors'];
 General Knowledge;multiple;easy;According to Sherlock Holmes, "If you eliminate the impossible, whatever remains, however improbable, must be the...";Truth;['Answer', 'Cause', 'Source'];
 General Knowledge;multiple;easy;What is Tasmania?;An Australian State;['A flavor of Ben and Jerry's ice-cream', 'A Psychological Disorder', 'The Name of a Warner Brothers Cartoon Character'];
