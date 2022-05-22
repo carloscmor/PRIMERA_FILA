@@ -2,6 +2,7 @@
 import cambiar_tema from "./tema.js";
 import crear_dados from "./dado.js";
 import crear_vidas from "./vidas.js";
+import Tablero from "./tablero.js";
 
 // Botón para cambiar el tema.
 const botón_tema = document.getElementById("botón_tema");
@@ -30,10 +31,13 @@ for (let i = 1; i <= 6; i++) {
 let vidas = crear_vidas(3);
 contenedor.appendChild(vidas);
 
+// Creación del tablero.
+let tablero_base = new Tablero(980, 420, { x: 20, y: 128 });
+
 // Bucle que renderiza y actualiza.
 function bucle_principal() {
-	ctx.fillStyle = "#0F0";
-	// ctx.fillRect(0, 0, lienzo.ancho, lienzo.alto);
+	tablero_base.dibuja(ctx);
+	tablero_base.actualiza();
 	window.requestAnimationFrame(bucle_principal);
 }
 
