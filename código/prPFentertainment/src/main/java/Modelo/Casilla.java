@@ -95,9 +95,9 @@ public class Casilla {
 				if(dificultad.equalsIgnoreCase("easy")) {
 					pr = leerDeFichero("src\\preguntas\\api" + categoria + "F.txt");
 				}else if(dificultad.equalsIgnoreCase("hard")) {
-					pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
-				}else if(dificultad.equalsIgnoreCase("medium")) {
 					pr = leerDeFichero("src\\preguntas\\api" + categoria + "D.txt");
+				}else if(dificultad.equalsIgnoreCase("medium")) {
+					pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
 				}else {
 					pr = leerDeFichero("src\\preguntas\\apiGeneralF.txt");
 					categoria = "general";
