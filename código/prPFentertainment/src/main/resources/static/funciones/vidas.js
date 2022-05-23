@@ -1,5 +1,5 @@
 //* Creación del bloque vidas.
-export default function crear_vidas(número_vidas) {
+export default function crear_vidas(número_vidas, ayuda) {
 	const bloque = document.createElement("div");
 	bloque.setAttribute("class", "vidas");
 
@@ -13,6 +13,10 @@ export default function crear_vidas(número_vidas) {
 
 	bloque.appendChild(cantidad_vidas);
 	bloque.appendChild(corazón);
+
+	bloque.addEventListener("mouseover", () => {
+		ayuda.textContent = "VIDASAASASASASASAS";
+	});
 
 	return bloque;
 }

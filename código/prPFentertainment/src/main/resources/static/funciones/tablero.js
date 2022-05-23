@@ -1,24 +1,52 @@
 //* Creación del tablero.
 export default class Tablero {
-	constructor(posición, casillas) {
+	constructor(posición, casillas, ayuda) {
 		this.posición = posición;
 		this.casillas = casillas;
 		this.diferencia = 80;
 		this.color = { 1: "#FFF", 2: "#FF0", 3: "#F0F", 4: "#F00", 5: "#0FF", 6: "#0F0", 7: "#00F", 8: "#000" };
+		this.ayuda = ayuda;
+		this.es_creación = true;
+	}
+
+	dibujar_marco(ctx, i, j) {
+		ctx.fillStyle = "#AAA";
+		ctx.fillRect(this.posición.x + j * this.diferencia - 5, this.posición.y + i * this.diferencia - 5, this.diferencia + 5, this.diferencia + 5);
+	}
+
+	dibujar_casilla(ctx, i, j) {
+		ctx.fillStyle = this.color[this.casillas[i][j]] ? this.color[this.casillas[i][j]] : "#DCB";
+		ctx.fillRect(this.posición.x + j * this.diferencia, this.posición.y + i * this.diferencia, this.diferencia - 4, this.diferencia - 4);
+	}
+
+	crear_capa_de_ayuda() {
+		// ¡Por implementar!
+		const capa = document.createElement("div");
+	}
+
+	tratar_casilla(ctx, fila, columna) {
+		// Dibujar marco de casilla.
+		this.dibujar_marco(ctx, fila, columna);
+		// Dibujar casilla en función de su número.
+		this.dibujar_casilla(ctx, fila, columna);
+		// Añadir la escucha de ayuda.
+		if (this.es_creación) {
+			this.crear_capa_de_ayuda();
+		}
+	}
+
+	tratar_fila(ctx, fila) {
+		for (let columna = 0; columna < this.casillas[0].length; columna++) {
+			if (this.casillas[fila][columna] != 0) {
+				this.tratar_casilla(ctx, fila, columna);
+			}
+		}
 	}
 
 	dibuja(ctx) {
-		for (let fila_casilla = 0; fila_casilla < this.casillas.length; fila_casilla++) {
-			for (let casilla = 0; casilla < this.casillas[0].length; casilla++) {
-				if (this.casillas[fila_casilla][casilla] != 0) {
-					// Dibujar marco de casilla.
-					ctx.fillStyle = "#AAA";
-					ctx.fillRect(this.posición.x + casilla * this.diferencia - 5, this.posición.y + fila_casilla * this.diferencia - 5, this.diferencia + 5, this.diferencia + 5);
-					// Dibujar casilla en función de su número.
-					ctx.fillStyle = this.color[this.casillas[fila_casilla][casilla]] ? this.color[this.casillas[fila_casilla][casilla]] : "#DCB";
-					ctx.fillRect(this.posición.x + casilla * this.diferencia, this.posición.y + fila_casilla * this.diferencia, this.diferencia - 4, this.diferencia - 4);
-				}
-			}
+		for (let fila = 0; fila < this.casillas.length; fila++) {
+			this.tratar_fila(ctx, fila);
 		}
+		this.es_creación = false;
 	}
 }
