@@ -36,7 +36,7 @@ public class Temporizador extends Thread {
 
 	// Reinicia el temporizador, reinicializando las variables
 	public void reiniciar() {
-		this.tiempo = inicio;
+		this.tiempo = inicio + 1;
 		this.agotado = false;
 	}
 
