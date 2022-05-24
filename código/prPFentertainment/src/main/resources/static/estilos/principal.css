@@ -57,6 +57,13 @@ header > div > img {
 	border-radius: 2.5%;
 }
 
+.casilla {
+	position: absolute;
+	width: 76px;
+	height: 76px;
+	margin: 0;
+}
+
 /* Vidas */
 
 .vidas {

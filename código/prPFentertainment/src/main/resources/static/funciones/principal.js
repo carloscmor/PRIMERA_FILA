@@ -43,7 +43,7 @@ let tablero_ejemplo =
 	[0, 8, 7, 6, 0, 9, 0, 2, 2, 6, 5, 0],
 	[0, 2, 0, 0, 0, 8, 0, 6, 0, 0, 0, 0],
 	[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
-let tablero_base = new Tablero({ x: 33, y: 138 }, tablero_ejemplo, ayuda);
+let tablero_base = new Tablero({ x: 33, y: 138 }, tablero_ejemplo, ayuda, contenedor);
 
 // Bucle que renderiza y actualiza.
 function bucle_principal() {
