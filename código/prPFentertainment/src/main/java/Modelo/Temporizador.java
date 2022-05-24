@@ -36,7 +36,7 @@ public class Temporizador extends Thread {
 
 	// Reinicia el temporizador, reinicializando las variables
 	public void reiniciar() {
-		this.tiempo = inicio;
+		this.tiempo = inicio + 1;
 		this.agotado = false;
 	}
 
@@ -47,7 +47,7 @@ public class Temporizador extends Thread {
 	// Inicia el temporizador
 	public void run() {
 		while (!fin) {
-			if (tiempo >= 0) {
+			if (tiempo > 0) {
 				System.out.print(tiempo + " ");
 			} else {
 				agotado = true;

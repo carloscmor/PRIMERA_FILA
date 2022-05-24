@@ -69,8 +69,10 @@ public class Pregunta {
 	}
 
 	public void responderPregunta(String resp) {
-		respuesta = resp;
-		acertada = validar(respuesta);
+		if(!temporizador.esFinal()) {
+			respuesta = resp;
+			acertada = validar(respuesta);
+		}
 	}
 
 	//Valida la respuesta elegida -> es usuario el método responder
