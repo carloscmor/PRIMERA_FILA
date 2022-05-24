@@ -59,8 +59,10 @@ public class Temporizador extends Thread {
 	public void run() {
 		while (!fin) {
 
-			if (tiempo > 0) System.out.print(tiempo + " ");
-			else {
+			if (tiempo > 0) {
+				System.out.print(tiempo + " ");
+				tiempo--;
+			} else {
 				agotado = true;
 				fin = true;
 			}
@@ -70,8 +72,6 @@ public class Temporizador extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			tiempo--;
-
 		}
 	}
 }
