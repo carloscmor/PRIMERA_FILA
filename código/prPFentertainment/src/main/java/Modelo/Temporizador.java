@@ -2,41 +2,50 @@ package Modelo;
 
 public class Temporizador extends Thread {
 
-	private int inicio;
+	private final int inicio;
 	private int tiempo;
 	private boolean agotado;
 	private boolean fin;
 
-	// Constructor
+	/**
+	 * Constructor
+	 * @param n Tiempo de inicio del temporizador.
+	 */
 	public Temporizador(int n) {
-		if (n <= 0) {
-			throw new IllegalArgumentException("Valor incorrecto.");
-		}
+		if (n <= 0) throw new IllegalArgumentException("Valor incorrecto.");
 		this.inicio = n;
 		this.tiempo = n;
 		agotado = false;
 		fin = false;
 	}
 
-	// Devuelve el estado del temporizador, es decir, si esta agotado o no
+	/**
+	 * @return el estado del temporizador, es decir, si está agotado o no.
+	 */
 	public boolean getResultado() {
 		return this.agotado;
 	}
 
-	// Devuelve la cantidad de tiempo del temporizador. No usar mientras el
-	// temporizador esta corriendo
+	/**
+	 * <b>No usar mientras el temporizador está corriendo.<b/>
+	 * @return la cantidad de tiempo del temporizador.
+	 */
 	public int getTiempo() {
 		return tiempo;
 	}
 
-	// Para el temporizador
-	public void parar() {
+	/**
+	 * Para el temporizador.
+	 */
+	void parar() {
 		fin = true;
 	}
 
-	// Reinicia el temporizador, reinicializando las variables
+	/**
+	 * Reinicia el temporizador, reinicializando las variables.
+	 */
 	public void reiniciar() {
-		this.tiempo = inicio;
+		this.tiempo = inicio + 1;
 		this.agotado = false;
 	}
 
@@ -44,11 +53,15 @@ public class Temporizador extends Thread {
 		return fin;
 	}
 
-	// Inicia el temporizador
+	/**
+	 * Inicia el temporizador
+	 */
 	public void run() {
 		while (!fin) {
-			if (tiempo >= 0) {
+
+			if (tiempo > 0) {
 				System.out.print(tiempo + " ");
+				tiempo--;
 			} else {
 				agotado = true;
 				fin = true;
@@ -59,8 +72,6 @@ public class Temporizador extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			tiempo--;
-
 		}
 	}
 }

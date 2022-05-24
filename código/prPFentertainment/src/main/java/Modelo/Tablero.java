@@ -45,8 +45,12 @@ public class Tablero {
 
 		return categorias[pos];
 	}
+	
+	public getCasillas() {
+		return casillas;
+	}
 
-	public void iniciarTablero(String d) { // hay que cambiarla para cada modalidad
+	public void iniciarTablero(String d) {
 		casillas = new ArrayList<>();
 
 		if(!d.equals("desafio")) {

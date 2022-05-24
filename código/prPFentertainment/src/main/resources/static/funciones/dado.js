@@ -1,5 +1,5 @@
 //* Iteración en la creación y escucha del dado.
-export default function crear_dados() {
+export default function crear_dados(ayuda) {
 	const ruta = "archivos/dado/";
 	const tipo = ".png";
 	let dado = [];
@@ -16,6 +16,9 @@ export default function crear_dados() {
 		// Escuchar los eventos del dado.
 		dado[i].addEventListener("click", () => {
 			console.log("Dado " + i + " clicado.");
+		});
+		dado[i].addEventListener("mouseover", () => {
+			ayuda.textContent = "DADODODODODODO";
 		});
 	}
 
