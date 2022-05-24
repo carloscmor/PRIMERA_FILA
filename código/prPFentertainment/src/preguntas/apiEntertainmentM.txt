@@ -12,11 +12,11 @@ Entertainment: Music;multiple;medium;Who is the founder and leader of industrial
 Entertainment: Music;multiple;medium;Who had a 1976 hit with the song "You Make Me Feel Like Dancing"?;Leo Sayer;['Elton John', 'Billy Joel', 'Andy Gibb'];
 Entertainment: Music;multiple;medium;In which city did American rap producer DJ Khaled originate from?;Miami;['New York', 'Detroit', 'Atlanta'];
 Entertainment: Music;multiple;medium;Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.;Hurt;['Closer', 'A Warm Place', 'Big Man with a Gun'];
-Entertainment: Music;multiple;medium;74–75 is a 1993 single from the album Ring by what American band?;The Connells;['R.E.M.', 'The Ocean Blue', 'The Bangles'];
+Entertainment: Music;multiple;medium;'74-'75 is a 1993 single from the album Ring by what American band?;The Connells;['R.E.M.', 'The Ocean Blue', 'The Bangles'];
 Entertainment: Musicals & Theatres;multiple;medium;In which Shakespeare play does the character Marcellus say, "Something is rotten in the state of Denmark"?;Hamlet;['Macbeth', 'King Lear', 'Twelfth Night'];
 Entertainment: Musicals & Theatres;multiple;medium;In which Shakespearean play will you find the suicide of Ophelia?;Hamlet;['Macbeth', 'Othello', 'King Lear'];
 Entertainment: Musicals & Theatres;multiple;medium;Which of the following is not a piece from the 1950's musical West Side Story?;The Back Alley;['Maria', 'Tonight', 'Mambo'];
-Entertainment: Musicals & Theatres;multiple;medium;Who played Marquis de Lafayette and Thomas Jefferson in the original Broadway run of Hamilton?;Daveed Diggs;['Lin-Manuel Miranda', 'Javier Muñoz', 'Wayne Brady'];
+Entertainment: Musicals & Theatres;multiple;medium;Who played Marquis de Lafayette and Thomas Jefferson in the original Broadway run of Hamilton?;Daveed Diggs;['Lin-Manuel Miranda', 'Javier Muï¿½oz', 'Wayne Brady'];
 Entertainment: Musicals & Theatres;multiple;medium;The Andrew Lloyd Webber musical "Cats" is based off a book of poems written by which author?;T.S. Elliot;['Andrew Lloyd Webber', 'Emily Dickenson', 'Robert Frost'];
 Entertainment: Television;multiple;medium;What year did the television company BBC officially launch the channel BBC One?;1936;['1948', '1932', '1955'];
 Entertainment: Television;multiple;medium;Who co-founded the YouTube Let's Play channel "Game Grumps" alongside Newgrounds animator Egoraptor?;JonTron;['Pewdiepie', 'Tobuscus', 'Markiplier'];
