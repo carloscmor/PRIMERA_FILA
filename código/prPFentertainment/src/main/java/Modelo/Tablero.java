@@ -46,7 +46,7 @@ public class Tablero {
 		return categorias[pos];
 	}
 
-	public void iniciarTablero(String d) { // hay que cambiarla para cada modalidad
+	public void iniciarTablero(String d) {
 		casillas = new ArrayList<>();
 
 		if(!d.equals("desafio")) {
@@ -71,5 +71,4 @@ public class Tablero {
 	public String toString() {
 		return dificultad + casillas.toString();
 	}
-//Subirlo actualizado por cambiar dificultad a string
 }
