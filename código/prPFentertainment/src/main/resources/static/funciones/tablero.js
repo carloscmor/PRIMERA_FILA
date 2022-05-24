@@ -20,7 +20,7 @@ export default class Tablero {
 		ctx.fillRect(this.posición.x + j * this.diferencia, this.posición.y + i * this.diferencia, this.diferencia - 4, this.diferencia - 4);
 	}
 
-	crear_capa_de_ayuda(ctx, i, j) {
+	crear_capa_de_ayuda(i, j) {
 		const capa = document.createElement("p");
 		capa.setAttribute("class", "casilla");
 		capa.style.top = this.posición.y + i * this.diferencia + "px";
@@ -32,13 +32,11 @@ export default class Tablero {
 	}
 
 	tratar_casilla(ctx, fila, columna) {
-		// Dibujar marco de casilla.
 		this.dibujar_marco(ctx, fila, columna);
-		// Dibujar casilla en función de su número.
 		this.dibujar_casilla(ctx, fila, columna);
-		// Añadir la escucha de ayuda.
+		// Añadir la escucha de ayuda en el primer bucle.
 		if (this.es_creación) {
-			this.div_casillas.appendChild(this.crear_capa_de_ayuda(ctx, fila, columna));
+			this.div_casillas.appendChild(this.crear_capa_de_ayuda(fila, columna));
 		}
 	}
 
