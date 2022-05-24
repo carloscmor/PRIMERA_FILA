@@ -45,15 +45,8 @@ public class Casilla {
 
 		List<String> lc = Files.readAllLines(Paths.get(nfich));
 
-		try (Scanner sc = new Scanner(new File(nfich))) {
-			String linea = "";
-			int i = (rn % lc.size());
-			while (sc.hasNextLine() && i > 0) {
-				linea = sc.nextLine();
-				--i;
-			}
-			res = linea.split("[;]");
-		}
+		res = lc.get((rn % lc.size())).split("[;]");
+		
 		rn = (rn + 1) % lc.size();
 		return res;
 	}
