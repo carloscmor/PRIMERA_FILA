@@ -45,6 +45,10 @@ public class Tablero {
 
 		return categorias[pos];
 	}
+	
+	public getCasillas() {
+		return casillas;
+	}
 
 	public void iniciarTablero(String d) {
 		casillas = new ArrayList<>();
@@ -71,4 +75,5 @@ public class Tablero {
 	public String toString() {
 		return dificultad + casillas.toString();
 	}
+//Subirlo actualizado por cambiar dificultad a string
 }

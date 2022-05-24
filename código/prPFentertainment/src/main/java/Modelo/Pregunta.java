@@ -85,11 +85,13 @@ public class Pregunta {
 		return respuesta == null;
 	}
 
-	public void responderPregunta(String resp) {
+	public int responderPregunta(String resp) {
 		if(!temporizador.esFinal()) {
 			respuesta = resp;
 			acertada = validar(respuesta);
 		}
+		
+		return temporizador.getTiempo();
 	}
 
 	/**
