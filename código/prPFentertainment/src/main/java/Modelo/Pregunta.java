@@ -2,8 +2,8 @@ package Modelo;
 import java.util.*;
 
 public class Pregunta {
-	public static final String verdadero = "TRUE", falso = "FALSE";
-
+	private static final String verdadero = "TRUE";
+	public static final String falso = "FALSE";
 	private final String categoria;
 	private final String pregunta;
 	private final String solucion;
@@ -11,12 +11,14 @@ public class Pregunta {
 
 	private boolean acertada;
 	private String respuesta;
-	private Temporizador temporizador;
+	private final Temporizador temporizador;
 
-	//Constructor para preguntas de multiple opcion
-	//Se pasan como parametro por orden los elementos como vienen en el json, depues de hacerle el split
-	//Tipo y dificultad no se pasan como parametro porque no nos hace falta para la clase, ya que solo
-	//lo usariamos para elegir el fichero y la pregunta a crear
+	/**
+	 * Constructor para preguntas de multiple opción. <br>
+	 * Se pasan como parámetro por orden los elementos como vienen en el json, después de hacerle el split. <br>
+	 * Tipo y dificultad no se pasan como parámetro porque no nos hace falta para la clase, ya que solo
+	 * lo usaríamos para elegir el fichero y la pregunta a crear.
+	 */
 	public Pregunta(String categoria, String pregunta, String solucion, Set<String> incorrectas, int tiempo) {
 		this.categoria = categoria;
 		this.pregunta = pregunta;
@@ -29,32 +31,45 @@ public class Pregunta {
 
 	}
 
-	//Constructor para preguntas de verdadero o falso
-	//En este no se pasan las opciones ya que siempre es o verdadero o falso
+	/**
+	 * Constructor para preguntas de verdadero o falso. <br>
+	 * En este no se pasan las opciones ya que siempre es o verdadero o falso.
+	 */
 	public Pregunta(String categoria, String pregunta, String solucion, int tiempo) {
 		this(categoria, pregunta, solucion, null, tiempo);
 	}
 
+	/**
+	 * @return el temporizador
+	 */
 	public Temporizador getTemporizador() {
 		return temporizador;
 	}
 
-	//Devuelve la categoria de la pregunta
+	/**
+	 * Devuelve la categoria de la pregunta
+	 */
 	public String getCategoria() {
 		return categoria;
 	}
 
-	//Devuelve la pregunta
+	/**
+	 * Devuelve la pregunta
+	 */
 	public String getPregunta() {
 		return pregunta;
 	}
 
-	//Devuelve la solucion a la pregunta, es decir, la opcion correcta
+	/**
+	 * Devuelve la solucion a la pregunta, es decir, la opcion correcta
+	 */
 	public String getSolucion() {
 		return solucion;
 	}
 
-	//Devuelve las opciones que no son correctas
+	/**
+	 * Devuelve las opciones que no son correctas
+	 */
 	public Set<String> getIncorrectas() {
 		return incorrectas;
 	}
@@ -63,7 +78,9 @@ public class Pregunta {
 		return acertada;
 	}
 
-	//Devuelve si la pregunta ha sido respondida
+	/**
+	 * Devuelve si la pregunta ha sido respondida
+	 */
 	public boolean isRespondida() {
 		return respuesta == null;
 	}
@@ -75,17 +92,38 @@ public class Pregunta {
 		}
 	}
 
-	//Valida la respuesta elegida -> es usuario el método responder
+	/**
+	 * Valida la respuesta elegida -> es usuario el método responder
+	 */
 	public boolean validar(String resp) {
 		return solucion.equalsIgnoreCase(resp);
+	}
+
+	public void iniciar(){
+		temporizador.start();
+	}
+
+	public void parar(){
+		temporizador.parar();
+	}
+
+	public boolean agotado(){
+		return temporizador.getResultado();
+	}
+
+	public void esperar(){
+		try {
+			temporizador.join();
+		} catch (InterruptedException e) {
+			System.err.println("<!> Problema con el temporizador.");
+			System.exit(-1);
+		}
 	}
 
 	public List<String> getOpciones(){
 		List<String> res = new ArrayList<>();
 		if(incorrectas != null) {
-			for(String op : incorrectas) {
-				res.add(op);
-			}
+			res.addAll(incorrectas);
 			res.add(solucion);
 		}else {
 			res.add(verdadero);
@@ -100,10 +138,10 @@ public class Pregunta {
 		StringBuilder sb = new StringBuilder(pregunta.toUpperCase() + "\n");
 		List<String> opciones = getOpciones();
 
-		int i = (int) 'a';
+		int i = 'a';
 			for(String op : opciones){
 				char c = (char) i++;
-				sb.append("\t" + c + ") " + op + "\n");
+				sb.append("\t").append(c).append(") ").append(op).append("\n");
 			}
 		return sb.toString();
 	}

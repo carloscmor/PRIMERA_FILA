@@ -3,13 +3,32 @@ package Modelo;
 import java.util.StringJoiner;
 
 public class CasillaEspecial extends Casilla {
-
-
-
 	public CasillaEspecial(String categ, int pos) {
 		super(categ, pos, "hard");
 	}
-	
+
+	/**
+	 * <h1>Efectos</h1>
+	 * <h2><u>Partida Rápida</u></h2>
+	 * <ul>
+	 *     <li>2  = Avanza 1 casilla</li>
+	 *     <li>6  = Pierde 1 vida</li>
+	 *     <li>10 = Pregunta especial</li>
+	 *     <li>14 = Gana 1 vida</li>
+	 *     <li>17 = Retrocede 1 casilla</li>
+	 * </ul>
+	 *
+	 * <h2><u>Partida Desafío</u></h2>
+	 * <ul>
+	 *     <li>3  = Avanza 1 casilla</li>
+	 *     <li>7  = Pierde 1 vida</li>
+	 *     <li>11 = Pregunta Especial</li>
+	 *     <li>15 = Retrocede 1 casilla</li>
+	 *     <li>18 = Gana 1 vida</li>
+	 *     <li>22 = Pregunta Especial</li>
+	 *     <li>26 = Retrocede 1 casilla</li>
+	 * </ul>
+	 */
 	public void ActivarEspecial(Partida p) {
 		switch (this.getPosicion()) {
 		case 2: case 3: { // Avanzar casilla
@@ -23,8 +42,7 @@ public class CasillaEspecial extends Casilla {
 		}
 			break;
 		case 10: case 11: case 22:{ // Pregunta Especial = Pregunta dificil aleatoria
-			generarPregunta();	
-			
+			generarPregunta();
 			break;
 		}
 		case 14: case 18:  // Aumentar 1 vida
@@ -46,21 +64,5 @@ public class CasillaEspecial extends Casilla {
 	}
 
 	
-/*
-PR
-2  = Avanza 1 casilla
-6  = Pierde 1 vida
-10 = Pregunta especial
-14 = Gana 1 vida
-17 = Retrocede 1 casilla
- 
-PD
-3  = Avanza 1 casilla
-7  = Pierde 1 vida
-11 = Pregunta Especial
-15 = Retrocede 1 casilla
-18 = Gana 1 vida
-22 = Pregunta Especial
-26 = Retrocede 1 casilla
- */
+
 }
