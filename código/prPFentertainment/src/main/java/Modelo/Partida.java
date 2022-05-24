@@ -5,14 +5,14 @@ import java.util.StringJoiner;
 public class Partida {
 
 	private static final int[] vidas= {5,3};
-	public enum tipo_partida {desafio, rapida}
+	public static enum tipo_partida {desafio, rapida};
 
 	private final Tablero tablero;
 	private final Jugador jugador;
 
-	private boolean empezada = false, terminada;
-	private final Dado dado;
-	private final Ficha ficha;
+	private boolean empezada, terminada;
+	private Dado dado;
+	private Ficha ficha;
 
 	public Partida(String nombreJugador) { //Partida desafío
 		this(nombreJugador, tipo_partida.desafio, "desafio");
@@ -20,8 +20,11 @@ public class Partida {
 
 	public Partida(String nombreJugador, tipo_partida tipo, String d) {
 		jugador = new Jugador(nombreJugador, vidas[tipo.ordinal()]);
-		if (tipo == tipo_partida.desafio) tablero = new Tablero();
-		else tablero = new Tablero(d);
+		if (tipo == tipo_partida.desafio) {
+			tablero = new Tablero();
+		} else {
+			tablero = new Tablero(d);
+		}
 		dado = new Dado();
 		ficha = new Ficha();
 	}
@@ -34,6 +37,16 @@ public class Partida {
 		return terminada;
 	}
 
+	public void avanzarFicha() {
+		int cont=1;
+		dado.tirar();
+		while(ficha.getPosicion() < tablero.getCasillas().size()-1 
+				&& cont<dado.valor()) {
+			ficha.Avanzar();
+			cont++;
+		}
+	}
+	
 	public void setTerminada(boolean terminada) {
 		this.terminada = terminada;
 	}
@@ -49,17 +62,16 @@ public class Partida {
 	public boolean isEmpezada() {
 		return empezada;
 	}
-
+	
 	public Ficha getFicha() {
 		return ficha;
 	}
 
     public void empezar() {
-    	empezada = true;
+    	while(!terminada); //por completar
     }
     public void terminar() {
-    	//todo fin
-		terminada = true;
+    	//fin
     }
 
     public Tablero getTablero() {
@@ -68,7 +80,7 @@ public class Partida {
 
     @Override
     public String toString() {
-        return new StringJoiner(", \n", "Partida (Desafío) " + "[\n", "]")
+        return new StringJoiner(", \n", "Partida (Desaf�o) " + "[\n", "]")
                 .add("\tTablero = {" + tablero + "}")
                 .add("\tJugador = {" + jugador + "}")
                 .toString();
