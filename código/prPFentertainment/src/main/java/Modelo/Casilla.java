@@ -10,7 +10,8 @@ public class Casilla {
 	/**
 	 * Según la dificultad, los tiempos de espera varían.
 	 */
-	private static final Map<String, Integer> tiempos = Map.of("easy", 20, "medium", 30, "hard", 40);
+	private static final Map<String, Integer> tiempos = Map.of(
+			"easy", 20, "medium", 30, "hard", 40);
 
 	private String categoria;
 	private final int posicion;

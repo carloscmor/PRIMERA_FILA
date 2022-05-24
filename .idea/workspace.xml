@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="19a13a6b-b387-4888-a8c5-847b39f2b0f7" name="Changes" comment="Creación del método toString de pregunta y del método getSolución.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/CasillaEspecial.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/CasillaEspecial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Tablero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Casilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Partida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <workItem from="1652375775743" duration="1357000" />
       <workItem from="1653212651104" duration="78000" />
       <workItem from="1653244996342" duration="3000" />
-      <workItem from="1653375085245" duration="4773000" />
+      <workItem from="1653375085245" duration="5375000" />
     </task>
     <servers />
   </component>

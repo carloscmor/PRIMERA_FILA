@@ -59,6 +59,7 @@ public class Partida {
     }
     public void terminar() {
     	//todo fin
+		terminada = true;
     }
 
     public Tablero getTablero() {
