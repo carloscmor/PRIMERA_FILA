@@ -8,40 +8,42 @@ import java.util.*;
 
 
 public class Casilla {
-
+	/**
+	 * Según la dificultad, los tiempos de espera varían.
+	 */
 	private static final Map<String, Integer> tiempos = Map.of("easy", 20, "medium", 30, "hard", 40);
-	//según la dificultad, los tiempos de espera varían
 
 	private String categoria;
-	private int posicion;
+	private final int posicion;
 	private String dificultad;
 	private Pregunta pregunta;
-	private int rn; //Atributo para no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial
-
-	//Constructor de la clase, se le pasa la categoria, la posicion en el "tablero" y la dificultad
+	/**
+	 * Atributo para no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial.
+	 */
+	private int rn;
+	/**
+	 * Constructor de la clase, se le pasa la categoria, la posicion en el "tablero" y la dificultad.
+	 */
 	public Casilla(String categ, int pos, String d) {
 		categoria = categ;
 		posicion = pos;
 		Random rdn = new Random();
 		rn = rdn.nextInt(59);
 
-		if (!d.equals("desafio")) {
-			dificultad = d;
-		} else {
-			if (pos < Tablero.getTamTableroDesafio() / 3) {
-				dificultad = "easy";
-			} else if (pos < (Tablero.getTamTableroDesafio() / 3) * 2) {
-				dificultad = "medium";
-			} else {
-				dificultad = "hard";
-			}
+		if (!d.equals("desafio")) dificultad = d;
+		else {
+			if (pos < Tablero.getTamTableroDesafio() / 3) dificultad = "easy";
+			else if (pos < (Tablero.getTamTableroDesafio() / 3) * 2) dificultad = "medium";
+			else dificultad = "hard";
 		}
 		pregunta = generarPregunta();
 	}
 
-	//Devuelve una pregunta en forma de array despues del split
+	/**
+	 * Devuelve una pregunta en forma de array despues del {@code split}.
+	 */
 	private String[] leerDeFichero(String nfich) throws IOException {
-		String[] res = new String[6];
+		String[] res;
 
 		List<String> lc = Files.readAllLines(Paths.get(nfich));
 
@@ -52,7 +54,7 @@ public class Casilla {
 				linea = sc.nextLine();
 				--i;
 			}
-			res = linea.split("[;]");
+			res = linea.split(";");
 		}
 		rn = (rn + 1) % lc.size();
 		return res;
@@ -76,20 +78,17 @@ public class Casilla {
 
 	private Set<String> procesarIncorrectas(String linea){
 		//['The Little Prince', 'Harry Potter and the Philosopher's Stone', 'The Da Vinci Code']
-		Set<String> res = new TreeSet<>();
 		if(linea.length() > 1) linea = linea.substring(2, linea.length()-2);
 		String[] ops = linea.split("', '");
-		for(String str : ops) {
-			res.add(str);
-		}
-		return res;
+		return new TreeSet<>(Arrays.asList(ops));
 	}
 
-	//Genera una nueva pregunta de fichero para la casilla cada vez que se llama
-	//La pregunta solo se genera despues de llamar a este metodo por primera vez
+	/**
+	 * Genera una nueva pregunta de fichero para la casilla cada vez que se llama. <br>
+	 * La pregunta solo se genera después de llamar a este método por primera vez.
+	 */
 	public Pregunta generarPregunta() {
 		String[] pr = null;
-
 		do {
 			try {
 				if(dificultad.equalsIgnoreCase("easy")) {
@@ -115,14 +114,17 @@ public class Casilla {
 				//indices del array despues del split
 
 		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase()))
-			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase())); //Falta rellenar el Set con las incorrectas
+			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase()));
+		//Todo rellenar el Set con las incorrectas
 		return pregunta;
 	}
 
 	@Override
 	public String toString() {
-		return new StringJoiner(", ", "Casilla" + "[", "]").add("Categoria='" + categoria + "'")
-				.add("Posicion=" + posicion).toString();
+		return new StringJoiner(", ", "Casilla" + "[", "]")
+				.add("Categoria = '" + categoria + "'")
+				.add("Posicion = " + posicion)
+				.toString();
 	}
 
 }
