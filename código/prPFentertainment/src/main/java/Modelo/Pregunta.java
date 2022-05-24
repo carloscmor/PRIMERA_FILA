@@ -82,7 +82,7 @@ public class Pregunta {
 	 * Devuelve si la pregunta ha sido respondida
 	 */
 	public boolean isRespondida() {
-		return respuesta == null;
+		return respuesta != null;
 	}
 
 	public void responderPregunta(String resp) {
