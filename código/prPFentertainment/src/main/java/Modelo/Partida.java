@@ -38,7 +38,7 @@ public class Partida {
 	}
 
 	public void avanzarFicha() {
-		int cont=1;
+		int cont=0;
 		dado.tirar();
 		while(ficha.getPosicion() < tablero.getCasillas().size()-1 
 				&& cont<dado.valor()) {
