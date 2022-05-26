@@ -2,8 +2,7 @@ package Modelo;
 import java.util.*;
 
 public class Pregunta {
-	private static final String verdadero = "TRUE";
-	public static final String falso = "FALSE";
+	public static final String verdadero = "TRUE",  falso = "FALSE";
 	private final String categoria;
 	private final String pregunta;
 	private final String solucion;

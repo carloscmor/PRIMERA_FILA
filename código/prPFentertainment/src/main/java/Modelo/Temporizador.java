@@ -37,7 +37,7 @@ public class Temporizador extends Thread {
 	/**
 	 * Para el temporizador.
 	 */
-	void parar() {
+	public void parar() {
 		fin = true;
 	}
 
