@@ -85,11 +85,14 @@ public class Pregunta {
 		return respuesta != null;
 	}
 
-	public void responderPregunta(String resp) {
+	public int responderPregunta(String resp) {
+		int code = -1;
 		if(!temporizador.esFinal()) {
 			respuesta = resp;
 			acertada = validar(respuesta);
+			code = 0;
 		}
+		return code;
 	}
 
 	/**
@@ -115,7 +118,7 @@ public class Pregunta {
 		try {
 			temporizador.join();
 		} catch (InterruptedException e) {
-			System.err.println("<!> Problema con el temporizador.");
+			//System.err.println("<!> Problema con el temporizador."); -> En el modelo no se puede realizar E/S.
 			System.exit(-1);
 		}
 	}

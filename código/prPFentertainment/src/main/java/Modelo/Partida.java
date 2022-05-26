@@ -51,10 +51,6 @@ public class Partida {
 		this.terminada = terminada;
 	}
 
-	public static int[] getVidas() {
-		return vidas;
-	}
-
 	public Jugador getJugador() {
 		return jugador;
 	}
@@ -68,10 +64,10 @@ public class Partida {
 	}
 
     public void empezar() {
-    	while(!terminada); //por completar
+    	empezada = true;
     }
     public void terminar() {
-    	//fin
+    	terminada = true;
     }
 
     public Tablero getTablero() {

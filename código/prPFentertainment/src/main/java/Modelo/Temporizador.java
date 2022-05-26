@@ -60,7 +60,6 @@ public class Temporizador extends Thread {
 		while (!fin) {
 
 			if (tiempo > 0) {
-				System.out.print(tiempo + " ");
 				tiempo--;
 			} else {
 				agotado = true;
