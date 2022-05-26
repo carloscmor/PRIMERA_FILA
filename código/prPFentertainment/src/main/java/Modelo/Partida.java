@@ -36,14 +36,12 @@ public class Partida {
 	public boolean isTerminada() {
 		return terminada;
 	}
-
-	public void avanzarFicha() {
-		int cont=0;
-		dado.tirar();
-		while(ficha.getPosicion() < tablero.getCasillas().size()-1 
-				&& cont<dado.valor()) {
+	
+	public void avanzarFicha(int n) {
+		int cont = 0;
+		while(cont++ < n && 
+				ficha.getPosicion() < tablero.getCasillas().size()) {
 			ficha.Avanzar();
-			cont++;
 		}
 	}
 	

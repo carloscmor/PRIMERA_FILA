@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Tablero {
 
-	private String[] categorias = new String[] {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
+	private static final String[] categorias = {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
 	
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
 	private String dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
