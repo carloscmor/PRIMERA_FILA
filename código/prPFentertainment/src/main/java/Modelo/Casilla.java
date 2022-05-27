@@ -84,9 +84,10 @@ public class Casilla {
 
     /**
      * Genera una nueva pregunta de fichero para la casilla cada vez que se llama. <br>
-     * La pregunta solo se genera después de llamar a este método por primera vez.
+     * La pregunta solo se genera después de llamar a este método por primera vez. <br>
+     * En el caso de que no se pueda crear la pregunta, se vuelve a ejecutar este método.
      */
-    public void generarPregunta() {
+    void generarPregunta() {
         String[] pr = null;
         do {
             try {
@@ -101,7 +102,6 @@ public class Casilla {
                     categoria = "general";
                     dificultad = "easy";
                 }
-
             } catch (Exception e) { //Fichero por defecto, en caso de no encontrar el requerido.
                 categoria = "general"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
                 dificultad = "easy";
@@ -117,8 +117,6 @@ public class Casilla {
         } catch (IndexOutOfBoundsException e) {
             generarPregunta();
         }
-
-        //Todo rellenar el Set con las incorrectas
     }
 
     @Override
