@@ -6,6 +6,8 @@ import java.util.Random;
 public class Tablero {
 
 	private static final String[] categorias = {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
+	private static final String[] dificultades = {"easy", "medium", "hard"};
+	private static final String desafio = "desafio";
 	
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
 	private String dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
@@ -14,16 +16,30 @@ public class Tablero {
 	private static final int TAM_TABLERO_DESAFIO=30; // Numero de casillas de tablero desafio
 
 	public Tablero() {				//
-		dificultad="desafio";
-		iniciarTablero(dificultad);
+		this(desafio);
 	}
 	
-	public Tablero(String d) { // Para que el tablero se cree en modo partida rapida con la dificultad seleccionad
-		dificultad = d;
+	public Tablero(String d) { // Para que el tablero se cree en modo partida rapida con la dificultad seleccionada
+		dificultad = validaDificultad(d);
 		iniciarTablero(dificultad);
-		
 	}
 
+	private static String validaDificultad(String d) {
+		String res = d;
+		boolean valida = false;
+		
+		int i = 0;
+		while(i < dificultades.length && !valida) {
+			valida = dificultades[i].equalsIgnoreCase(d);
+			i++;
+		}
+		if(!valida) {
+			Random rnd = new Random();
+			res = dificultades[rnd.nextInt(dificultades.length)];
+		}
+		return res;
+	}
+	
 	public String getDificultad() {
 		return dificultad;
 	}
@@ -49,7 +65,7 @@ public class Tablero {
 	public void iniciarTablero(String d) {
 		casillas = new ArrayList<>();
 
-		if(!d.equals("desafio")) {
+		if(!d.equals(desafio)) {
 			for(int i=0; i<TAM_TABLERO_RAPIDA; i++) {
 				if(i==2 || i==6 || i==10 || i==14 || i==17) {
 					casillas.add(new CasillaEspecial(generarCategoria(), i));

@@ -36,7 +36,7 @@ public class Casilla {
 			else if (pos < (Tablero.getTamTableroDesafio() / 3) * 2) dificultad = "medium";
 			else dificultad = "hard";
 		}
-		pregunta = generarPregunta();
+		generarPregunta(); //inicial, después otras se generan.
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class Casilla {
 	 * Genera una nueva pregunta de fichero para la casilla cada vez que se llama. <br>
 	 * La pregunta solo se genera después de llamar a este método por primera vez.
 	 */
-	public Pregunta generarPregunta() {
+	public void generarPregunta() {
 		String[] pr = null;
 		do {
 			try {
@@ -105,11 +105,14 @@ public class Casilla {
 		//formato de la pregunta: categoria ; tipo ; dificultad ; pregunta ; respuesta correcta ; respuesta/s incorrecta (puede ser una lista si la respuesta es de multiple eleccion
 				//    	            0	       1	 2	            3	             4			    5
 				//indices del array despues del split
-
-		pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase()))
+		try {
+			pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase()))
 			: new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase()));
+		}catch(IndexOutOfBoundsException e) {
+			generarPregunta();
+		}
+		
 		//Todo rellenar el Set con las incorrectas
-		return pregunta;
 	}
 
 	@Override

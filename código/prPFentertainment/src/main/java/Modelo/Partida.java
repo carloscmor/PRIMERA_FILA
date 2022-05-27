@@ -18,6 +18,10 @@ public class Partida {
 		this(nombreJugador, tipo_partida.desafio, "desafio");
 	}
 
+	public Partida(String nombreJugador, String d) {
+		this(nombreJugador, tipo_partida.rapida, d);
+	}
+	
 	public Partida(String nombreJugador, tipo_partida tipo, String d) {
 		jugador = new Jugador(nombreJugador, vidas[tipo.ordinal()]);
 		if (tipo == tipo_partida.desafio) {
@@ -74,9 +78,21 @@ public class Partida {
 
     @Override
     public String toString() {
-        return new StringJoiner(", \n", "Partida (Desaf�o) " + "[\n", "]")
-                .add("\tTablero = {" + tablero + "}")
-                .add("\tJugador = {" + jugador + "}")
-                .toString();
+    	StringBuilder sb = new StringBuilder(jugador.toString());
+    	sb.append(tablero.getDificultad());
+    	
+    	int cont = 0; int linea = 1;
+    	int posActual = ficha.getPosicion();
+    	
+    	sb.append("\nPOSICION -> " + posActual + "\n\n");
+    	
+        for(Casilla c : tablero.getCasillas()) {
+        	sb.append(c);
+        	if(cont == posActual) sb.append(" *F* ");
+        	if(cont % linea == 0) sb.append("\n");
+        	
+        	cont++;
+        }
+        return sb.toString();
     }
 }

@@ -9,7 +9,7 @@ public class Dado {
 
 	public Dado() {
 		rd = new Random();
-		valor = 0; // 0 indica un dado sin lanzar. ¿Cambiar a aleatorio?
+		tirar();
 	}
 
 	// Devuelve el valor actual del dado. ¡Depuración!
@@ -29,9 +29,6 @@ public class Dado {
 
 	@Override
 	public String toString() {
-		return new StringJoiner(", ", "Dado" + "[", "]")
-				.add("Variable Random = " + rd)
-				.add("valor = " + valor)
-				.toString();
+		return "[" + valor + "]";
 	}
 }
