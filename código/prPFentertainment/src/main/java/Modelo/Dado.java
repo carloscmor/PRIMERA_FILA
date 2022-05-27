@@ -23,8 +23,9 @@ public class Dado {
 	}
 
 	// Asigna a valor el siguiente resultado.
-	public void tirar() {
+	public int tirar() {
 		valor = rd.nextInt(6) + 1;
+		return valor;
 	}
 
 	@Override
