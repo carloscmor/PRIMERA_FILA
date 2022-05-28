@@ -10,12 +10,14 @@ export default function cambiar_tema(nodo, accionador, logo) {
 	const logo_claro = "archivos/logo/logo_claro.png";
 
 	if (nodo.getAttribute("href") === tema_oscuro) {
+		// Cambiar a modo claro.
 		nodo.setAttribute("href", tema_claro);
 		accionador.setAttribute("src", icono_oscuro);
 		accionador.setAttribute("alt", alternativa_oscuro);
 		accionador.setAttribute("title", alternativa_oscuro);
 		logo.setAttribute("src", logo_claro);
 	} else {
+		// Cambiar a modo oscuro.
 		nodo.setAttribute("href", tema_oscuro);
 		accionador.setAttribute("src", icono_claro);
 		accionador.setAttribute("alt", alternativa_claro);

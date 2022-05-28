@@ -34,7 +34,7 @@ export default class Tablero {
 	tratar_casilla(ctx, fila, columna) {
 		this.dibujar_marco(ctx, fila, columna);
 		this.dibujar_casilla(ctx, fila, columna);
-		// Añadir la escucha de ayuda en el primer bucle.
+		// Añadir la escucha del cuadro de ayuda en el primer bucle.
 		if (this.es_creación) {
 			this.div_casillas.appendChild(this.crear_capa_de_ayuda(fila, columna));
 		}
