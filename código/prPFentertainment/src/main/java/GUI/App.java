@@ -18,7 +18,7 @@ import java.awt.Component;
 import java.awt.Color;
 import javax.swing.JTextField;
 
-public class app {
+public class App {
 
 	private JFrame frmSabelotodo;
 	private JTextField textField;
@@ -30,7 +30,7 @@ public class app {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					app window = new app();
+					App window = new App();
 					window.frmSabelotodo.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,7 +42,7 @@ public class app {
 	/**
 	 * Create the application.
 	 */
-	public app() {
+	public App() {
 		initialize();
 	}
 
@@ -81,7 +81,7 @@ public class app {
 		frmSabelotodo.getContentPane().add(btnNewButton_2);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\carlo\\Documents\\GitHub\\PRIMERA_FILA\\código\\prPFentertainment\\src\\main\\resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
+		lblNewLabel.setIcon(new ImageIcon("src\\main\\resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
 		lblNewLabel.setBounds(10, 11, 133, 139);
 		frmSabelotodo.getContentPane().add(lblNewLabel);
 		
