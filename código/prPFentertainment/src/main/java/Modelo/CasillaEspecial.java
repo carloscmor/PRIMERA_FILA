@@ -32,7 +32,7 @@ public class CasillaEspecial extends Casilla {
 	public void ActivarEspecial(Partida p) {
 		switch (this.getPosicion()) {
 		case 2: case 3: { // Avanzar casilla
-			 p.getFicha().Avanzar(); 
+			 p.getFicha().avanzar();
 			break;
 		}
 		case 6: case 7:{ // Restar 1 vida
@@ -49,7 +49,7 @@ public class CasillaEspecial extends Casilla {
 			p.getJugador().setVidas(p.getJugador().getVidas()+1);
 			break;
 		case 15: case 17: case 26: //Retroceder casilla
-			 p.getFicha().Retroceder();
+			 p.getFicha().retroceder();
 			break;
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + this.getPosicion());

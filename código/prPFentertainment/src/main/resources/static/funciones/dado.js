@@ -13,10 +13,11 @@ export default function crear_dados(ayuda) {
 		if (i != 3) {
 			dado[i].classList.toggle("oculto", true);
 		}
-		// Escuchar los eventos del dado.
+		// Escuchar la tirada del dado.
 		dado[i].addEventListener("click", () => {
 			console.log("Dado " + i + " clicado.");
 		});
+		// Escucha del cuadro de ayuda.
 		dado[i].addEventListener("mouseover", () => {
 			ayuda.textContent = "DADODODODODODO";
 		});

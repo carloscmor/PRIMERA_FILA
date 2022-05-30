@@ -7,7 +7,11 @@
     <list default="true" id="19a13a6b-b387-4888-a8c5-847b39f2b0f7" name="Changes" comment="Creación del método toString de pregunta y del método getSolución.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Casilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/CasillaEspecial.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/CasillaEspecial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Ficha.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Ficha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/Modelo/Partida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PartidaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/código/prPFentertainment/src/main/java/PruebasMainClases/PartidaMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -39,15 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0b58fcf7882a62d7e86b820befd98f86&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "spring.configuration.checksum": "0b58fcf7882a62d7e86b820befd98f86"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.PreguntaMain">
     <configuration name="PreguntaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PruebasMainClases.PreguntaMain" />
@@ -100,7 +106,9 @@
       <workItem from="1652375775743" duration="1357000" />
       <workItem from="1653212651104" duration="78000" />
       <workItem from="1653244996342" duration="3000" />
-      <workItem from="1653375085245" duration="5375000" />
+      <workItem from="1653375085245" duration="5851000" />
+      <workItem from="1653382822370" duration="5000" />
+      <workItem from="1653667316386" duration="7426000" />
     </task>
     <servers />
   </component>

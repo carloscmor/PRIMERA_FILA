@@ -7,6 +7,7 @@ export default class Tablero {
 		this.color = { 1: "#FFF", 2: "#FF0", 3: "#F0F", 4: "#F00", 5: "#0FF", 6: "#0F0", 7: "#00F", 8: "#000" };
 		this.ayuda = ayuda;
 		this.es_creación = true;
+		this.tipos_ayuda = { 0: "CEROCEROCERO", 1: "UNOUNOUNO", 2: "DOSDOSDOS", 3: "TRESTRESTRES", 4: "CUATROCUATROCUATRO", 5: "CINCOCINCoCINCO", 6: "SEISSEISSEIS", 7: "SIETESIETESIETE", 8: "OCHOCHOCHO" };
 		this.div_casillas = div;
 	}
 
@@ -26,7 +27,7 @@ export default class Tablero {
 		capa.style.top = this.posición.y + i * this.diferencia + "px";
 		capa.style.left = this.posición.x + j * this.diferencia + "px";
 		capa.addEventListener("mouseover", () => {
-			this.ayuda.textContent = "CASILLLAAALLLALALALALA";
+			this.ayuda.textContent = this.tipos_ayuda[this.casillas[i][j]];
 		});
 		return capa;
 	}
@@ -34,7 +35,7 @@ export default class Tablero {
 	tratar_casilla(ctx, fila, columna) {
 		this.dibujar_marco(ctx, fila, columna);
 		this.dibujar_casilla(ctx, fila, columna);
-		// Añadir la escucha de ayuda en el primer bucle.
+		// Añadir la escucha del cuadro de ayuda en el primer bucle.
 		if (this.es_creación) {
 			this.div_casillas.appendChild(this.crear_capa_de_ayuda(fila, columna));
 		}
