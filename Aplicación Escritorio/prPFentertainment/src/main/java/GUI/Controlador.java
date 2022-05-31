@@ -201,9 +201,9 @@ public class Controlador implements ActionListener {
 				laAnteriorEraEspecial = true;
 				panel.getSeguirPartida().setEnabled(true);
 				
-			}else {
-				panel.getTiraDado().setEnabled(true);
 			}
+				panel.getTiraDado().setEnabled(true);
+
 			
 		}else if(cmd.equals(PanelInterno.cmdTirar)) {
 			partida.getDado().tirar();
