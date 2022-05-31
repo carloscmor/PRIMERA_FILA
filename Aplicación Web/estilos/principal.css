@@ -115,3 +115,50 @@ header > div > img {
 .oculto {
 	display: none;
 }
+
+/* Inicio */
+.título_inicio {
+	position: absolute;
+	top: 32px;
+	margin: 0px 0px 0px 180px;
+	font-size: 80px;
+	color: var(--fuente);
+}
+
+.botón_rápida {
+	position: absolute;
+	top: 160px;
+	left: 140px;
+	border: 1px solid var(--fuente);
+	border-radius: 20px;
+	padding: 20px;
+	background-color: var(--fondo2);
+	font-size: 80px;
+	color: var(--fuente);
+	z-index: 100;
+}
+
+.botón_rápida:hover {
+	cursor: pointer;
+	opacity: 80%;
+	background-color: var(--botón);
+}
+
+.botón_desafío {
+	position: absolute;
+	top: 160px;
+	right: 140px;
+	border: 1px solid var(--fuente);
+	border-radius: 20px;
+	padding: 20px;
+	background-color: var(--fondo2);
+	font-size: 80px;
+	color: var(--fuente);
+	z-index: 100;
+}
+
+.botón_desafío:hover {
+	cursor: pointer;
+	opacity: 80%;
+	background-color: var(--botón);
+}

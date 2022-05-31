@@ -1,9 +1,11 @@
 //* Guión principal.
 import cambiar_tema from "./tema.js";
-import crear_dados from "./dado.js";
+import crear_dado from "./dado.js";
 import crear_vidas from "./vidas.js";
 import Tablero from "./tablero.js";
 import crear_ayuda from "./ayuda.js";
+import crear_pantalla_inicio from "./inicio.js";
+import Partida from "./partida.js";
 
 // Botón para cambiar el tema.
 const botón_tema = document.getElementById("botón_tema");
@@ -24,17 +26,12 @@ lienzo.alto = 576;
 
 // Bloque textual de ayuda.
 let ayuda = crear_ayuda();
-contenedor.appendChild(ayuda);
 
 // Bloque con las vidas.
 let vidas = crear_vidas(3, ayuda);
-contenedor.appendChild(vidas);
 
 // Funcionalidad del dado.
-let dados = crear_dados(ayuda);
-for (let i = 1; i <= 6; i++) {
-	contenedor.appendChild(dados[i], ayuda);
-}
+let dado = crear_dado(ayuda);
 
 // Creación del tablero.
 let tablero_ejemplo =
@@ -45,10 +42,36 @@ let tablero_ejemplo =
 	[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
 let tablero_base = new Tablero({ x: 33, y: 138 }, tablero_ejemplo, ayuda, contenedor);
 
+// Clase partida.
+const partida = new Partida();
+
+const estados = {
+	inicio: 0,
+	ejecución: 1,
+	fin: 2
+};
+
+const tipos = {
+	rápida: 0,
+	desafío: 1
+};
+
+// Pantalla de Inicio.
+const inicio = crear_pantalla_inicio(partida);
+
 // Bucle que renderiza y actualiza.
 function bucle_principal() {
 	ctx.clearRect(0, 0, lienzo.ancho, lienzo.alto);
-	tablero_base.dibuja(ctx);
+	if (partida.estado == estados.ejecución) {
+		contenedor.appendChild(ayuda);
+		contenedor.appendChild(vidas);
+		contenedor.appendChild(dado, ayuda);
+		tablero_base.dibuja(ctx);
+	} else if (partida.estado == estados.inicio) {
+		contenedor.appendChild(inicio);
+	} else if (partida.estado == estados.fin) {
+
+	}
 	window.requestAnimationFrame(bucle_principal);
 }
 
