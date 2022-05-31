@@ -1,0 +1,10 @@
+Animals;multiple;hard;What was the name of the Ethiopian Wolf before they knew it was related to wolves?;Simien Jackel;['Ethiopian Coyote', 'Amharic Fox', 'Canis Simiensis'];
+Animals;multiple;hard;What scientific suborder does the family Hyaenidae belong to?;Feliformia;['Haplorhini', 'Caniformia', 'Ciconiiformes'];
+Animals;multiple;hard;What is the scientific name of the cheetah?;Acinonyx jubatus;['Panthera onca', 'Lynx rufus', 'Felis catus'];
+Animals;multiple;hard;What is the Gray Wolf's scientific name?;Canis Lupus;['Canis Aureus', 'Canis Latrans', 'Canis Lupus Lycaon'];
+Animals;multiple;hard;Unlike on most salamanders, this part of a newt is flat?;Tail;['Head', 'Teeth', 'Feet'];
+Animals;multiple;hard;What is the name of the copper-rich protein that creates the blue blood in the Antarctic octopus?;Hemocyanin;['Cytochrome', 'Iron', 'Methionine'];
+Animals;multiple;hard;Which species is a "mountain chicken"?;Frog;['Chicken', 'Horse', 'Fly'];
+Animals;multiple;hard;Which of the following is another name for the "Poecilotheria Metallica Tarantula"?;Gooty;['Hopper', 'Silver Stripe', 'Woebegone'];
+Animals;multiple;hard;Which of these is a colony of polyps and not a jellyfish?;Portuguese Man-of-War;['Sea Wasp', 'Irukandji', 'Sea Nettle'];
+Animals;multiple;hard;To which biological phylum do all mammals, birds and reptiles belong?;Chordata;['Echinodermata', 'Annelida', 'Placazoa'];
