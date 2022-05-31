@@ -1,0 +1,10 @@
+Animals;multiple;easy;What is the fastest  land animal?;Cheetah;['Lion', 'Thomson's Gazelle', 'Pronghorn Antelope'];
+Animals;multiple;easy;What is the scientific name for modern day humans?;Homo Sapiens;['Homo Ergaster', 'Homo Erectus', 'Homo Neanderthalensis'];
+Animals;multiple;easy;How many legs do butterflies have?;6;['2', '4', '0'];
+Animals;multiple;easy;What do you call a baby bat?;Pup;['Cub', 'Chick', 'Kid'];
+Animals;multiple;easy;Which class of animals are newts members of?;Amphibian;['Fish', 'Reptiles', 'Mammals'];
+Animals;multiple;easy;What is the collective noun for a group of crows?;Murder;['Pack', 'Gaggle', 'Herd'];
+Animals;multiple;easy;By definition, where does an abyssopelagic animal live?;At the bottom of the ocean;['In the desert', 'On top of a mountain', 'Inside a tree'];
+Animals;multiple;easy;What colour is the female blackbird?;Brown;['Black', 'White', 'Yellow'];
+Animals;multiple;easy;How many teeth does an adult rabbit have?;28;['30', '26', '24'];
+Animals;multiple;easy;What is the name of a rabbit's abode?;Burrow;['Nest', 'Den', 'Dray'];

@@ -1,0 +1,8 @@
+/** Estilo del modo oscuro */
+:root {
+	--fondo1: rgb(36, 36, 36);
+	--fondo2: rgb(20, 20, 20);
+	--borde1: rgb(32, 32, 32);
+	--borde2: rgb(200, 200, 200);
+	--fuente: rgb(207, 207, 207);
+}
