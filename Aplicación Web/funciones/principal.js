@@ -6,6 +6,7 @@ import Tablero from "./tablero.js";
 import crear_ayuda from "./ayuda.js";
 import crear_pantalla_inicio from "./inicio.js";
 import Partida from "./partida.js";
+import Ficha from "./ficha.js";
 
 // Botón para cambiar el tema.
 const botón_tema = document.getElementById("botón_tema");
@@ -42,6 +43,10 @@ let tablero_ejemplo =
 	[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
 let tablero_base = new Tablero({ x: 33, y: 138 }, tablero_ejemplo, ayuda, contenedor);
 
+// Ficha.
+const ficha_imagen = document.getElementById("ficha");
+let ficha = new Ficha(ficha_imagen);
+
 // Clase partida.
 const partida = new Partida();
 
@@ -67,6 +72,7 @@ function bucle_principal() {
 		contenedor.appendChild(vidas);
 		contenedor.appendChild(dado, ayuda);
 		tablero_base.dibuja(ctx);
+		ficha.dibuja(ctx);
 	} else if (partida.estado == estados.inicio) {
 		contenedor.appendChild(inicio);
 	} else if (partida.estado == estados.fin) {

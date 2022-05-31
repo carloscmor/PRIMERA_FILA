@@ -10,7 +10,7 @@ export default function crear_dado(ayuda) {
 	dado.setAttribute("src", ruta + 1 + tipo);
 	// Escuchar la tirada del dado.
 	dado.addEventListener("click", () => {
-		console.log("Dado " + i + " clicado.");
+		console.log("Dado clicado.");
 	});
 	// Escucha del cuadro de ayuda.
 	dado.addEventListener("mouseover", () => {

@@ -162,3 +162,7 @@ header > div > img {
 	opacity: 80%;
 	background-color: var(--botón);
 }
+
+.none {
+	display: none;
+}
