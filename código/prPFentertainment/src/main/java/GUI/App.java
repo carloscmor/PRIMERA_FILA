@@ -74,6 +74,7 @@ public class App {
 		frmSabelotodo.getContentPane().setLayout(null);
 		
 		JButton EndButton = new JButton("TERMINAR");
+		EndButton.setEnabled(false);
 		EndButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -82,6 +83,7 @@ public class App {
 		frmSabelotodo.getContentPane().add(EndButton);
 		
 		JButton modoDesafio = new JButton("DESAFÍO");
+		modoDesafio.setEnabled(false);
 		modoDesafio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -90,6 +92,7 @@ public class App {
 		frmSabelotodo.getContentPane().add(modoDesafio);
 		
 		JButton modoRapida = new JButton("RÁPIDA");
+		modoRapida.setEnabled(false);
 		modoRapida.setBounds(955, 58, 90, 42);
 		frmSabelotodo.getContentPane().add(modoRapida);
 		
@@ -121,6 +124,7 @@ public class App {
 		panel_partida.setLayout(null);
 		
 		JComboBox comboBoxOpciones = new JComboBox();
+		comboBoxOpciones.setEnabled(false);
 		comboBoxOpciones.setBounds(1035, 128, 164, 22);
 		panel_partida.add(comboBoxOpciones);
 		
@@ -129,6 +133,8 @@ public class App {
 		panel_partida.add(scrollTablero);
 		
 		JTextPane tableroPane = new JTextPane();
+		tableroPane.setEnabled(false);
+		tableroPane.setEditable(false);
 		tableroPane.setToolTipText("aquí se muestra el tablero");
 		tableroPane.setFont(new Font("Dialog", Font.PLAIN, 19));
 		tableroPane.setBackground(UIManager.getColor("List.dropCellBackground"));
@@ -160,6 +166,8 @@ public class App {
 		panel_partida.add(lblNewLabel_5_3);
 		
 		JTextPane infoCasilla = new JTextPane();
+		infoCasilla.setEnabled(false);
+		infoCasilla.setEditable(false);
 		infoCasilla.setFont(new Font("Dialog", Font.PLAIN, 16));
 		infoCasilla.setBounds(542, 382, 344, 38);
 		panel_partida.add(infoCasilla);
@@ -169,6 +177,8 @@ public class App {
 		panel_partida.add(casillaLabel);
 		
 		JTextPane dado = new JTextPane();
+		dado.setEnabled(false);
+		dado.setEditable(false);
 		dado.setFont(new Font("Dialog", Font.PLAIN, 73));
 		dado.setBounds(617, 228, 118, 108);
 		panel_partida.add(dado);
@@ -179,6 +189,7 @@ public class App {
 		panel_partida.add(resLabel);
 		
 		JButton responderPregunta = new JButton("RESPONDER");
+		responderPregunta.setEnabled(false);
 		responderPregunta.setBounds(1035, 39, 164, 51);
 		panel_partida.add(responderPregunta);
 		
@@ -188,16 +199,20 @@ public class App {
 		panel_partida.add(tiempoLabel);
 		
 		timeLog = new JTextField();
+		timeLog.setEnabled(false);
+		timeLog.setEditable(false);
 		timeLog.setFont(new Font("Dialog", Font.PLAIN, 19));
 		timeLog.setBounds(882, 11, 75, 38);
 		panel_partida.add(timeLog);
 		timeLog.setColumns(10);
 		
 		JButton seguirPartida = new JButton("DESPLAZAR FICHA");
+		seguirPartida.setEnabled(false);
 		seguirPartida.setBounds(747, 267, 139, 69);
 		panel_partida.add(seguirPartida);
 		
 		JButton tiraDado = new JButton("TIRAR");
+		tiraDado.setEnabled(false);
 		tiraDado.setBounds(750, 228, 88, 26);
 		panel_partida.add(tiraDado);
 		
@@ -213,18 +228,24 @@ public class App {
 		lblNewLabel_5_2_2.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		
 		JTextPane nombreJugador = new JTextPane();
+		nombreJugador.setEnabled(false);
+		nombreJugador.setEditable(false);
 		nombreJugador.setFont(new Font("Dialog", Font.PLAIN, 20));
 		nombreJugador.setBackground(SystemColor.control);
 		nombreJugador.setBounds(135, 45, 186, 43);
 		InformacionPanel.add(nombreJugador);
 		
 		JTextPane puntuacion = new JTextPane();
+		puntuacion.setEnabled(false);
+		puntuacion.setEditable(false);
 		puntuacion.setFont(new Font("Dialog", Font.PLAIN, 22));
 		puntuacion.setBackground(SystemColor.menu);
 		puntuacion.setBounds(182, 100, 139, 43);
 		InformacionPanel.add(puntuacion);
 		
 		JTextPane vidas = new JTextPane();
+		vidas.setEnabled(false);
+		vidas.setEditable(false);
 		vidas.setFont(new Font("Dialog", Font.PLAIN, 22));
 		vidas.setBackground(SystemColor.menu);
 		vidas.setBounds(182, 155, 139, 44);
@@ -251,6 +272,8 @@ public class App {
 		panel_partida.add(scrollPregunta);
 		
 		JTextPane preguntaPane = new JTextPane();
+		preguntaPane.setEnabled(false);
+		preguntaPane.setEditable(false);
 		scrollPregunta.setViewportView(preguntaPane);
 		preguntaPane.setFont(new Font("Dialog", Font.PLAIN, 17));
 		preguntaPane.setBackground(new Color(240, 255, 255));
@@ -272,6 +295,7 @@ public class App {
 		frmSabelotodo.getContentPane().add(registraJugador);
 		
 		JButton inicioPartida = new JButton("INICIAR PARTIDA");
+		inicioPartida.setEnabled(false);
 		inicioPartida.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		inicioPartida.setBounds(1070, 33, 165, 72);
 		frmSabelotodo.getContentPane().add(inicioPartida);
