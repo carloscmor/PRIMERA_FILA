@@ -159,6 +159,10 @@ public class Pregunta {
         }
     }
 
+    public int getPuntuacion() {
+    	return temporizador.getTiempo();
+    }
+    
     /**
      * Mezcla las opciones {@link #incorrectas} con la correcta,
      * y las devuelve (o {@link #verdadero} y {@link #falso} si procede).

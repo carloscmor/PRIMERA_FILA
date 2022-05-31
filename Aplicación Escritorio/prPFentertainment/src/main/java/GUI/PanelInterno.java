@@ -14,6 +14,8 @@ import javax.swing.ImageIcon;
 import java.awt.Choice;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextArea;
+import javax.swing.UIManager;
+import java.awt.Color;
 
 public class PanelInterno extends JPanel {
 	/**
@@ -26,7 +28,8 @@ public class PanelInterno extends JPanel {
 								cmdEndButton = "TERMINA",
 								cmdResponde = "RESPONDE",
 								cmdSeguir = "SIGUE",
-								cmdTirar = "TIRA";
+								cmdTirar = "TIRA",
+								cmdVisualizar = "VISUALIZAR";
 	
 	private static final long serialVersionUID = 1L;
 
@@ -61,10 +64,12 @@ public class PanelInterno extends JPanel {
 				,modoSeleccionado;
 	private JComboBox<Object> comboBoxOpciones_1;
 	private JTextArea textTablero;
+	
 
-	public JTextPane getModoSeleccionado() {
-		return modoSeleccionado;
-	}
+	private JButton iniciarPregunta;
+	private JTextArea TextPregunta;
+
+	
 
 	/**
 	 * Create the panel.
@@ -107,7 +112,7 @@ public class PanelInterno extends JPanel {
 		nombreJugador = new JTextField();
 		nombreJugador.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		nombreJugador.setColumns(10);
-		nombreJugador.setBounds(585, 37, 210, 33);
+		nombreJugador.setBounds(531, 37, 288, 33);
 		add(nombreJugador);
 		
 		lblNewLabel_1 = new JLabel("Nombre del jugador:");
@@ -140,8 +145,8 @@ public class PanelInterno extends JPanel {
 		partidaLabel.setBounds(540, 589, 49, 19);
 		add(partidaLabel);
 		
-		estadoLabel = new JLabel("estadoPartida");
-		estadoLabel.setBounds(601, 590, 230, 16);
+		estadoLabel = new JLabel("");
+		estadoLabel.setBounds(601, 590, 462, 16);
 		add(estadoLabel);
 		
 		JPanel panel_partida = new JPanel();
@@ -151,17 +156,20 @@ public class PanelInterno extends JPanel {
 		add(panel_partida);
 		
 		comboBoxOpciones = new JComboBox<Object>();
+		comboBoxOpciones.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		comboBoxOpciones.setEnabled(false);
-		comboBoxOpciones.setBounds(1035, 128, 164, 22);
+		comboBoxOpciones.setBounds(1150, 127, 81, 38);
 		panel_partida.add(comboBoxOpciones);
 		
 		scrollTablero = new JScrollPane();
-		scrollTablero.setBounds(30, 39, 481, 381);
+		scrollTablero.setToolTipText("Aquí se muestra el tablero");
+		scrollTablero.setAutoscrolls(true);
+		scrollTablero.setBounds(10, 37, 522, 383);
 		panel_partida.add(scrollTablero);
 		
 		textTablero = new JTextArea();
-		textTablero.setBackground(SystemColor.activeCaption);
-		textTablero.setFont(new Font("Monospaced", Font.PLAIN, 18));
+		textTablero.setBackground(UIManager.getColor("inactiveCaption"));
+		textTablero.setFont(new Font("Monospaced", Font.PLAIN, 15));
 		textTablero.setEditable(false);
 		scrollTablero.setViewportView(textTablero);
 		
@@ -177,12 +185,12 @@ public class PanelInterno extends JPanel {
 		
 		selecciónLabel = new JLabel("Selección de la respuesta");
 		selecciónLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		selecciónLabel.setBounds(1035, 102, 164, 14);
+		selecciónLabel.setBounds(1067, 102, 164, 14);
 		panel_partida.add(selecciónLabel);
 		
 		lblNewLabel_5 = new JLabel("DADO");
 		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		lblNewLabel_5.setBounds(542, 228, 68, 29);
+		lblNewLabel_5.setBounds(561, 209, 68, 29);
 		panel_partida.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_5_3 = new JLabel("Resultado:");
@@ -191,29 +199,29 @@ public class PanelInterno extends JPanel {
 		panel_partida.add(lblNewLabel_5_3);
 		
 		infoCasilla = new JTextPane();
-		infoCasilla.setFont(new Font("Dialog", Font.PLAIN, 16));
+		infoCasilla.setFont(new Font("Dialog", Font.PLAIN, 14));
 		infoCasilla.setEditable(false);
 		infoCasilla.setBounds(542, 382, 344, 38);
 		panel_partida.add(infoCasilla);
 		
 		casillaLabel = new JLabel("CASILLA ACTUAL");
-		casillaLabel.setBounds(542, 348, 223, 22);
+		casillaLabel.setBounds(544, 360, 223, 22);
 		panel_partida.add(casillaLabel);
 		
 		dado = new JTextPane();
 		dado.setFont(new Font("Dialog", Font.PLAIN, 73));
 		dado.setEditable(false);
-		dado.setBounds(617, 228, 118, 108);
+		dado.setBounds(548, 241, 118, 108);
 		panel_partida.add(dado);
 		
-		resLabel = new JLabel("res");
+		resLabel = new JLabel("");
 		resLabel.setFont(new Font("Dialog", Font.BOLD, 14));
 		resLabel.setBounds(1138, 164, 93, 28);
 		panel_partida.add(resLabel);
 		
 		responderPregunta = new JButton("RESPONDER");
 		responderPregunta.setEnabled(false);
-		responderPregunta.setBounds(1035, 39, 164, 51);
+		responderPregunta.setBounds(1067, 40, 164, 51);
 		panel_partida.add(responderPregunta);
 		
 		JLabel tiempoLabel = new JLabel("TIEMPO:");
@@ -221,15 +229,15 @@ public class PanelInterno extends JPanel {
 		tiempoLabel.setBounds(786, 11, 100, 29);
 		panel_partida.add(tiempoLabel);
 		
-		seguirPartida = new JButton("DESPLAZAR FICHA");
+		seguirPartida = new JButton("SEGUIR");
 		seguirPartida.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		seguirPartida.setEnabled(false);
-		seguirPartida.setBounds(747, 267, 139, 69);
+		seguirPartida.setBounds(758, 302, 128, 69);
 		panel_partida.add(seguirPartida);
 		
 		tiraDado = new JButton("TIRAR");
 		tiraDado.setEnabled(false);
-		tiraDado.setBounds(750, 228, 88, 26);
+		tiraDado.setBounds(672, 323, 76, 26);
 		panel_partida.add(tiraDado);
 		
 		JPanel InformacionPanel = new JPanel();
@@ -244,17 +252,17 @@ public class PanelInterno extends JPanel {
 		InformacionPanel.add(lblNewLabel_5_2_2);
 		
 		nombre = new JTextPane();
-		nombre.setFont(new Font("Dialog", Font.PLAIN, 20));
+		nombre.setFont(new Font("Dialog", Font.PLAIN, 18));
 		nombre.setEditable(false);
 		nombre.setBackground(SystemColor.menu);
-		nombre.setBounds(135, 45, 186, 43);
+		nombre.setBounds(135, 45, 186, 76);
 		InformacionPanel.add(nombre);
 		
 		puntuacion = new JTextPane();
 		puntuacion.setFont(new Font("Dialog", Font.PLAIN, 22));
 		puntuacion.setEditable(false);
 		puntuacion.setBackground(SystemColor.menu);
-		puntuacion.setBounds(182, 100, 139, 43);
+		puntuacion.setBounds(30, 156, 139, 43);
 		InformacionPanel.add(puntuacion);
 		
 		vidas = new JTextPane();
@@ -271,22 +279,25 @@ public class PanelInterno extends JPanel {
 		
 		JLabel puntuacionLabel = new JLabel("PUNTUACIÓN");
 		puntuacionLabel.setFont(new Font("Dialog", Font.PLAIN, 16));
-		puntuacionLabel.setBounds(52, 100, 112, 21);
+		puntuacionLabel.setBounds(30, 132, 112, 21);
 		InformacionPanel.add(puntuacionLabel);
 		
 		JLabel vidasLabel = new JLabel("VIDAS");
 		vidasLabel.setFont(new Font("Dialog", Font.PLAIN, 16));
-		vidasLabel.setBounds(78, 155, 86, 21);
+		vidasLabel.setBounds(182, 132, 86, 21);
 		InformacionPanel.add(vidasLabel);
 		
 		scrollPregunta = new JScrollPane();
-		scrollPregunta.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollPregunta.setBounds(523, 52, 500, 150);
+		scrollPregunta.setBounds(551, 52, 472, 150);
 		panel_partida.add(scrollPregunta);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setText("");
-		scrollPregunta.setViewportView(textArea);
+		TextPregunta = new JTextArea();
+		TextPregunta.setBackground(new Color(255, 222, 173));
+		TextPregunta.setForeground(Color.BLACK);
+		TextPregunta.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		TextPregunta.setEditable(false);
+		TextPregunta.setText("");
+		scrollPregunta.setViewportView(TextPregunta);
 		
 		JTextPane tiempo = new JTextPane();
 		tiempo.setFont(new Font("Dialog", Font.PLAIN, 20));
@@ -295,16 +306,12 @@ public class PanelInterno extends JPanel {
 		tiempo.setBounds(884, 11, 93, 38);
 		panel_partida.add(tiempo);
 		
-		
-		//registro de comandos
-		modoDesafio.setActionCommand(cmdModoDesafio);
-		modoRapida.setActionCommand(cmdModoRapida);
-		registraJugador.setActionCommand(cmdRegistraJugador);
-		inicioPartida.setActionCommand(cmdInicioPartida);
-		EndButton.setActionCommand(cmdEndButton);
-		responderPregunta.setActionCommand(cmdResponde);
-		seguirPartida.setActionCommand(cmdSeguir);
-		tiraDado.setActionCommand(cmdTirar);
+		iniciarPregunta = new JButton("VISUALIZAR PREGUNTA");
+		iniciarPregunta.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		iniciarPregunta.setEnabled(false);
+		iniciarPregunta.setActionCommand("SIGUE");
+		iniciarPregunta.setBounds(695, 209, 191, 69);
+		panel_partida.add(iniciarPregunta);
 		
 		modoSeleccionado = new JTextPane();
 		modoSeleccionado.setEditable(false);
@@ -318,8 +325,20 @@ public class PanelInterno extends JPanel {
 		add(comboBoxOpciones_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("dificultad");
-		lblNewLabel_2.setBounds(777, 120, 90, 14);
+		lblNewLabel_2.setBounds(815, 120, 79, 14);
 		add(lblNewLabel_2);
+		
+		//registro de comandos
+		modoDesafio.setActionCommand(cmdModoDesafio);
+		modoRapida.setActionCommand(cmdModoRapida);
+		registraJugador.setActionCommand(cmdRegistraJugador);
+		inicioPartida.setActionCommand(cmdInicioPartida);
+		EndButton.setActionCommand(cmdEndButton);
+		responderPregunta.setActionCommand(cmdResponde);
+		seguirPartida.setActionCommand(cmdSeguir);
+		tiraDado.setActionCommand(cmdTirar);
+		iniciarPregunta.setActionCommand(cmdVisualizar);
+		
 	}
 	
 	public JTextArea getTextTablero() {
@@ -339,6 +358,7 @@ public class PanelInterno extends JPanel {
 		responderPregunta.addActionListener(ctr);
 		seguirPartida.addActionListener(ctr);
 		tiraDado.addActionListener(ctr);
+		iniciarPregunta.addActionListener(ctr);
 		
 	}
 
@@ -432,5 +452,17 @@ public class PanelInterno extends JPanel {
 
 	public JTextPane getVidas() {
 		return vidas;
+	}
+	
+	public JButton getVisualizarPregunta() {
+		return iniciarPregunta;
+	}
+	
+	public JTextArea getTextPregunta() {
+		return TextPregunta;
+	}
+	
+	public JTextPane getModoSeleccionado() {
+		return modoSeleccionado;
 	}
 }

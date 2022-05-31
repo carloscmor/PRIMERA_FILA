@@ -29,10 +29,14 @@ public class Jugador {
     }
 
     public void setVidas(int vidas) {
-        if (vidas >= 0)
+        if (vidas >= 0) 
             this.vidas = vidas;
     }
 
+    public void decrementaVida() {
+    	if(vidas > 0) vidas--;
+    }
+    
     public int getPuntuacion() {
         return puntuacion;
     }

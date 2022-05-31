@@ -73,7 +73,7 @@ public class Partida {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(jugador.toString());
+        StringBuilder sb = new StringBuilder();
         sb.append(tablero.getDificultad());
 
         int cont = 0;
