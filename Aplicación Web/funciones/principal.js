@@ -31,21 +31,21 @@ let ayuda = crear_ayuda();
 // Bloque con las vidas.
 let vidas = crear_vidas(3, ayuda);
 
-// Funcionalidad del dado.
-let dado = crear_dado(ayuda);
-
 // Creación del tablero.
-let tablero_ejemplo =
-	[[1, 2, 3, 4, 0, 2, 4, 5, 6, 3, 4, 0],
-	[0, 0, 0, 5, 0, 3, 0, 0, 0, 0, 2, 0],
-	[0, 8, 7, 6, 0, 9, 0, 2, 2, 6, 5, 0],
-	[0, 2, 0, 0, 0, 8, 0, 6, 0, 0, 0, 0],
-	[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
-let tablero_base = new Tablero({ x: 33, y: 138 }, tablero_ejemplo, ayuda, contenedor);
+let tablero =
+[[1, 2, 3, 4, 0, 2, 4, 5, 6, 3, 4, 0],
+[0, 0, 0, 5, 0, 3, 0, 0, 0, 0, 2, 0],
+[0, 8, 7, 6, 0, 9, 0, 2, 2, 6, 5, 0],
+[0, 2, 0, 0, 0, 8, 0, 6, 0, 0, 0, 0],
+[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
+let tablero_base = new Tablero({ x: 33, y: 138 }, tablero, ayuda, contenedor);
 
 // Ficha.
 const ficha_imagen = document.getElementById("ficha");
-let ficha = new Ficha(ficha_imagen);
+let ficha = new Ficha(ficha_imagen, tablero);
+
+// Funcionalidad del dado.
+let dado = crear_dado(ayuda, ficha);
 
 // Clase partida.
 const partida = new Partida();
