@@ -17,13 +17,17 @@ public class Casilla {
     private final int posicion;
     private String dificultad;
     private Pregunta pregunta;
+
     /**
      * Atributo para no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial.
      */
     private int rn;
 
     /**
-     * Constructor de la clase, se le pasa la categoria, la posicion en el "tablero" y la dificultad.
+     * Constructor de la clase.
+     * @param categ la categoría de la casilla.
+     * @param pos la posición en el tablero
+     * @param d la dificultad
      */
     public Casilla(String categ, int pos, String d) {
         categoria = categ;
@@ -31,12 +35,11 @@ public class Casilla {
         Random rdn = new Random();
         rn = rdn.nextInt(59);
 
-        if (!d.equals("desafio")) dificultad = d;
-        else {
+        if (d.equals("desafio")) {
             if (pos < Tablero.getTamTableroDesafio() / 3) dificultad = "easy";
             else if (pos < (Tablero.getTamTableroDesafio() / 3) * 2) dificultad = "medium";
             else dificultad = "hard";
-        }
+        } else dificultad = d;
         generarPregunta(); //inicial, después otras se generan.
     }
 
@@ -55,16 +58,12 @@ public class Casilla {
         return res;
     }
 
-    public String getCategoria() {
+    String getCategoria() {
         return categoria;
     }
 
-    public int getPosicion() {
+    int getPosicion() {
         return posicion;
-    }
-
-    public String getDificultad() {
-        return dificultad;
     }
 
     public Pregunta getPregunta() {
@@ -112,8 +111,9 @@ public class Casilla {
         //    	            0	       1	 2	            3	             4			    5
         //indices del array despues del split
         try {
-            pregunta = pr[1].equals("multiple") ? new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase()))
-                    : new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase()));
+            pregunta = pr[1].equals("multiple") ?
+                    new Pregunta(pr[0], pr[3], pr[4], procesarIncorrectas(pr[5]), tiempos.get(pr[2].toLowerCase())) :
+                    new Pregunta(pr[0], pr[3], pr[4], tiempos.get(pr[2].toLowerCase()));
         } catch (IndexOutOfBoundsException e) {
             generarPregunta();
         }

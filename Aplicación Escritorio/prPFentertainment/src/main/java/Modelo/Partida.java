@@ -40,7 +40,8 @@ public class Partida {
 
     public void avanzarFicha(int n) {
         int cont = 0;
-        while (cont++ < n && ficha.getPosicion() < tablero.getCasillas().size()) ficha.avanzar();
+        while (ficha.getPosicion() < tablero.getCasillas().size() && cont++ < n) ficha.avanzar();
+        if(ficha.getPosicion() == tablero.getCasillas().size()) terminar();
     }
 
     public void setTerminada(boolean terminada) {
@@ -63,7 +64,7 @@ public class Partida {
         empezada = true;
     }
 
-    public void terminar() {
+    private void terminar() {
         terminada = true;
     }
 

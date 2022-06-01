@@ -3,7 +3,7 @@ package Modelo;
 import java.util.StringJoiner;
 
 public class CasillaEspecial extends Casilla {
-	public CasillaEspecial(String categ, int pos) {
+	CasillaEspecial(String categ, int pos) {
 		super(categ, pos, "hard");
 	}
 
@@ -36,11 +36,9 @@ public class CasillaEspecial extends Casilla {
 			break;
 		}
 		case 6: case 7:{ // Restar 1 vida
-			if(p.getJugador().getVidas() > 1) {
-				p.getJugador().setVidas(p.getJugador().getVidas() - 1);
-			}
-		}
+			if(p.getJugador().getVidas() > 1) p.getJugador().setVidas(p.getJugador().getVidas() - 1);
 			break;
+		}
 		case 10: case 11: case 22:{ // Pregunta Especial = Pregunta dificil aleatoria
 			generarPregunta();
 			break;

@@ -1,10 +1,9 @@
 package Modelo;
 
 import java.util.Random;
-import java.util.StringJoiner;
 
 public class Dado {
-	private Random rd; // Clase que proporciona el siguiente resultado.
+	private final Random rd; // Clase que proporciona el siguiente resultado.
 	private int valor; // Valor actual del dado (cara superior).
 
 	public Dado() {
