@@ -15,6 +15,10 @@ import java.awt.Choice;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
+
+import Modelo.Partida;
+import Modelo.Tablero;
+
 import java.awt.Color;
 
 public class PanelInterno extends JPanel {
@@ -321,6 +325,7 @@ public class PanelInterno extends JPanel {
 		comboBoxOpciones_1 = new JComboBox<Object>();
 		comboBoxOpciones_1.setEnabled(false);
 		comboBoxOpciones_1.setModel(new DefaultComboBoxModel(new String[] {"easy", "medium", "difficult"}));
+		comboBoxOpciones_1.setModel(new DefaultComboBoxModel(Tablero.dificultades));
 		comboBoxOpciones_1.setBounds(904, 114, 164, 22);
 		add(comboBoxOpciones_1);
 		

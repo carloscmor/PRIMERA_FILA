@@ -6,7 +6,7 @@ import java.util.Random;
 public class Tablero {
 
 	private static final String[] categorias = {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
-	private static final String[] dificultades = {"easy", "medium", "hard"};
+	public static final String[] dificultades = {"easy", "medium", "hard"};
 	private static final String desafio = "desafio";
 	
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
