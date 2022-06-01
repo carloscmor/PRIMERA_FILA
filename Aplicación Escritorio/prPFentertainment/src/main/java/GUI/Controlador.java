@@ -180,7 +180,8 @@ public class Controlador implements ActionListener {
 				partida.getJugador().decrementaVida();
 				panel.getResLabel().setText("FALLO :(");
 				panel.getVidas().setText("");
-				panel.getVidas().setText( Integer.toString(vidas - 1) );
+				vidas = partida.getJugador().getVidas();
+				panel.getVidas().setText( Integer.toString(vidas) );
 				
 			}
 			
@@ -200,9 +201,11 @@ public class Controlador implements ActionListener {
 				ce.ActivarEspecial(partida);
 				laAnteriorEraEspecial = true;
 				panel.getSeguirPartida().setEnabled(true);
-				
-			}
 				panel.getTiraDado().setEnabled(true);
+			}else {
+				panel.getTiraDado().setEnabled(true);
+			}
+				
 
 			
 		}else if(cmd.equals(PanelInterno.cmdTirar)) {
