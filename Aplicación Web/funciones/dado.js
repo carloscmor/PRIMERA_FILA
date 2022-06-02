@@ -30,7 +30,7 @@ export default function crear_dado(ayuda, ficha, tablero, partida) {
 	});
 	// Escucha del cuadro de ayuda.
 	dado.addEventListener("mouseover", () => {
-		ayuda.textContent = "DADODODODODODO";
+		ayuda.textContent = "Este es el dado. Cliquéalo para tiralo y avanzar casillas. Cada casilla corresponde a una categoría de la que deberás responder una pregunta. Avanza hasta la meta para ganar. ¡Si te quedas sin vidas perderás la partida!";
 	});
 
 	return dado;

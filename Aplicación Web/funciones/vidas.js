@@ -15,7 +15,7 @@ export default function crear_vidas(número_vidas, ayuda) {
 	bloque.appendChild(corazón);
 	// Escucha del cuadro de ayuda.
 	bloque.addEventListener("mouseover", () => {
-		ayuda.textContent = "VIDASAASASASASASAS";
+		ayuda.textContent = "Esta son las vidas que tienes. Partes de tener 3 vidas y puedes perder una vida si fallas una preguntas, por lo que perderás la partida si te quedas sin ninguna.";
 	});
 
 	return bloque;

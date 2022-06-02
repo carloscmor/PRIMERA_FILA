@@ -7,7 +7,7 @@ export default class Tablero {
 		this.color = { 1: "#FFF", 2: "#FF0", 3: "#F0F", 4: "#F00", 5: "#0FF", 6: "#0F0", 7: "#00F", 8: "#000" };
 		this.ayuda = ayuda;
 		this.es_creación = true;
-		this.tipos_ayuda = { 1: "INICIO", 2: "DOSDOSDOS", 3: "TRESTRESTRES", 4: "CUATROCUATROCUATRO", 5: "CINCOCINCOCINCO", 6: "SEISSEISSEIS", 7: "SIETESIETESIETE", 8: "META" };
+		this.tipos_ayuda = { 1: "Casilla de inicio. Partes de esta casilla donde no tienes que responder ninguna pregunta.", 2: "Categoría: Animales. ¿Cuánto sabes de los animales, sus especies, hábitos y sus relaciones?", 3: "Categoría: Entretenimiento. Muestra donde inviertes tu tiempo de ocio.", 4: "Categoría: General. Demuestra que sabes lo suficiente de todo en esta vida.", 5: "Categoría: Historia. Saca a pasear esos datos históricos que llevas almacenados.", 6: "Categoría: Ciencia. Dale pá, esta la tienes que acertar sí o sí.", 7: "Categoría: Deportes. Venga chabales, ¿quién se echa un furbo?", 8: "La meta. Tú único objetivo es llegar a esta casilla. ¿Podrás conseguirlo?" };
 		this.div_casillas = div;
 		this.preguntas;
 	}
