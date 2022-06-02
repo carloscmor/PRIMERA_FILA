@@ -7,8 +7,13 @@ export default class Tablero {
 		this.color = { 1: "#FFF", 2: "#FF0", 3: "#F0F", 4: "#F00", 5: "#0FF", 6: "#0F0", 7: "#00F", 8: "#000" };
 		this.ayuda = ayuda;
 		this.es_creación = true;
-		this.tipos_ayuda = { 0: "CEROCEROCERO", 1: "UNOUNOUNO", 2: "DOSDOSDOS", 3: "TRESTRESTRES", 4: "CUATROCUATROCUATRO", 5: "CINCOCINCoCINCO", 6: "SEISSEISSEIS", 7: "SIETESIETESIETE", 8: "OCHOCHOCHO" };
+		this.tipos_ayuda = { 1: "INICIO", 2: "DOSDOSDOS", 3: "TRESTRESTRES", 4: "CUATROCUATROCUATRO", 5: "CINCOCINCOCINCO", 6: "SEISSEISSEIS", 7: "SIETESIETESIETE", 8: "META" };
 		this.div_casillas = div;
+		this.preguntas;
+	}
+
+	asignar_preguntas(preguntas) {
+		this.preguntas = preguntas;
 	}
 
 	dibujar_marco(ctx, i, j) {

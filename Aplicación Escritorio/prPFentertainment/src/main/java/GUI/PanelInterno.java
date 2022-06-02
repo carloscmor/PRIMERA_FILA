@@ -3,6 +3,8 @@ package GUI;
 import java.awt.*;
 import javax.swing.*;
 
+import Modelo.Tablero;
+
 public class PanelInterno extends JPanel {
 	/**
 	 * componentes y comandos de los botones del panel.
@@ -305,7 +307,7 @@ public class PanelInterno extends JPanel {
 
         comboBoxOpciones_1 = new JComboBox<>();
         comboBoxOpciones_1.setEnabled(false);
-        comboBoxOpciones_1.setModel(new DefaultComboBoxModel(new String[]{"easy", "medium", "difficult"}));
+        comboBoxOpciones_1.setModel(new DefaultComboBoxModel(Tablero.dificultades));
         comboBoxOpciones_1.setBounds(904, 114, 164, 22);
         add(comboBoxOpciones_1);
 
@@ -323,6 +325,10 @@ public class PanelInterno extends JPanel {
         seguirPartida.setActionCommand(cmdSeguir);
         tiraDado.setActionCommand(cmdTirar);
         iniciarPregunta.setActionCommand(cmdVisualizar);
+        
+        JLabel lblNewLabel_3 = new JLabel("");
+        lblNewLabel_3.setBounds(10, 14, 133, 139);
+        add(lblNewLabel_3);
 
     }
 
