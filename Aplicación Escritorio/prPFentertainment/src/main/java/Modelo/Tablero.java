@@ -8,14 +8,14 @@ import java.util.Random;
  */
 public class Tablero {
 
-<<<<<<< Updated upstream
-	private static final String[] categorias = {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
+//<<<<<<< Updated upstream
+	/*private static final String[] categorias = {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
 	public static final String[] dificultades = {"easy", "medium", "hard"};
 	private static final String desafio = "desafio";
 	
 	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
-	private String dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione
-=======
+	private String dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione*/
+//=======
     /**
      * Categorías de las {@link Casilla casillas} para generar.
      */
