@@ -30,6 +30,8 @@ export default class Ficha {
 		let cantidad = Object.keys(this.preguntas[this.trad[this.tablero[this.posición.actual.y][this.posición.actual.x]]].results).length;
 		let pregunta = this.preguntas[this.trad[this.tablero[this.posición.actual.y][this.posición.actual.x]]].results[Math.floor(Math.random() * 100 % cantidad)];
 
+
+		prompt(pregunta.question+"\n"+pregunta)
 		console.log(pregunta);
 	}
 
