@@ -39,7 +39,8 @@ public class Temporizador extends Thread {
     /**
      * Para el temporizador
      */
-    public void parar() {
+
+    void parar() {
         fin = true;
     }
 
@@ -51,7 +52,8 @@ public class Temporizador extends Thread {
         this.agotado = false;
     }
 
-    public boolean esFinal() {
+
+    boolean esFinal() {
         return fin;
     }
 
