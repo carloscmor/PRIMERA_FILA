@@ -43,13 +43,13 @@ let tablero_base = new Tablero({ x: 33, y: 138 }, tablero, ayuda, contenedor);
 
 // Ficha.
 const ficha_imagen = document.getElementById("ficha");
-let ficha = new Ficha(ficha_imagen, tablero_base);
-
-// Funcionalidad del dado.
-let dado = crear_dado(ayuda, ficha, tablero_base);
+let ficha = new Ficha(ficha_imagen, tablero_base, ayuda);
 
 // Clase partida.
 const partida = new Partida();
+
+// Funcionalidad del dado.
+let dado = crear_dado(ayuda, ficha, tablero_base, partida);
 
 // Pantalla de Inicio.
 const inicio = crear_pantalla_inicio(partida);
@@ -81,7 +81,18 @@ function bucle_principal() {
 		contenedor.appendChild(inicio);
 		es_creación = false;
 	} else if (partida.estado == 2) {
-
+		ayuda.textContent = "¡Enhorabuena! Has ganado la partida :D"
+		const volver_a_jugar = document.createElement("button");
+		volver_a_jugar.setAttribute("class", "en_medio botón");
+		volver_a_jugar.addEventListener("mouseover", () => {
+			this.ayuda.textContent = "Vuelve a empezar la partida, seleccionando de nuevo el tipo de partida y la dificultad.";
+		});
+		volver_a_jugar.addEventListener("click", () => {
+			location.reload();
+		});
+		volver_a_jugar.textContent = "¿Volver a jugar?";
+		const juego = document.getElementById("juego");
+		juego.appendChild(volver_a_jugar);
 	}
 	window.requestAnimationFrame(bucle_principal);
 }

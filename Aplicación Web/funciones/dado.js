@@ -1,5 +1,5 @@
 //* Iteración en la creación y escucha del dado.
-export default function crear_dado(ayuda, ficha, tablero) {
+export default function crear_dado(ayuda, ficha, tablero, partida) {
 	const ruta = "archivos/dado/";
 	const tipo = ".png";
 	let dado;
@@ -10,7 +10,7 @@ export default function crear_dado(ayuda, ficha, tablero) {
 		dado[0].setAttribute("src", ruta + resultado + tipo);
 		for (let i = 0; i < resultado; i++) {
 			if (tablero.casillas[ficha.posición.actual.y][ficha.posición.actual.x] == 8) {
-				console.log("MECHA MECHAAAAAA");
+				partida.estado = 2;
 				break;
 			}
 			ficha.avanzar();

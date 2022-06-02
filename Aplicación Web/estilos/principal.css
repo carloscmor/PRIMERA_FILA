@@ -170,6 +170,15 @@ header > div > img {
 	background-color: var(--botón);
 }
 
+.en_medio {
+	position: absolute;
+	top: 200px;
+	left: 220px;
+	border-radius: 40px;
+	padding: 25px;
+	font-size: 80px;
+}
+
 .none {
 	display: none;
 }
