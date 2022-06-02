@@ -1,0 +1,117 @@
+/** Estilo principal */
+body {
+	margin: 0;
+	background-color: var(--fondo1);
+	font-family: sans-serif;
+	color: var(--fuente);
+}
+
+/* Cabecera */
+
+header {
+	padding: 0.1px;
+	border-bottom: 2px solid var(--borde1);
+	background-color: var(--fondo2);
+	font-size: 0.85em;
+	text-align: center;
+}
+
+header > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+header > div > img {
+	display: block;
+	width: 68px;
+	height: 68px;
+	padding: 1px;
+}
+
+/* Tema */
+
+#botón_tema {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 28px;
+	margin: 10px;
+	padding: 0;
+	z-index: 100;
+}
+
+#botón_tema:hover {
+	cursor: pointer;
+	opacity: 80%;
+}
+
+/* Tablero */
+
+.contenedor {
+	position: relative;
+	top: 25px;
+	width: 1024px;
+	height: 576px;
+	margin: 0 auto 0 auto;
+	border: 4px solid var(--borde2);
+	border-radius: 2.5%;
+}
+
+.casilla {
+	position: absolute;
+	width: 76px;
+	height: 76px;
+	margin: 0;
+}
+
+/* Vidas */
+
+.vidas {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	border: 4px solid var(--borde2);
+	padding: 0px 10px 0px 10px;
+}
+
+.corazón {
+	position: relative;
+	top: 5px;
+	width: 64px;
+	height: 64px;
+}
+
+.número_vidas {
+	position: relative;
+	top: -2px;
+	font-size: 64px;
+}
+
+/* Ayuda */
+
+.ayuda {
+	position: absolute;
+	top: -7px;
+	left: 164px;
+	width: 700px;
+	height: 80px;
+	border: 4px solid var(--borde2);
+	padding: 5px 10px;
+	font-size: 20px;
+	overflow: scroll;
+}
+
+/* Dado */
+
+.dado {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 86px;
+	height: 86px;
+	border: 4px solid var(--borde2);
+}
+
+.oculto {
+	display: none;
+}

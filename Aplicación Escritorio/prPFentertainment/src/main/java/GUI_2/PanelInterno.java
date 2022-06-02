@@ -1,4 +1,4 @@
-package GUI;
+package GUI_2;
 
 import java.awt.*;
 import javax.swing.*;
@@ -51,11 +51,11 @@ public class PanelInterno extends JPanel {
     private final JTextPane vidas;
     private final JTextPane modoSeleccionado;
     private final JComboBox<Object> comboBoxOpciones_1;
-    private final JTextArea textTablero;
 
 
     private final JButton iniciarPregunta;
     private final JTextArea TextPregunta;
+    private JLayeredPane layeredPane;
 
 
     /**
@@ -66,7 +66,7 @@ public class PanelInterno extends JPanel {
         setLayout(null);
 
         JLabel lblNewLabel = new JLabel("");
-        lblNewLabel.setIcon(new ImageIcon("src\\resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
+        lblNewLabel.setIcon(new ImageIcon("src\\main\\resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
         lblNewLabel.setBounds(10, 14, 133, 139);
         add(lblNewLabel);
 
@@ -153,12 +153,9 @@ public class PanelInterno extends JPanel {
         scrollTablero.setAutoscrolls(true);
         scrollTablero.setBounds(10, 37, 522, 383);
         panel_partida.add(scrollTablero);
-
-        textTablero = new JTextArea();
-        textTablero.setBackground(UIManager.getColor("inactiveCaption"));
-        textTablero.setFont(new Font("Monospaced", Font.PLAIN, 15));
-        textTablero.setEditable(false);
-        scrollTablero.setViewportView(textTablero);
+        
+        layeredPane = new JLayeredPane();
+        scrollTablero.setViewportView(layeredPane);
 
         JLabel tableroLabel = new JLabel("TABLERO");
         tableroLabel.setFont(new Font("Tahoma", Font.PLAIN, 24));
@@ -328,11 +325,11 @@ public class PanelInterno extends JPanel {
 
     }
 
-    public JTextArea getTextTablero() {
-        return textTablero;
-    }
+    public JLayeredPane getLayeredPane() {
+		return layeredPane;
+	}
 
-    public JComboBox<Object> getComboBoxOpciones_1() {
+	public JComboBox<Object> getComboBoxOpciones_1() {
         return comboBoxOpciones_1;
     }
 
