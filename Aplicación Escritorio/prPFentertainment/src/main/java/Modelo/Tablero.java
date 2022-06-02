@@ -8,14 +8,6 @@ import java.util.Random;
  */
 public class Tablero {
 
-//<<<<<<< Updated upstream
-	/*private static final String[] categorias = {"Entertainment", "Animals", "Science", "History", "Sports", "General"};
-	public static final String[] dificultades = {"easy", "medium", "hard"};
-	private static final String desafio = "desafio";
-	
-	private ArrayList<Casilla> casillas; //Todas las casillas se almacenan en un arraylist
-	private String dificultad; 	/*Almacena la dificultad del tablero, que se pasar� al metodo que seleccione*/
-//=======
     /**
      * Categorías de las {@link Casilla casillas} para generar.
      */
@@ -39,9 +31,8 @@ public class Tablero {
     /**
      * Dificultad del tablero (cualquiera de {@link #dificultades} o <i>{@link #desafio desafío}</i>).
      */
-    private final String dificultad; 	/*Almacena la dificultad del tablero, que se pasará al metodo que seleccione
->>>>>>> Stashed changes
-									  la pregunta del fichero de preguntas*/
+    private final String dificultad;
+
     /**
      * Tamaño de tablero de {@link Partida} rápida.
      */
@@ -55,6 +46,7 @@ public class Tablero {
     /**
      * Crea un tablero <i>desafío</i>.
      */
+
     public Tablero() {
         this(desafio);
     }
@@ -90,7 +82,8 @@ public class Tablero {
         return res;
     }
 
-    public String getDificultad() {
+
+    String getDificultad() {
         return dificultad;
     }
 
@@ -98,7 +91,8 @@ public class Tablero {
         return casillas;
     }
 
-    public static int getTamTableroDesafio() {
+
+    static int getTamTableroDesafio() {
         return TAM_TABLERO_DESAFIO;
     }
 
@@ -107,17 +101,10 @@ public class Tablero {
      * @return la categoría generada.
      */
     private String generarCategoria() {
-    	Random rnd = new Random();
-		int pos = rnd.nextInt(categorias.length);
-		Casilla ultima = null;
-		if(casillas.size() != 0) {
-			 ultima = casillas.get(casillas.size() - 1);
-			while(ultima.getCategoria().equalsIgnoreCase(categorias[pos])) {
-				pos = rnd.nextInt(categorias.length);
-			}
-		}
+        Random rnd = new Random();
+        int pos = rnd.nextInt(categorias.length);
 
-		return categorias[pos];
+        return categorias[pos];
     }
 
     /**
