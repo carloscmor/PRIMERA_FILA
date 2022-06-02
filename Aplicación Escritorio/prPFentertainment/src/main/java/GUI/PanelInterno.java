@@ -1,23 +1,7 @@
 package GUI;
 
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.JButton;
-import javax.swing.JTextField;
-import java.awt.SystemColor;
-import javax.swing.JComboBox;
-import javax.swing.JScrollPane;
-import javax.swing.JTextPane;
-import javax.swing.ImageIcon;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JTextArea;
-import javax.swing.UIManager;
-
-import Modelo.Partida;
-import Modelo.Tablero;
-
-import java.awt.Color;
+import java.awt.*;
+import javax.swing.*;
 
 public class PanelInterno extends JPanel {
 	/**
