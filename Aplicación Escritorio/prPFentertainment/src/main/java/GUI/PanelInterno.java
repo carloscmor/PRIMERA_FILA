@@ -3,6 +3,8 @@ package GUI;
 import java.awt.*;
 import javax.swing.*;
 
+import Modelo.Tablero;
+
 public class PanelInterno extends JPanel {
 	/**
 	 * componentes y comandos de los botones del panel.
@@ -64,7 +66,7 @@ public class PanelInterno extends JPanel {
         setLayout(null);
 
         JLabel lblNewLabel = new JLabel("");
-        lblNewLabel.setIcon(new ImageIcon("resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
+        lblNewLabel.setIcon(new ImageIcon("src\\resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
         lblNewLabel.setBounds(10, 14, 133, 139);
         add(lblNewLabel);
 
@@ -305,7 +307,7 @@ public class PanelInterno extends JPanel {
 
         comboBoxOpciones_1 = new JComboBox<>();
         comboBoxOpciones_1.setEnabled(false);
-        comboBoxOpciones_1.setModel(new DefaultComboBoxModel(new String[]{"easy", "medium", "difficult"}));
+        comboBoxOpciones_1.setModel(new DefaultComboBoxModel(Tablero.dificultades));
         comboBoxOpciones_1.setBounds(904, 114, 164, 22);
         add(comboBoxOpciones_1);
 

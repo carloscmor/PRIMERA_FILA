@@ -24,7 +24,7 @@ public class Tablero {
     /**
      * Posibles dificultades para las {@link Casilla casillas}.
      */
-    private static final String[] dificultades = {"easy", "medium", "hard"};
+    public static final String[] dificultades = {"easy", "medium", "hard"};
 
     /**
      * Dificultad "extra" para el modo desafío (para comparar).
