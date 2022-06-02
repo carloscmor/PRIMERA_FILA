@@ -3,10 +3,18 @@ package GUI_2;
 import Modelo.CasillaEspecial;
 import Modelo.Partida;
 import Modelo.Pregunta;
+import Modelo.Tablero;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
 
 public class Controlador implements ActionListener {
 	
@@ -85,7 +93,64 @@ public class Controlador implements ActionListener {
 
 				panel.getEndButton().setEnabled(true);
 
-				panel.getTextTablero().setText(partida.toString());
+				//tablero
+				Dimension boardSize = new Dimension(510,373);
+				panel.getLayeredPane().setPreferredSize(boardSize);
+				
+				// Add a chess board to the Layered Pane
+
+				JPanel tablero = new JPanel();
+				panel.getLayeredPane().add(tablero, JLayeredPane.DEFAULT_LAYER);
+
+				int rows, cols;
+
+				if (partida.getTablero().getCasillas().size() == Tablero.getTamTableroDesafio()) {
+					rows = 5;
+					cols = 6;
+				} else {
+					rows = 4;
+					cols = 5;
+				}
+				GridLayout gl = new GridLayout(rows, cols);
+				gl.setVgap(10);
+				gl.setHgap(5);
+				tablero.setLayout(gl);
+				
+				tablero.setPreferredSize(boardSize);
+				tablero.setBackground(Color.black);
+				tablero.setBounds(0, 0, boardSize.width, boardSize.height);
+				
+				BorderLayout bl = new BorderLayout();
+
+				int cont = 0;
+				for (int i = 0; i < rows * cols; i++) {
+
+					JPanel square = new JPanel(bl);
+
+					int index = cont;
+
+					if ((index / cols) % 2 != 0) {
+						index = (rows - (index % cols)) + (cols * (index / cols));
+					}
+
+					if (partida.getTablero().getCasillas().get(index).getCategoria().equalsIgnoreCase("Sports"))
+						square.setBackground(Color.orange);
+					else if (partida.getTablero().getCasillas().get(index).getCategoria().equalsIgnoreCase("Science"))
+						square.setBackground(Color.green);
+					else if (partida.getTablero().getCasillas().get(index).getCategoria().equalsIgnoreCase("Animals"))
+						square.setBackground(Color.pink);
+					else if (partida.getTablero().getCasillas().get(index).getCategoria().equalsIgnoreCase("General"))
+						square.setBackground(Color.CYAN);
+					else if (partida.getTablero().getCasillas().get(index).getCategoria().equalsIgnoreCase("History"))
+						square.setBackground(Color.yellow);
+					else
+						square.setBackground(Color.red);
+
+					cont++;
+
+					tablero.add(square);
+				}
+				
 				pos = 0;
 				panel.getInfoCasilla().setText(partida.getTablero().getCasillas().get(pos).toString());
 				panel.getVisualizarPregunta().setEnabled(true);
@@ -119,7 +184,7 @@ public class Controlador implements ActionListener {
 				panel.getSeguirPartida().setEnabled(false);
 
 				//textos
-				panel.getTextTablero().setText("");
+				panel.getScrollTablero().removeAll();
 				panel.getInfoCasilla().setText("");
 				panel.getDado().setText("");
 				panel.getNombre().setText("");
@@ -229,7 +294,7 @@ public class Controlador implements ActionListener {
 				if(!partida.isTerminada()) {
 					pos = partida.getFicha().getPosicion();
 
-					panel.getTextTablero().setText(partida.toString());
+					//tablero
 					panel.getInfoCasilla().setText(partida.getTablero().getCasillas().get(pos).toString());
 
 					panel.getVisualizarPregunta().setEnabled(true);

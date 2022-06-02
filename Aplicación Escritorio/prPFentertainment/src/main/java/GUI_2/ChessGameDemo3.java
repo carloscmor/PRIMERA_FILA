@@ -4,6 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 
 import Modelo.Partida;
+import Modelo.Tablero;
 
 public class ChessGameDemo3 extends JFrame {
 
@@ -29,7 +30,7 @@ public class ChessGameDemo3 extends JFrame {
 
 		int rows, cols;
 
-		if (tam == 30) {
+		if (tam == Tablero.getTamTableroDesafio()) {
 			rows = 5;
 			cols = 6;
 		} else {
@@ -80,7 +81,7 @@ public class ChessGameDemo3 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		JFrame frame = new ChessGameDemo3(new Partida("TROYA"));
+		JFrame frame = new ChessGameDemo3(new Partida("F"));
 		frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		frame.pack();
 		frame.setResizable(true);

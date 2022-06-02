@@ -64,7 +64,7 @@ public class PanelInterno extends JPanel {
         setLayout(null);
 
         JLabel lblNewLabel = new JLabel("");
-        lblNewLabel.setIcon(new ImageIcon("src\\main\\resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
+        lblNewLabel.setIcon(new ImageIcon("resources\\static\\archivos\\logo\\logo_oscuro_chico.png"));
         lblNewLabel.setBounds(10, 14, 133, 139);
         add(lblNewLabel);
 
