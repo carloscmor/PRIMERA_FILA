@@ -57,9 +57,5 @@ export default class Ficha {
 			this.posición.anterior.y = this.posición.actual.y;
 			this.posición.actual.x--;
 		}
-
-		if (this.tablero[this.posición.actual.y][this.posición.actual.x] == 1) {
-			console.log("META");
-		}
 	}
 }
