@@ -90,7 +90,7 @@ public class Tablero {
         return res;
     }
 
-    String getDificultad() {
+    public String getDificultad() {
         return dificultad;
     }
 
