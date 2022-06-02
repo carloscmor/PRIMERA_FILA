@@ -92,7 +92,7 @@ public class Tablero {
     }
 
 
-    static int getTamTableroDesafio() {
+    public static int getTamTableroDesafio() {
         return TAM_TABLERO_DESAFIO;
     }
 

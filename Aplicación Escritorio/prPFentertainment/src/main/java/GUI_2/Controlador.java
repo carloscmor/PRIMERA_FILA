@@ -129,9 +129,7 @@ public class Controlador implements ActionListener {
 
 					int index = cont;
 
-					if ((index / cols) % 2 != 0) {
-						index = (rows - (index % cols)) + (cols * (index / cols));
-					}
+					if ((index / cols) % 2 != 0) index = (rows - (index % cols)) + (cols * (index / cols));
 
 					if (partida.getTablero().getCasillas().get(index).getCategoria().equalsIgnoreCase("Sports"))
 						square.setBackground(Color.orange);
