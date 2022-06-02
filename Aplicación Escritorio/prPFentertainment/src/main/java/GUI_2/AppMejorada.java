@@ -23,6 +23,7 @@ public class AppMejorada {
 
 	/**
 	 * Create the application.
+	 * @wbp.parser.entryPoint
 	 */
 	private AppMejorada() {
 		initialize();
