@@ -33,11 +33,11 @@ let vidas = crear_vidas(3, ayuda);
 
 // Creación del tablero.
 let tablero =
-[[1, 2, 3, 4, 0, 2, 4, 5, 6, 3, 4, 0],
-[0, 0, 0, 5, 0, 3, 0, 0, 0, 0, 2, 0],
-[0, 8, 7, 6, 0, 9, 0, 2, 2, 6, 5, 0],
-[0, 2, 0, 0, 0, 8, 0, 6, 0, 0, 0, 0],
-[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
+	[[1, 2, 3, 4, 0, 2, 4, 5, 6, 3, 4, 0],
+	[0, 0, 0, 5, 0, 3, 0, 0, 0, 0, 2, 0],
+	[0, 8, 7, 6, 0, 9, 0, 2, 2, 6, 5, 0],
+	[0, 2, 0, 0, 0, 8, 0, 6, 0, 0, 0, 0],
+	[0, 3, 4, 5, 6, 7, 0, 3, 4, 5, 6, 1]];
 let tablero_base = new Tablero({ x: 33, y: 138 }, tablero, ayuda, contenedor);
 
 // Ficha.
@@ -63,18 +63,26 @@ const tipos = {
 
 // Pantalla de Inicio.
 const inicio = crear_pantalla_inicio(partida);
+let es_creación = true;
+let es_primera_vez = true;
 
 // Bucle que renderiza y actualiza.
 function bucle_principal() {
 	ctx.clearRect(0, 0, lienzo.ancho, lienzo.alto);
 	if (partida.estado == estados.ejecución) {
-		contenedor.appendChild(ayuda);
-		contenedor.appendChild(vidas);
-		contenedor.appendChild(dado, ayuda);
+		if (es_primera_vez) {
+			contenedor.appendChild(ayuda);
+			contenedor.appendChild(vidas);
+			contenedor.appendChild(dado, ayuda);
+			es_primera_vez = false;
+		}
+		// ¡DEPURACIÓN!
+		console.log("Tipo: " + partida.tipo + " - Dificultad: " + partida.dificultad);
 		tablero_base.dibuja(ctx);
 		ficha.dibuja(ctx);
-	} else if (partida.estado == estados.inicio) {
+	} else if (partida.estado == estados.inicio && es_creación) {
 		contenedor.appendChild(inicio);
+		es_creación = false;
 	} else if (partida.estado == estados.fin) {
 
 	}

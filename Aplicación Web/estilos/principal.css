@@ -125,39 +125,46 @@ header > div > img {
 	color: var(--fuente);
 }
 
-.botón_rápida {
+.tipo {
 	position: absolute;
-	top: 300px;
-	left: 140px;
+	top: 260px;
+	left: 220px;
 	border: 1px solid var(--fuente);
 	border-radius: 20px;
 	padding: 20px;
 	background-color: var(--fondo2);
-	font-size: 80px;
+	font-size: 30px;
 	color: var(--fuente);
 	z-index: 100;
 }
 
-.botón_rápida:hover {
-	cursor: pointer;
-	opacity: 80%;
-	background-color: var(--botón);
-}
-
-.botón_desafío {
+.dificultad {
 	position: absolute;
-	top: 300px;
-	right: 140px;
+	top: 360px;
+	left: 220px;
 	border: 1px solid var(--fuente);
 	border-radius: 20px;
 	padding: 20px;
 	background-color: var(--fondo2);
-	font-size: 80px;
+	font-size: 30px;
 	color: var(--fuente);
 	z-index: 100;
 }
 
-.botón_desafío:hover {
+.botón_empezar {
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	border: 1px solid var(--fuente);
+	border-radius: 20px;
+	padding: 20px;
+	background-color: var(--fondo2);
+	font-size: 40px;
+	color: var(--fuente);
+	z-index: 100;
+}
+
+.botón:hover {
 	cursor: pointer;
 	opacity: 80%;
 	background-color: var(--botón);
