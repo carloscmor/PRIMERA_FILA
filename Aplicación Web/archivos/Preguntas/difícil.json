@@ -1,0 +1,1700 @@
+{
+	"animales": {
+		"response_code": 0,
+		"results": [
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the name of the Ethiopian Wolf before they knew it was related to wolves?",
+				"correct_answer": "Simien Jackel",
+				"incorrect_answers": [
+					"Ethiopian Coyote",
+					"Amharic Fox",
+					"Canis Simiensis"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What scientific suborder does the family Hyaenidae belong to?",
+				"correct_answer": "Feliformia",
+				"incorrect_answers": [
+					"Haplorhini",
+					"Caniformia",
+					"Ciconiiformes"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the scientific name of the cheetah?",
+				"correct_answer": "Acinonyx jubatus",
+				"incorrect_answers": [
+					"Panthera onca",
+					"Lynx rufus",
+					"Felis catus"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the Gray Wolf&#039;s scientific name?",
+				"correct_answer": "Canis Lupus",
+				"incorrect_answers": [
+					"Canis Aureus",
+					"Canis Latrans",
+					"Canis Lupus Lycaon"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Unlike on most salamanders, this part of a newt is flat?",
+				"correct_answer": "Tail",
+				"incorrect_answers": [
+					"Head",
+					"Teeth",
+					"Feet"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the name of the copper-rich protein that creates the blue blood in the Antarctic octopus?",
+				"correct_answer": "Hemocyanin",
+				"incorrect_answers": [
+					"Cytochrome",
+					"Iron",
+					"Methionine"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which species is a &quot;mountain chicken&quot;?",
+				"correct_answer": "Frog",
+				"incorrect_answers": [
+					"Chicken",
+					"Horse",
+					"Fly"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following is another name for the &quot;Poecilotheria Metallica Tarantula&quot;?",
+				"correct_answer": "Gooty",
+				"incorrect_answers": [
+					"Hopper",
+					"Silver Stripe",
+					"Woebegone"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these is a colony of polyps and not a jellyfish?",
+				"correct_answer": "Portuguese Man-of-War",
+				"incorrect_answers": [
+					"Sea Wasp",
+					"Irukandji",
+					"Sea Nettle"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "To which biological phylum do all mammals, birds and reptiles belong?",
+				"correct_answer": "Chordata",
+				"incorrect_answers": [
+					"Echinodermata",
+					"Annelida",
+					"Placazoa"
+				]
+			}
+		]
+	},
+	"entretenimiento": {
+		"response_code": 0,
+		"results": [
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the name of the Ethiopian Wolf before they knew it was related to wolves?",
+				"correct_answer": "Simien Jackel",
+				"incorrect_answers": [
+					"Ethiopian Coyote",
+					"Amharic Fox",
+					"Canis Simiensis"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What scientific suborder does the family Hyaenidae belong to?",
+				"correct_answer": "Feliformia",
+				"incorrect_answers": [
+					"Haplorhini",
+					"Caniformia",
+					"Ciconiiformes"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the scientific name of the cheetah?",
+				"correct_answer": "Acinonyx jubatus",
+				"incorrect_answers": [
+					"Panthera onca",
+					"Lynx rufus",
+					"Felis catus"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the Gray Wolf&#039;s scientific name?",
+				"correct_answer": "Canis Lupus",
+				"incorrect_answers": [
+					"Canis Aureus",
+					"Canis Latrans",
+					"Canis Lupus Lycaon"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Unlike on most salamanders, this part of a newt is flat?",
+				"correct_answer": "Tail",
+				"incorrect_answers": [
+					"Head",
+					"Teeth",
+					"Feet"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the name of the copper-rich protein that creates the blue blood in the Antarctic octopus?",
+				"correct_answer": "Hemocyanin",
+				"incorrect_answers": [
+					"Cytochrome",
+					"Iron",
+					"Methionine"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which species is a &quot;mountain chicken&quot;?",
+				"correct_answer": "Frog",
+				"incorrect_answers": [
+					"Chicken",
+					"Horse",
+					"Fly"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following is another name for the &quot;Poecilotheria Metallica Tarantula&quot;?",
+				"correct_answer": "Gooty",
+				"incorrect_answers": [
+					"Hopper",
+					"Silver Stripe",
+					"Woebegone"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these is a colony of polyps and not a jellyfish?",
+				"correct_answer": "Portuguese Man-of-War",
+				"incorrect_answers": [
+					"Sea Wasp",
+					"Irukandji",
+					"Sea Nettle"
+				]
+			},
+			{
+				"category": "Animals",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "To which biological phylum do all mammals, birds and reptiles belong?",
+				"correct_answer": "Chordata",
+				"incorrect_answers": [
+					"Echinodermata",
+					"Annelida",
+					"Placazoa"
+				]
+			}
+		]
+	},
+	"general": {
+		"response_code": 0,
+		"results": [
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Electronic music producer Kygo&#039;s popularity skyrocketed after a certain remix. Which song did he remix?",
+				"correct_answer": "Ed Sheeran - I See Fire",
+				"incorrect_answers": [
+					"Marvin Gaye - Sexual Healing",
+					"Coldplay - Midnight",
+					"a-ha - Take On Me"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What type of dog is &#039;Handsome Dan&#039;, the mascot of Yale University?",
+				"correct_answer": "Bulldog",
+				"incorrect_answers": [
+					"Yorkshire Terrier",
+					"Boxer",
+					"Pug"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The words &quot;bungalow&quot; and &quot;shampoo&quot; originate from the languages of which country?",
+				"correct_answer": "India",
+				"incorrect_answers": [
+					"Papua New Guinea",
+					"Ethiopia",
+					"China"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Before the 19th Century, the &quot;Living Room&quot; was originally called the...",
+				"correct_answer": "Parlor",
+				"incorrect_answers": [
+					"Open Room",
+					"Sitting Room",
+					"Loft"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What year was Queen Elizabeth II born?",
+				"correct_answer": "1926",
+				"incorrect_answers": [
+					"1923",
+					"1929",
+					"1930"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which film star has his statue in Leicester Square?",
+				"correct_answer": "Charlie Chaplin",
+				"incorrect_answers": [
+					"Paul Newman",
+					"Rowan Atkinson ",
+					"Alfred Hitchcock"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following is an existing family in &quot;The Sims&quot;?",
+				"correct_answer": "The Goth Family",
+				"incorrect_answers": [
+					"The Family",
+					"The Simoleon Family",
+					"The Proud Family"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these banks are NOT authorized to issue currency notes in Hong Kong?",
+				"correct_answer": "OCBC",
+				"incorrect_answers": [
+					"HSBC",
+					"Standard Chartered",
+					"Bank of China"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the romanized Korean word for &quot;heart&quot;?",
+				"correct_answer": "Simjang",
+				"incorrect_answers": [
+					"Aejeong",
+					"Jeongsin",
+					"Segseu"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The Swedish word &quot;Grunka&quot; means what in English?",
+				"correct_answer": "Thing",
+				"incorrect_answers": [
+					"People",
+					"Place",
+					"Pineapple"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Disney&#039;s Haunted Mansion is home to a trio of Hitchhiking Ghosts. Which of these is NOT one of them?",
+				"correct_answer": "Harry",
+				"incorrect_answers": [
+					"Gus",
+					"Phineas",
+					"Ezra"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How long did it take the motorized window washers of the original World Trade Center to clean the entire exterior of the building?",
+				"correct_answer": "1 Month",
+				"incorrect_answers": [
+					"3 Weeks",
+					"1 Week",
+					"2 Months"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which one of these Swedish companies was founded in 1943?",
+				"correct_answer": "IKEA",
+				"incorrect_answers": [
+					"H &amp; M",
+					"Lindex",
+					"Clas Ohlson"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How many calories are in a 355 ml can of Pepsi Cola?",
+				"correct_answer": "150",
+				"incorrect_answers": [
+					"200",
+					"100",
+					"155"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What year was the RoboSapien toy robot released?",
+				"correct_answer": "2004",
+				"incorrect_answers": [
+					"2000",
+					"2001",
+					"2006"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was Bank of America originally established as?",
+				"correct_answer": "Bank of Italy",
+				"incorrect_answers": [
+					"Bank of Long Island",
+					"Bank of Pennsylvania",
+					"Bank of Charlotte"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What does the Latin phrase &quot;Veni, vidi, vici&quot; translate into English?",
+				"correct_answer": "I came, I saw, I conquered",
+				"incorrect_answers": [
+					"See no evil, hear no evil, speak no evil",
+					"Life, liberty, and happiness",
+					"Past, present, and future"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Virtual reality company Oculus VR lost which of it&#039;s co-founders in a freak car accident in 2013?",
+				"correct_answer": "Andrew Scott Reisse",
+				"incorrect_answers": [
+					"Nate Mitchell",
+					"Jack McCauley",
+					"Palmer Luckey"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In flight systems, what does the initialism &quot;TCAS&quot; stand for?",
+				"correct_answer": "Traffic Collision Avoidance System",
+				"incorrect_answers": [
+					"Traffic Communication Alert System",
+					"Traffic Configuration Alignment System",
+					"Traffic Call-sign Abbreviation System"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "If someone said &quot;you are olid&quot;, what would they mean?",
+				"correct_answer": "You smell extremely unpleasant.",
+				"incorrect_answers": [
+					"You are out of shape\/weak.",
+					"Your appearance is repulsive.",
+					"You are incomprehensible\/an idiot."
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Named after the mallow flower, mauve is a shade of what?",
+				"correct_answer": "Purple",
+				"incorrect_answers": [
+					"Red",
+					"Brown",
+					"Pink"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Chartreuse is a color between yellow and what?",
+				"correct_answer": "Green",
+				"incorrect_answers": [
+					"Red",
+					"Black",
+					"Purple"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Originally another word for poppy, coquelicot is a shade of what?",
+				"correct_answer": "Red",
+				"incorrect_answers": [
+					"Green",
+					"Blue",
+					"Pink"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Where is Apple Inc. headquartered?",
+				"correct_answer": "Cupertino, California",
+				"incorrect_answers": [
+					"Redwood City, California",
+					"Redmond, Washington",
+					"Santa Monica, CA"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which church&#039;s interior in Vatican City was designed in 1503 by renaissance architects including Bramante, Michelangelo and Bernini?",
+				"correct_answer": "St. Peter&#039;s Basilica",
+				"incorrect_answers": [
+					"Catania Cathedral",
+					"St. Mark&rsquo;s Basilica",
+					"The Duomo of Florence"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "If you planted the seeds of Quercus robur, what would grow?",
+				"correct_answer": "Trees",
+				"incorrect_answers": [
+					"Grains",
+					"Vegetables",
+					"Flowers"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How many notes are there on a standard grand piano?",
+				"correct_answer": "88",
+				"incorrect_answers": [
+					"98",
+					"108",
+					"78"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In &quot;Battle Cats&quot;, what is Moneko \/ MISS Moneko&#039;s critical percentage rate?",
+				"correct_answer": "15%",
+				"incorrect_answers": [
+					"20%",
+					"10%",
+					"25%"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the most commonly used noun in the English language?",
+				"correct_answer": "Time",
+				"incorrect_answers": [
+					"Home",
+					"Water",
+					"Man"
+				]
+			},
+			{
+				"category": "General Knowledge",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following  British Monarchs never appeared on a circulated pound sterling coin?",
+				"correct_answer": "Edward VIII",
+				"incorrect_answers": [
+					"Victoria",
+					"George VI",
+					"Charles II"
+				]
+			}
+		]
+	},
+	"historia": {
+		"response_code": 0,
+		"results": [
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?",
+				"correct_answer": "Battle of Midway",
+				"incorrect_answers": [
+					"Attack on Truk Island",
+					"Attack on Pearl Harbor",
+					"Battle of the Coral Sea"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
+				"correct_answer": "John and Mary",
+				"incorrect_answers": [
+					"Joseph and Catherine",
+					"William and Elizabeth",
+					"George and Anne"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "When did Spanish Peninsular War start?",
+				"correct_answer": "1808",
+				"incorrect_answers": [
+					"1806",
+					"1810",
+					"1809"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What year was Canada founded in?",
+				"correct_answer": "1867",
+				"incorrect_answers": [
+					"1798",
+					"1859",
+					"1668"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "On which day did ARPANET suffer a 4 hour long network crash?",
+				"correct_answer": "October 27, 1980",
+				"incorrect_answers": [
+					"November 21, 1969",
+					"October 29, 1969",
+					"December 9, 1991"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What did the first vending machines in the early 1880&#039;s dispense?",
+				"correct_answer": "Post cards",
+				"incorrect_answers": [
+					"Alcohol",
+					"Cigarettes",
+					"Sodas "
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "When was the SS or Schutzstaffel established?",
+				"correct_answer": "April 4th, 1925",
+				"incorrect_answers": [
+					"September 1st, 1941",
+					"March 8th, 1935",
+					"February 21st, 1926"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "When was Adolf Hitler appointed as Chancellor of Germany?",
+				"correct_answer": "January 30, 1933",
+				"incorrect_answers": [
+					"September 1, 1939",
+					"February 27, 1933",
+					"October 6, 1939"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Bohdan Khmelnytsky was which of the following?",
+				"correct_answer": "Leader of the Ukrainian Cossacks",
+				"incorrect_answers": [
+					"General Secretary of the Communist Party of the USSR",
+					"Prince of Wallachia",
+					"Grand Prince of Novgorod"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which one of these rulers did not belong to the Habsburg dynasty?",
+				"correct_answer": "Philip V",
+				"incorrect_answers": [
+					"Charles V",
+					"Philip II",
+					"Francis Joseph"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The Second Boer War in 1899 was fought where?",
+				"correct_answer": "South Africa",
+				"incorrect_answers": [
+					"Argentina",
+					"Nepal",
+					"Bulgaria"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In which year did the Tokyo Subway Sarin Attack occur?",
+				"correct_answer": "1995",
+				"incorrect_answers": [
+					"2001",
+					"2011",
+					"1991"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the real name of the Albanian national leader Skanderbeg?",
+				"correct_answer": "Gjergj Kastrioti",
+				"incorrect_answers": [
+					"Diturak Zhulati",
+					"Iskander Bejko",
+					"Mirash Krasniki"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What year was the United States Declaration of Independence signed?",
+				"correct_answer": "1776",
+				"incorrect_answers": [
+					"1775",
+					"1774",
+					"1777"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
+				"correct_answer": "Nationalist Spain",
+				"incorrect_answers": [
+					"Republican Spain",
+					"Popular Front",
+					"Papal State"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was found in 1946 by two young shepards near a cave?",
+				"correct_answer": "Dead Sea Scrolls",
+				"incorrect_answers": [
+					"The Blackbeard Chest",
+					"Sheep",
+					"The First Oaxaca Cave Sleeper"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The Battle of Hastings was fought in which year?",
+				"correct_answer": "1066",
+				"incorrect_answers": [
+					"911",
+					"1204",
+					"1420"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Who was the President of the United States during the signing of the Gadsden Purchase?",
+				"correct_answer": "Franklin Pierce",
+				"incorrect_answers": [
+					"Andrew Johnson",
+					"Abraham Lincoln",
+					"James Polk"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "When was the city of Rome, Italy founded?",
+				"correct_answer": "753 BCE",
+				"incorrect_answers": [
+					"902 BCE",
+					"524 BCE",
+					"697 BCE"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How many women joined the United States Armed Services during World War II?",
+				"correct_answer": "350,000",
+				"incorrect_answers": [
+					"225,000",
+					"100,000",
+					"500,000"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the code name for the Allied invasion of Southern France on August 15th, 1944?",
+				"correct_answer": "Operation Dragoon",
+				"incorrect_answers": [
+					"Operation Overlord",
+					"Operation Market Garden",
+					"Operation Torch"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the original name of New York City?",
+				"correct_answer": "New Amsterdam",
+				"incorrect_answers": [
+					"New London",
+					"New Paris",
+					"New Rome"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "When was the &quot;Siege of Leningrad&quot; lifted during World War II?",
+				"correct_answer": "January 1944",
+				"incorrect_answers": [
+					"September 1943",
+					"November 1943",
+					"March 1944"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following was not one of Joseph Stalin&#039;s ten blows during World War II?",
+				"correct_answer": "Vistula-Oder Offensive",
+				"incorrect_answers": [
+					"Crimean Offensive",
+					"Leningrad-Novgorod Offensive",
+					"Operation Bagration"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which day did World War I begin?",
+				"correct_answer": "July 28",
+				"incorrect_answers": [
+					"January 28",
+					"June 28",
+					"April 28"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the last colony the UK ceded marking the end of the British Empire?",
+				"correct_answer": "Hong Kong",
+				"incorrect_answers": [
+					"India",
+					"Australia",
+					"Ireland"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In addition to his career as an astrologer and &quot;prophet&quot;, Nostradamus published a 1555 treatise that included a section on what?",
+				"correct_answer": "Making jams and jellies",
+				"incorrect_answers": [
+					"Teaching parrots to talk",
+					"Cheating at card games",
+					"Digging graves"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Before the American colonies switched to the Gregorian calendar in 1752, on what date did their new year start?",
+				"correct_answer": "March 25th",
+				"incorrect_answers": [
+					"June 1st",
+					"September 25th",
+					"December 1st"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Toussaint Louverture led a successful slave revolt in which country?",
+				"correct_answer": "Haiti",
+				"incorrect_answers": [
+					"France",
+					"Cuba",
+					"United States"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "From 1940 to 1942, what was the capital-in-exile of Free France ?",
+				"correct_answer": "Brazzaville",
+				"incorrect_answers": [
+					"Algiers",
+					"Paris",
+					"Tunis"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which King of England was faced with the Peasants&#039; Revolt in 1381?",
+				"correct_answer": "Richard II",
+				"incorrect_answers": [
+					"Edward III",
+					"Edward II",
+					"Henry IV"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The ancient city of Chich&eacute;n Itz&aacute; was built by which civilization?",
+				"correct_answer": "Mayans",
+				"incorrect_answers": [
+					"Aztecs",
+					"Incas",
+					"Toltecs"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which English king was married to Eleanor of Aquitaine?",
+				"correct_answer": "Henry II",
+				"incorrect_answers": [
+					"Richard I",
+					"Henry I",
+					"Henry V"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Who was the first man to travel into outer space twice?",
+				"correct_answer": "Gus Grissom",
+				"incorrect_answers": [
+					"Vladimir Komarov",
+					"Charles Conrad",
+					"Yuri Gagarin"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "During World War I, which nation&#039;s monarchs were blood related?",
+				"correct_answer": "England, Germany, Russia",
+				"incorrect_answers": [
+					"France, Russia, Germany",
+					"Serbia, Russia, Croatia",
+					"Germany, Spain, Austria"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The son of which pope supposedly held a lecherous f&ecirc;te involving 50 courtesans in the papal palace?",
+				"correct_answer": "Alexander VI",
+				"incorrect_answers": [
+					"Innocent V",
+					"Urban II",
+					"Pius III"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following physicists did NOT work on the Manhattan project?",
+				"correct_answer": "Murray Gell-Mann",
+				"incorrect_answers": [
+					"Richard Feynman",
+					"J. Robert Oppenheimer",
+					"John Von-Neumann"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which is the hull NO. of the Fletcher class destroyer Fletcher?",
+				"correct_answer": "DD-445",
+				"incorrect_answers": [
+					"DD-992",
+					"DD-444",
+					"DD-446"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these theoretical phycisists first predicted the existence of antimatter?",
+				"correct_answer": "Paul Dirac",
+				"incorrect_answers": [
+					"Niels Bohr",
+					"Albert Einstein",
+					"Werner Heisenberg"
+				]
+			},
+			{
+				"category": "History",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Who is the creator of the soft drink, Dr. Pepper?",
+				"correct_answer": "Charles Alderton",
+				"incorrect_answers": [
+					"James Wellington",
+					"Johnson Hinsin",
+					"Boris Heviltik"
+				]
+			}
+		]
+	},
+	"ciencia": {
+		"response_code": 0,
+		"results": [
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Who is the original author of the realtime physics engine called PhysX?",
+				"correct_answer": "NovodeX",
+				"incorrect_answers": [
+					"Ageia",
+					"Nvidia",
+					"AMD"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following is the oldest of these computers by release date?",
+				"correct_answer": "TRS-80",
+				"incorrect_answers": [
+					"Commodore 64",
+					"ZX Spectrum",
+					"Apple 3"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the name of the process that sends one qubit of information using two bits of classical information?",
+				"correct_answer": "Quantum Teleportation",
+				"incorrect_answers": [
+					"Super Dense Coding",
+					"Quantum Entanglement",
+					"Quantum Programming"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these is not a key value of Agile software development?",
+				"correct_answer": "Comprehensive documentation",
+				"incorrect_answers": [
+					"Individuals and interactions",
+					"Customer collaboration",
+					"Responding to change"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What does the International System of Quantities refer 1024 bytes as?",
+				"correct_answer": "Kibibyte",
+				"incorrect_answers": [
+					"Kylobyte",
+					"Kilobyte",
+					"Kelobyte"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Dutch computer scientist Mark Overmars is known for creating which game development engine?",
+				"correct_answer": "Game Maker",
+				"incorrect_answers": [
+					"Stencyl",
+					"Construct",
+					"Torque 2D"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What was the name of the first Bulgarian personal computer?",
+				"correct_answer": "IMKO-1",
+				"incorrect_answers": [
+					"Pravetz 82",
+					"Pravetz 8D",
+					"IZOT 1030"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following computer components can be built using only NAND gates?",
+				"correct_answer": "ALU",
+				"incorrect_answers": [
+					"CPU",
+					"RAM",
+					"Register"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the codename of the eighth generation Intel Core micro-architecture launched in October 2017?",
+				"correct_answer": "Coffee Lake",
+				"incorrect_answers": [
+					"Sandy Bridge",
+					"Skylake",
+					"Broadwell"
+				]
+			},
+			{
+				"category": "Science: Computers",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which kind of algorithm is Ron Rivest not famous for creating?",
+				"correct_answer": "Secret sharing scheme",
+				"incorrect_answers": [
+					"Hashing algorithm",
+					"Asymmetric encryption",
+					"Stream cipher"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the derivative of Acceleration with respect to time?",
+				"correct_answer": "Jerk",
+				"incorrect_answers": [
+					"Shift",
+					"Bump",
+					"Slide"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the approximate value of mathematical constant e?",
+				"correct_answer": "2.72",
+				"incorrect_answers": [
+					"3.14",
+					"1.62",
+					"1.41"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How many zeptometres are inside one femtometre?",
+				"correct_answer": "1,000,000",
+				"incorrect_answers": [
+					"10",
+					"1,000,000,000",
+					"1000"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The decimal number 31 in hexadecimal would be what?",
+				"correct_answer": "1F",
+				"incorrect_answers": [
+					"3D",
+					"2E",
+					"1B"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The French mathematician �variste Galois is primarily known for his work in which?",
+				"correct_answer": "Galois Theory",
+				"incorrect_answers": [
+					"Galois' Continued Fractions",
+					"Galois' Method for PDE's ",
+					"Abelian Integration"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+				"correct_answer": "1.58 x 10^20",
+				"incorrect_answers": [
+					"1.58 x 10^22",
+					"1.58 x  10^18",
+					"1.58 x 10^24"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following famous mathematicians died in a duel at the age of 20?",
+				"correct_answer": "Galois",
+				"incorrect_answers": [
+					"Abel",
+					"Euler",
+					"Gauss"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following mathematicians made major contributions to game theory?",
+				"correct_answer": "John Von Neumann",
+				"incorrect_answers": [
+					"Carl Friedrich Gauss",
+					"Leonhard Euler",
+					"Stefan Banach"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the smallest number that can be expressed as the sum of two positive cubes in two different ways?",
+				"correct_answer": "1729",
+				"incorrect_answers": [
+					"91",
+					"561",
+					"4104"
+				]
+			},
+			{
+				"category": "Science: Mathematics",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the fourth digit of &pi;?",
+				"correct_answer": "1",
+				"incorrect_answers": [
+					"2",
+					"3",
+					"4"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is considered the rarist form of color blindness?",
+				"correct_answer": "Blue",
+				"incorrect_answers": [
+					"Red",
+					"Green",
+					"Purple"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following liquids is least viscous? Assume temperature is 25�C.",
+				"correct_answer": "Acetone",
+				"incorrect_answers": [
+					"Water",
+					"Mercury",
+					"Benzene"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The 'Islets of Langerhans' is found in which human organ?",
+				"correct_answer": "Pancreas",
+				"incorrect_answers": [
+					"Kidney",
+					"Liver",
+					"Brain"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How many legs is it biologically impossible for a centipede to have?",
+				"correct_answer": "100",
+				"incorrect_answers": [
+					"26",
+					"50",
+					"74"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the scientific name of the knee cap?",
+				"correct_answer": "Patella",
+				"incorrect_answers": [
+					"Femur",
+					"Foramen Magnum",
+					"Scapula"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the molecular formula of Ozone?",
+				"correct_answer": "O3",
+				"incorrect_answers": [
+					"C6H2O6",
+					"N2O",
+					"SO4"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What genetic disease is caused by having an extra Y chromosome (XYY)?",
+				"correct_answer": "Jacob's Syndrome",
+				"incorrect_answers": [
+					"Klinefelter's Syndrome",
+					"Turner's Syndrome",
+					"Down Syndrome"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What does the term &quot;isolation&quot; refer to in microbiology?",
+				"correct_answer": "The separation of a strain from a natural, mixed population of living microbes",
+				"incorrect_answers": [
+					"A lack of nutrition in microenviroments",
+					"The nitrogen level in soil",
+					"Testing effects of certain microorganisms in an isolated enviroments, such as caves"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of the following is the term for &quot;surgical complications resulting from surgical sponges left inside the patient's body?",
+				"correct_answer": "Gossypiboma",
+				"incorrect_answers": [
+					"Gongoozler",
+					"Jentacular",
+					"Meupareunia"
+				]
+			},
+			{
+				"category": "Science & Nature",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In physics, conservation of energy and conservation of momentum are both consequences of which of the following?",
+				"correct_answer": "Noether's Theorem",
+				"incorrect_answers": [
+					"Bell's Theorem",
+					"Wick's Theorem",
+					"Carnot's Theorem"
+				]
+			}
+		]
+	},
+	"deportes": {
+		"response_code": 0,
+		"results": [
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "How many times did Martina Navratilova win the Wimbledon Singles Championship?",
+				"correct_answer": "Nine",
+				"incorrect_answers": [
+					"Ten",
+					"Seven",
+					"Eight"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What tool lends it&#039;s name to a last-stone advantage in an end in Curling?",
+				"correct_answer": "Hammer",
+				"incorrect_answers": [
+					"Wrench",
+					"Drill",
+					"Screwdriver"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "With which doubles partner did John McEnroe have most success?",
+				"correct_answer": "Peter Fleming",
+				"incorrect_answers": [
+					"Mark Woodforde",
+					"Michael Stich",
+					"Mary Carillo"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Where was the Games of the XXII Olympiad held?",
+				"correct_answer": "Moscow",
+				"incorrect_answers": [
+					"Barcelona",
+					"Tokyo",
+					"Los Angeles"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which car company is the only Japanese company which won the 24 Hours of Le Mans?",
+				"correct_answer": "Mazda",
+				"incorrect_answers": [
+					"Toyota",
+					"Subaru",
+					"Nissan"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which Italian footballer told Neuer where he&#039;s putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?",
+				"correct_answer": "Pelle",
+				"incorrect_answers": [
+					"Insigne",
+					"Barzagli",
+					"Giaccherini"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
+				"correct_answer": "DING Ning (China)",
+				"incorrect_answers": [
+					"LI Xiaoxia (China)",
+					"Ai FUKUHARA (Japan)",
+					"Song KIM (North Korea)"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is the full name of the footballer &quot;Cristiano Ronaldo&quot;?",
+				"correct_answer": "Cristiano Ronaldo dos Santos Aveiro",
+				"incorrect_answers": [
+					"Cristiano Ronaldo los Santos Diego",
+					"Cristiano Armando Diego Ronaldo",
+					"Cristiano Luis Armando Ronaldo"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which year was the third Super Bowl held?",
+				"correct_answer": "1969",
+				"incorrect_answers": [
+					"1968",
+					"1971",
+					"1970"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What team did England beat in the semi-final stage to win in the 1966 World Cup final?",
+				"correct_answer": "Portugal",
+				"incorrect_answers": [
+					"West Germany",
+					"Soviet Union",
+					"Brazil"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which city features all of their professional sports teams&#039; jersey&#039;s with the same color scheme?",
+				"correct_answer": "Pittsburgh",
+				"incorrect_answers": [
+					"New York",
+					"Seattle",
+					"Tampa Bay"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which player &quot;kung-fu kicked&quot; a Crystal Palace fan in January 1995?",
+				"correct_answer": "Eric Cantona",
+				"incorrect_answers": [
+					"David Seamen",
+					"Ashley Cole",
+					"Mark Hughes"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Who is Manchester United&#039;s leading appearance maker?",
+				"correct_answer": "Ryan Giggs",
+				"incorrect_answers": [
+					"David Beckham",
+					"Wayne Rooney",
+					"Eric Cantona"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The Mazda 787B won the 24 Hours of Le Mans in what year?",
+				"correct_answer": "1991",
+				"incorrect_answers": [
+					"1990",
+					"2000",
+					"1987"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "What is &ldquo;The Sport of Kings&rdquo;?",
+				"correct_answer": "Horse Racing",
+				"incorrect_answers": [
+					"Chess",
+					"Jousting",
+					"Fencing"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which of these Russian cities did NOT contain a stadium that was used in the 2018 FIFA World Cup?",
+				"correct_answer": "Vladivostok",
+				"incorrect_answers": [
+					"Rostov-on-Don",
+					"Yekaterinburg",
+					"Kaliningrad"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "In Canadian football, scoring a rouge is worth how many points?",
+				"correct_answer": "1",
+				"incorrect_answers": [
+					"2",
+					"3",
+					"4"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "The AHL affiliate team of the Boston Bruins is named what?",
+				"correct_answer": "Providence Bruins",
+				"incorrect_answers": [
+					"New Haven Bruins",
+					"Cambridge Bruins",
+					"Hartford Bruins"
+				]
+			},
+			{
+				"category": "Sports",
+				"type": "multiple",
+				"difficulty": "hard",
+				"question": "Which English football team is nicknamed &#039;The Tigers&#039;?",
+				"correct_answer": "Hull City",
+				"incorrect_answers": [
+					"Cardiff City",
+					"Bristol City",
+					"Manchester City"
+				]
+			}
+		]
+	}
+}
