@@ -55,7 +55,7 @@ public class Tablero {
     /**
      * Crea un tablero <i>desafío</i>.
      */
-    Tablero() {
+    public Tablero() {
         this(desafio);
     }
 
@@ -98,7 +98,7 @@ public class Tablero {
         return casillas;
     }
 
-    static int getTamTableroDesafio() {
+    public static int getTamTableroDesafio() {
         return TAM_TABLERO_DESAFIO;
     }
 
@@ -107,10 +107,17 @@ public class Tablero {
      * @return la categoría generada.
      */
     private String generarCategoria() {
-        Random rnd = new Random();
-        int pos = rnd.nextInt(categorias.length);
+    	Random rnd = new Random();
+		int pos = rnd.nextInt(categorias.length);
+		Casilla ultima = null;
+		if(casillas.size() != 0) {
+			 ultima = casillas.get(casillas.size() - 1);
+			while(ultima.getCategoria().equalsIgnoreCase(categorias[pos])) {
+				pos = rnd.nextInt(categorias.length);
+			}
+		}
 
-        return categorias[pos];
+		return categorias[pos];
     }
 
     /**

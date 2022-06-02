@@ -58,11 +58,11 @@ public class Casilla {
         return res;
     }
 
-    String getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    int getPosicion() {
+    public int getPosicion() {
         return posicion;
     }
 
@@ -86,7 +86,7 @@ public class Casilla {
      * La pregunta solo se genera después de llamar a este método por primera vez. <br>
      * En el caso de que no se pueda crear la pregunta, se vuelve a ejecutar este método.
      */
-    void generarPregunta() {
+    public void generarPregunta() {
         String[] pr = null;
         do {
             try {
@@ -98,11 +98,11 @@ public class Casilla {
                     pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
                 else {
                     pr = leerDeFichero("src\\preguntas\\apiGeneralF.txt");
-                    categoria = "general";
+                    categoria = "General";
                     dificultad = "easy";
                 }
             } catch (Exception e) { //Fichero por defecto, en caso de no encontrar el requerido.
-                categoria = "general"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
+                categoria = "General"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
                 dificultad = "easy";
             }
 

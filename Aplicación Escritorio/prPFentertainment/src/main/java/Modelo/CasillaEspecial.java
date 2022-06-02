@@ -3,7 +3,7 @@ package Modelo;
 import java.util.StringJoiner;
 
 public class CasillaEspecial extends Casilla {
-	CasillaEspecial(String categ, int pos) {
+	public CasillaEspecial(String categ, int pos) {
 		super(categ, pos, "hard");
 	}
 
