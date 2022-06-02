@@ -72,7 +72,7 @@ function bucle_principal() {
 			contenedor.appendChild(dado, ayuda);
 			carga_json("archivos/Preguntas/" + dificultad[partida.dificultad] + ".json").then(preguntas => {
 				ficha.asignar_preguntas(preguntas);
-			})
+			});
 			es_primera_vez = false;
 		}
 		tablero_base.dibuja(ctx);

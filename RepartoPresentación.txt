@@ -1,0 +1,8 @@
+1- INTRODUCCIÓN: problema, solución.-CONCLUSIONES				Nuria
+2- Organización del trabajo y requisitos.								Julián
+3- Planificación.																				Dani
+4- Arquitectura MVC -> autómata de la aplicación. 			Carlos
+5- Modelo																								Guillermo
+6- Patrones, Principio SOLID -> orientado a objetos.		Javi Leiva
+7- Pruebas de caja negra.																Javi Lanceta
+8- Herramientas.-Modelo de implementación. -Despliegue.	Pablo
