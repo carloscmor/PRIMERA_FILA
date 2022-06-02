@@ -59,7 +59,7 @@ public class Casilla {
     }
 
 
-    String getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 

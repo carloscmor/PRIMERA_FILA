@@ -37,7 +37,7 @@ public class Temporizador extends Thread {
     }
 
     /**
-     * Para el temporizador
+     * Para el temporizador.
      */
 
     void parar() {
@@ -45,14 +45,16 @@ public class Temporizador extends Thread {
     }
 
     /**
-     * Reinicia el temporizador, reinicializando las variables
+     * Reinicia el temporizador, reinicializando las variables.
      */
     public void reiniciar() {
         this.tiempo = inicio + 1;
         this.agotado = false;
     }
 
-
+    /**
+     * @return si se agotó el temporizador
+     */
     boolean esFinal() {
         return fin;
     }

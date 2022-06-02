@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb18400e-d644-4e58-a9a9-c85fe852fce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/GUI/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/GUI/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/GUI_2/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/GUI_2/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Casilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/CasillaEspecial.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/CasillaEspecial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Partida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/PartidaException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Tablero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Temporizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aplicación Escritorio/prPFentertainment/src/main/java/Modelo/Temporizador.java" afterDir="false" />
     </list>
@@ -62,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654159837643</updated>
       <workItem from="1654159845572" duration="4770000" />
-      <workItem from="1654192673568" duration="1222000" />
+      <workItem from="1654192673568" duration="3350000" />
     </task>
     <servers />
   </component>
