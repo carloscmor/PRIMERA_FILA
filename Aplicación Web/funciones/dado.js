@@ -6,13 +6,15 @@ export default function crear_dado(ayuda, ficha, tablero) {
 
 	function tirar_dado() {
 		let resultado = Math.floor(Math.random() * 100 % 6 + 1);
-		console.log("Dado: " + resultado);
 		for (let i = 0; i < resultado; i++) {
-			if (tablero.casillas[ficha.posición.actual.y][ficha.posición.actual.x] == 10) {
+			if (tablero.casillas[ficha.posición.actual.y][ficha.posición.actual.x] == 8) {
 				console.log("MECHA MECHAAAAAA");
 				break;
 			}
 			ficha.avanzar();
+		}
+		if (tablero.casillas[ficha.posición.actual.y][ficha.posición.actual.x] != 8 && tablero.casillas[ficha.posición.actual.y][ficha.posición.actual.x] != 1) {
+			ficha.preguntar();
 		}
 	}
 

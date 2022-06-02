@@ -6,11 +6,31 @@ export default class Ficha {
 			actual: { x: 0, y: 0 },
 			anterior: { x: 0, y: 0 }
 		};
-		this.tablero = tablero;
+		this.tablero = tablero.casillas;
+		this.preguntas;
+		this.trad = {
+			2: "animales",
+			3: "entretenimiento",
+			4: "general",
+			5: "historia",
+			6: "ciencia",
+			7: "deportes"
+		};
+	}
+
+	asignar_preguntas(preguntas) {
+		this.preguntas = preguntas;
 	}
 
 	dibuja(ctx) {
 		ctx.drawImage(this.imagen, 35 + 80 * (this.posición.actual.x), 140 + 80 * (this.posición.actual.y), 71, 71);
+	}
+
+	preguntar() {
+		let cantidad = Object.keys(this.preguntas[this.trad[this.tablero[this.posición.actual.y][this.posición.actual.x]]].results).length;
+		let pregunta = this.preguntas[this.trad[this.tablero[this.posición.actual.y][this.posición.actual.x]]].results[Math.floor(Math.random() * 100 % cantidad)];
+
+		console.log(pregunta);
 	}
 
 	es_anterior(anterior) {
