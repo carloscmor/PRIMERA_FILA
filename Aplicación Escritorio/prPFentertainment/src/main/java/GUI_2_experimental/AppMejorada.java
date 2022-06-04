@@ -1,4 +1,4 @@
-package GUI_2;
+package GUI_2_experimental;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,6 +23,7 @@ public class AppMejorada {
 
 	/**
 	 * Create the application.
+	 * @wbp.parser.entryPoint
 	 */
 	private AppMejorada() {
 		initialize();

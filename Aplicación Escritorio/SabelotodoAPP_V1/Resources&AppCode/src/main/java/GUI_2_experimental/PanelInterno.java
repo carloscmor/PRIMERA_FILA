@@ -1,7 +1,9 @@
-package GUI_2;
+package GUI_2_experimental;
 
 import java.awt.*;
 import javax.swing.*;
+
+import Modelo.Tablero;
 
 public class PanelInterno extends JPanel {
 	/**
@@ -302,7 +304,7 @@ public class PanelInterno extends JPanel {
 
         comboBoxOpciones_1 = new JComboBox<>();
         comboBoxOpciones_1.setEnabled(false);
-        comboBoxOpciones_1.setModel(new DefaultComboBoxModel(new String[]{"easy", "medium", "difficult"}));
+        comboBoxOpciones_1.setModel(new DefaultComboBoxModel(Tablero.dificultades));
         comboBoxOpciones_1.setBounds(904, 114, 164, 22);
         add(comboBoxOpciones_1);
 

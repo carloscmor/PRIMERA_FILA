@@ -41,11 +41,10 @@ public class Partida {
     public void avanzarFicha(int n) {
         int cont = 0;
         while (ficha.getPosicion() < tablero.getCasillas().size() && cont++ < n) ficha.avanzar();
-        if(ficha.getPosicion() == tablero.getCasillas().size()) terminar();
-    }
-
-    public void setTerminada(boolean terminada) {
-        this.terminada = terminada;
+        if(ficha.getPosicion() == tablero.getCasillas().size()){
+            terminar();
+            ficha.retroceder();
+        }
     }
 
     public Jugador getJugador() {
@@ -64,7 +63,7 @@ public class Partida {
         empezada = true;
     }
 
-    private void terminar() {
+    public void terminar() {
         terminada = true;
     }
 

@@ -1,4 +1,4 @@
-package GUI_2;
+package GUI;
 
 import java.awt.*;
 import javax.swing.*;
@@ -51,11 +51,11 @@ public class PanelInterno extends JPanel {
     private final JTextPane vidas;
     private final JTextPane modoSeleccionado;
     private final JComboBox<Object> comboBoxOpciones_1;
+    private final JTextArea textTablero;
 
 
     private final JButton iniciarPregunta;
     private final JTextArea TextPregunta;
-    private JLayeredPane layeredPane;
 
 
     /**
@@ -153,9 +153,12 @@ public class PanelInterno extends JPanel {
         scrollTablero.setAutoscrolls(true);
         scrollTablero.setBounds(10, 37, 522, 383);
         panel_partida.add(scrollTablero);
-        
-        layeredPane = new JLayeredPane();
-        scrollTablero.setViewportView(layeredPane);
+
+        textTablero = new JTextArea();
+        textTablero.setBackground(UIManager.getColor("inactiveCaption"));
+        textTablero.setFont(new Font("Monospaced", Font.PLAIN, 15));
+        textTablero.setEditable(false);
+        scrollTablero.setViewportView(textTablero);
 
         JLabel tableroLabel = new JLabel("TABLERO");
         tableroLabel.setFont(new Font("Tahoma", Font.PLAIN, 24));
@@ -322,14 +325,18 @@ public class PanelInterno extends JPanel {
         seguirPartida.setActionCommand(cmdSeguir);
         tiraDado.setActionCommand(cmdTirar);
         iniciarPregunta.setActionCommand(cmdVisualizar);
+        
+        JLabel lblNewLabel_3 = new JLabel("");
+        lblNewLabel_3.setBounds(10, 14, 133, 139);
+        add(lblNewLabel_3);
 
     }
 
-    public JLayeredPane getLayeredPane() {
-		return layeredPane;
-	}
+    public JTextArea getTextTablero() {
+        return textTablero;
+    }
 
-	public JComboBox<Object> getComboBoxOpciones_1() {
+    public JComboBox<Object> getComboBoxOpciones_1() {
         return comboBoxOpciones_1;
     }
 

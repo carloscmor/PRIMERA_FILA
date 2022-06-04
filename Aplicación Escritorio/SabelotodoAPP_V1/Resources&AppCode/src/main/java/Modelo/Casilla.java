@@ -19,7 +19,7 @@ public class Casilla {
     private Pregunta pregunta;
 
     /**
-     * Atributo para no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial.
+     * Atributo para intentar no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial.
      */
     private int rn;
 
@@ -58,11 +58,12 @@ public class Casilla {
         return res;
     }
 
+
     public String getCategoria() {
         return categoria;
     }
 
-    public int getPosicion() {
+    int getPosicion() {
         return posicion;
     }
 
@@ -86,7 +87,7 @@ public class Casilla {
      * La pregunta solo se genera después de llamar a este método por primera vez. <br>
      * En el caso de que no se pueda crear la pregunta, se vuelve a ejecutar este método.
      */
-    public void generarPregunta() {
+    void generarPregunta() {
         String[] pr = null;
         do {
             try {
@@ -98,11 +99,11 @@ public class Casilla {
                     pr = leerDeFichero("src\\preguntas\\api" + categoria + "M.txt");
                 else {
                     pr = leerDeFichero("src\\preguntas\\apiGeneralF.txt");
-                    categoria = "General";
+                    categoria = "general";
                     dificultad = "easy";
                 }
             } catch (Exception e) { //Fichero por defecto, en caso de no encontrar el requerido.
-                categoria = "General"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
+                categoria = "general"; //como es error nuestro por no disponer de esas preguntas, lo ponemos más fácil
                 dificultad = "easy";
             }
 

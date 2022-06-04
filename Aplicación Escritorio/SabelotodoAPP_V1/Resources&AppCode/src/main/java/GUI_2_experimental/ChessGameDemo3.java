@@ -1,4 +1,4 @@
-package GUI_2;
+package GUI_2_experimental;
 
 import java.awt.*;
 import javax.swing.*;
