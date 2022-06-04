@@ -19,7 +19,7 @@ public class Casilla {
     private Pregunta pregunta;
 
     /**
-     * Atributo para no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial.
+     * Atributo para intentar no repetir la misma pregunta si cae en la misma casilla por efectos de casilla especial.
      */
     private int rn;
 

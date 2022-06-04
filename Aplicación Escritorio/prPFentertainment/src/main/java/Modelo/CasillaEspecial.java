@@ -29,31 +29,34 @@ public class CasillaEspecial extends Casilla {
 	 *     <li>26 = Retrocede 1 casilla</li>
 	 * </ul>
 	 */
-	public void ActivarEspecial(Partida p) {
+	public String ActivarEspecial(Partida p) {
 		switch (this.getPosicion()) {
 		case 2: case 3: { // Avanzar casilla
-			 p.getFicha().avanzar();
-			break;
+			p.getFicha().avanzar();
+			return "Avanzas una casilla :)";
 		}
 		case 6: case 7:{ // Restar 1 vida
-			if(p.getJugador().getVidas() > 1) p.getJugador().setVidas(p.getJugador().getVidas() - 1);
-			break;
+			if(p.getJugador().getVidas() > 1){
+				p.getJugador().setVidas(p.getJugador().getVidas() - 1);
+				return "Pierdes una vida :(";
+			} else return "Pierdes una vida... \n\nBueno, esta vez te libras...";
+
 		}
 		case 10: case 11: case 22:{ // Pregunta Especial = Pregunta dificil aleatoria
 			generarPregunta();
-			break;
+			return "";
 		}
 		case 14: case 18:  // Aumentar 1 vida
 			p.getJugador().setVidas(p.getJugador().getVidas()+1);
-			break;
+			return "Ganas una vida :)";
 		case 15: case 17: case 26: //Retroceder casilla
-			 p.getFicha().retroceder();
-			break;
+			p.getFicha().retroceder();
+			return "Retrocedes una casilla :(";
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + this.getPosicion());
-		}	
+		}
 	}
-	
+
 	public String toString() {
 		return new StringJoiner(", ", "Casilla" + "[", "]")
 				.add("Categoria='" + getCategoria() + "'")
@@ -61,6 +64,6 @@ public class CasillaEspecial extends Casilla {
 				.toString();
 	}
 
-	
+
 
 }

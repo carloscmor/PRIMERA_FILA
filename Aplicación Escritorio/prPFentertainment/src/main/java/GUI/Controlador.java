@@ -12,7 +12,7 @@ import java.util.List;
 public class Controlador implements ActionListener {
 
     private Partida partida;
-    private PanelInterno panel;
+    private final PanelInterno panel;
     private Partida.tipo_partida tipo;
     private String nombreJugador;
     private String dificultad;
@@ -22,7 +22,7 @@ public class Controlador implements ActionListener {
     private boolean laAnteriorEraEspecial;
     private List<String> opciones;
 
-    public Controlador(PanelInterno panel) {
+    Controlador(PanelInterno panel) {
         partida = null;
         this.panel = panel;
         vidas = 0;
@@ -137,17 +137,23 @@ public class Controlador implements ActionListener {
 
                 panel.getVisualizarPregunta().setEnabled(false);
                 Casilla casilla = partida.getTablero().getCasillas().get(pos);
-                if (casilla instanceof CasillaEspecial){
+                if (casilla instanceof CasillaEspecial && !(pos == 10 || pos == 11 || pos == 22)) {
                     CasillaEspecial ce = (CasillaEspecial) casilla;
                     //no hay pregunta
-                    ce.ActivarEspecial(partida);
+                    String efecto = ce.ActivarEspecial(partida);
                     laAnteriorEraEspecial = true;
                     panel.getSeguirPartida().setEnabled(true);
-                    panel.getTiraDado().setEnabled(true);
                     panel.getVidas().setText("");
                     vidas = partida.getJugador().getVidas();
-                    panel.getVidas().setText(Integer.toString(vidas));
-                }else{
+                    panel.getVidas().setText(Integer.toString(vidas)); //actualizar display de vidas
+                    panel.getTextPregunta().setText("¡Casilla especial! " + efecto);
+
+                } else {
+                    if (casilla instanceof CasillaEspecial) {
+                        CasillaEspecial ce = (CasillaEspecial) casilla;
+                        ce.ActivarEspecial(partida);
+                        panel.getEstadoLabel().setText("¡PREGUNTA EXPERTO!");
+                    }
                     preg = casilla.getPregunta();
 
                     opciones = preg.getOpciones();//opciones barajas ->¡UNA ÚNICA LLAMADA!, en otro caso falla la app.
@@ -192,7 +198,6 @@ public class Controlador implements ActionListener {
                     panel.getResLabel().setText("¡ACIERTO!");
                     panel.getPuntuacion().setText("");
                     panel.getPuntuacion().setText(Integer.toString(partida.getJugador().getPuntuacion()));
-
                 } else {
                     partida.getJugador().decrementaVida();
                     panel.getResLabel().setText("FALLO :(");
@@ -206,13 +211,15 @@ public class Controlador implements ActionListener {
                 panel.getComboBoxOpciones().removeAllItems();
                 panel.getComboBoxOpciones().setEnabled(false);
 
+                if (partida.getFicha().getPosicion() == partida.getTablero().getCasillas().size())
+                    partida.terminar();
+
                 if (vidas == 0) panel.getEstadoLabel().setText("TE HAS QUEDADO SIN VIDAS -> GAME OVER");
-                else if (partida.isTerminada()) panel.getEstadoLabel().setText("TERMINASTE LA PARTIDA");
+                else if (partida.isTerminada()) panel.getEstadoLabel().setText("¡HAS GANADO!");
                 else if (partida.getTablero().getCasillas().get(pos) instanceof CasillaEspecial) {
                     CasillaEspecial ce = (CasillaEspecial) partida.getTablero().getCasillas().get(pos);
                     ce.ActivarEspecial(partida);
-                    laAnteriorEraEspecial = true;
-                    panel.getSeguirPartida().setEnabled(true);
+                    panel.getEstadoLabel().setText("JUGANDO");
                     panel.getTiraDado().setEnabled(true);
                 } else panel.getTiraDado().setEnabled(true);
 
@@ -229,24 +236,23 @@ public class Controlador implements ActionListener {
                 break;
             case PanelInterno.cmdSeguir:
                 panel.getSeguirPartida().setEnabled(false);
-
-                if (!laAnteriorEraEspecial) { //todo debe dejar avanzar también con el dado
-                    int valorDado = partida.getDado().valor();
-                    partida.avanzarFicha(valorDado);
-                }
-                laAnteriorEraEspecial = false;
-
+                if (partida.getFicha().getPosicion() == partida.getTablero().getCasillas().size())
+                    partida.terminar();
                 if (partida.isTerminada()) panel.getEstadoLabel().setText("HAS GANADO!");
                 else {
+                    if (laAnteriorEraEspecial) {
+                        panel.getTiraDado().setEnabled(true);
+                        laAnteriorEraEspecial = false;
+                    } else {
+                        int valorDado = partida.getDado().valor();
+                        partida.avanzarFicha(valorDado);
+                        panel.getVisualizarPregunta().setEnabled(true);
+                    }
                     pos = partida.getFicha().getPosicion();
 
                     panel.getTextTablero().setText(partida.toString());
                     panel.getInfoCasilla().setText(partida.getTablero().getCasillas().get(pos).toString());
-
-                    panel.getVisualizarPregunta().setEnabled(true);
-
                 }
-
                 break;
         }
     }

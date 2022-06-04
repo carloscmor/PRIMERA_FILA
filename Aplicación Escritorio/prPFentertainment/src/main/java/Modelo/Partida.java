@@ -63,7 +63,7 @@ public class Partida {
         empezada = true;
     }
 
-    private void terminar() {
+    public void terminar() {
         terminada = true;
     }
 
