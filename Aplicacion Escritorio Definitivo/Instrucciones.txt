@@ -1,2 +1,2 @@
-El ejecutable de la aplicación está en la carpeta Jugar. Necesitas tener la carpeta "resources" en el mismo directorio que el .jar para que funcione correctamente.
+El ejecutable de la aplicación está en el archivo .zip Jugar. Necesitas tener la carpeta "resources" en el mismo directorio que el .jar para que funcione correctamente.
 También está el código fuente de la app en la carpeta "Proyecto".
