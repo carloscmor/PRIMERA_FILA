@@ -3,7 +3,7 @@ export default class Partida {
 	constructor() {
 		this.estado = 0;
 		this.tipo = 0;
-		this.dificultad = 0
+		this.dificultad = 0;
 		this.estados = {
 			"inicio": 0,
 			"ejecución": 1,
@@ -17,7 +17,7 @@ export default class Partida {
 			"fácil": 0,
 			"medio": 1,
 			"difícil": 3
-		}
+		};
 	}
 
 	asignar_estado(estado) {
