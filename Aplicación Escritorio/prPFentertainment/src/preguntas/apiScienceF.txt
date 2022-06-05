@@ -7,7 +7,7 @@ Science: Computers;multiple;easy;What is the most preferred image format used fo
 Science: Computers;multiple;easy;Which computer language would you associate Django framework with?;Python;['C#', 'C++', 'Java'];
 Science: Computers;multiple;easy;The numbering system with a radix of 16 is more commonly referred to as ;Hexadecimal;['Binary', 'Duodecimal', 'Octal'];
 Science: Computers;multiple;easy;In computing, what does MIDI stand for?;Musical Instrument Digital Interface;['Musical Interface of Digital Instruments', 'Modular Interface of Digital Instruments', 'Musical Instrument Data Interface'];
-Science: Computers;multiple;easy;In computing, what does LAN stand for?;Locar Area Network;['Long Antenna Node', 'Light Access Node', 'Land Adress Navigation'];
+Science: Computers;multiple;easy;In computing, what does LAN stand for?;Local Area Network;['Long Antenna Node', 'Light Access Node', 'Land Adress Navigation'];
 Science: Mathematics;multiple;easy;In Roman Numerals, what does XL equate to?;40;['60', '15', '90'];
 Science: Mathematics;multiple;easy;What's the square root of 49?;7;['4', '12', '9'];
 Science: Mathematics;multiple;easy;What prime number comes next after 19?;23;['25', '21', '27'];
